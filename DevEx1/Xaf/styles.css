@@ -1,0 +1,904 @@
+/*# --- ASPxMenu Lite skins for XAF --- #*/
+.menuLinks_DevEx1, .menuLinks_DevEx1 .dxm-item,
+.menuLinks_DevEx1 .dxm-hovered,
+.menuLinks_DevEx1 .dxm-disabled
+{
+    background: none !important;
+    border-style: none !important;
+}
+.menuLinks_DevEx1 .dxm-popOut
+{
+    border-style: none !important;
+}
+.menuLinks_DevEx1 .dxm-item a.dx > span
+{
+    color: #201f35;
+    text-decoration: underline !important;
+}
+.menuLinks_DevEx1 .dxm-hovered a.dx > span
+{
+    color: #2C4D79 !important;
+    text-decoration: underline !important;
+}
+.menuButtons_DevEx1 .dxm-popOut
+{
+    padding: 6px 4px 6px !important;
+}
+.menuButtons_DevEx1 .dxm-content
+{
+    padding: 2px 8px 1px 8px !important;
+    height: 16px !important;
+}
+.menuButtons_DevEx1 .dxm-item
+{
+    background: #ebedf2 url('../Editors/edtBtnBack.png') repeat-x left top !important;
+    border: solid 1px #a9acb5 !important;
+}
+.menuButtons_DevEx1 .dxm-item.dxm-hovered
+{
+    background: #dde6fe url('../Editors/edtBtnHBack.png') repeat-x left top !important;
+}
+.menuButtons_DevEx1, .menuButtons_DevEx1 .dxm-tmpl
+{
+    color: #201f35;
+    background: none !important;
+}
+.menuButtons_DevEx1 .dxm-item.dxm-tmpl
+{
+    border-color: transparent !important;
+}
+.menuButtons_DevEx1 .dxm-item.dxm-tmpl > *
+{
+    margin: -1px 0;
+}
+.menuButtons .dxm-item:not(.dxm-ami) .dxm-content
+{
+    /*# B254142 #*/
+    min-width: 60px !important;
+    text-align: center;
+}
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-l .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-r .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-l .dxm-subMenu .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-r .dxm-subMenu .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-t .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-b .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-t .dxm-subMenu .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-b .dxm-subMenu .dxm-content.dxalink
+{
+    padding: 4px 4px 3px;
+}
+.menuLinks_DevEx1.dxm-horizontal.dxm-main,
+.menuLinks_DevEx1.dxm-horizontal.dxm-main .dxm-item
+{
+    padding: 1px;
+}
+.dxmLite_DevEx1 .dxm-main.menuButtons
+{
+    padding: 1px;
+}
+.menuLinks_DevEx1.dxm-horizontal .dxm-spacing
+{
+    width: 1px;
+    min-width: 1px;
+}
+/*# ErrorInfoControl #*/
+.ErrorMessage
+{
+    width: 100%;
+    background-color: #FEE2C4;
+    border: solid 1px #E3BFA5;
+    vertical-align: middle;
+}
+.ErrorMessage .ErrorImage
+{
+    width: 16px;
+}
+.ErrorLabel
+{
+    text-align: left;
+    color: black;
+}
+.errorIcon
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.ErrorDetails
+{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+/*# ValidationError icon #*/
+.WebEditorCell .dxeErrorCell_DevEx1.dxeErrorFrame_DevEx1 .dxEditors_edtError_DevEx1.XafInplaceValidationErrorIcon
+{
+    background-image: none !important;
+    height: 16px;
+    width: 16px;
+    margin: 0;
+}
+.WebEditorCell .dxeErrorCell_DevEx1.dxeErrorFrame_DevEx1.dxeErrorFrameSys.dxeErrorCellSys
+{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.dxGridView_gvCellError_DevEx1.xafGridCellError
+{
+    background-image: none !important;
+}
+/*# TreeList #*/
+.TreeList .dxtlIndentWithButton_DevEx1
+{
+    vertical-align: middle;
+}
+.TreeList .dxtlCommandCell_DevEx1
+{
+    vertical-align: middle;
+}
+.TreeList .dxtlCommandCell_DevEx1 .dxbButton_DevEx1
+{
+    display: block;
+}
+.TextCell
+{
+    padding-left: 5px;
+}
+.XafTreeNode .ImageCell
+{
+    width: 16px;
+    vertical-align: top;
+}
+.XafTreeNode .TextCell
+{
+    padding: 0px 5px;
+    font-size: 90%;
+}
+.TreeList .XafTreeNode .ImageCell
+{
+    /*# T475015 #*/
+    vertical-align: middle;
+}
+.TreeList .XafTreeNode .ImageCell img
+{
+    display: inherit;
+}
+/*# Upload file/image buttons #*/
+.xafLookupButton
+{
+    margin-left: 1px;
+}
+.xafLookupButton div.dxb
+{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+.xafLookupButton.dxbButton_DevEx1
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.xafLookupButton.dxbButton_DevEx1 .dxb
+{
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+.XafFileDataAnchor
+{
+    white-space: nowrap;
+    margin-right: 5px;
+}
+/*# layout #*/
+.Layout
+{
+    padding-left: 32px;
+}
+.GroupHeader div
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.GroupHeader .Label
+{
+    width: 100%;
+    color: black;
+    font-size: 19px;
+    padding: 0px 5px 0px 5px;
+}
+.Layout .Caption
+{
+    color: #000;
+    vertical-align: middle;
+    padding: 2px 0px 2px 0px;
+    white-space: nowrap;
+}
+.Layout .StaticText
+{
+    color: #4f4f4f;
+}
+.LayoutTabbedGroupContainer
+{
+    padding: 16px 5px 5px 5px;
+}
+.GroupHeader
+{
+    height: 27px;
+    margin: 20px 0px 5px 0px;
+}
+.GroupHeader .Image
+{
+    padding-left: 20px;
+}
+.GroupHeader .Label
+{
+    padding-left: 20px;
+}
+.GroupHeader:first-child
+{
+    margin: 0px 0px 5px 0px;
+}
+.NextColumn .GroupHeader td.L div
+{
+    width: 35px;
+}
+.GroupHeader td.R div
+{
+    width: 5px;
+    height: 27px;
+}
+.Layout table.GroupContent
+{
+    width: 100%;
+}
+.Layout td.GroupContent
+{
+    vertical-align: top;
+}
+.Layout .WebEditorCell
+{
+    border-collapse: separate;
+    padding: 0px 0px 0px 0px;
+}
+.Layout .WebEditorCell::after
+{
+    display: block;
+    content: "";
+    clear: both;
+}
+.Layout .WebEditorCell a, .Layout .WebEditorCell a:hover, .Layout .WebEditorCell a:visited
+{
+    text-decoration: underline;
+}
+.Layout div.Item
+{
+    padding: 2px 5px 2px 5px;
+}
+.Layout .NextColumn div.Item
+{
+    padding: 2px 5px 2px 5px;
+}
+.Layout .LayoutTabContainer
+{
+    margin: 0px !important;
+}
+.Layout .HItem
+{
+    vertical-align: top;
+}
+.Layout .haLeft
+{
+    text-align: left !important;
+}
+.Layout .haRight
+{
+    text-align: right !important;
+}
+.Layout .haCenter
+{
+    text-align: center !important;
+}
+.Layout .vaTop
+{
+    vertical-align: top !important;
+}
+.Layout .vaCenter
+{
+    vertical-align: middle !important;
+}
+.Layout .vaBottom
+{
+    vertical-align: bottom !important;
+}
+.Layout .Item .ACH
+{
+    margin: 1px 0px;
+}
+.Layout .Item .ACH .TemplatedItem
+{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+/*# TabContainer #*/
+.TabsContainer .dxmMenuSeparator_DevEx1, .TabsContainer .dxmLite_DevEx1 .dxm-separator
+{
+    padding: 0px 10px 0px 16px !important;
+}
+.TabsContainer
+{
+    padding-right: 5px;
+    float: right;
+}
+.TabsContainer td
+{
+    text-align: left;
+}
+.TabsContainer .TemplatedItem
+{
+    padding: 0px 5px 0px 11px;
+}
+.TabsContainer .TemplatedItem .SingleChoiceActionItemLabel
+{
+    padding-left: 0px;
+}
+.LayoutTabContainerWithNestedFrame > .Item:first-child > .NestedFrame > .ToolBarUpdatePanel > .ToolBar .dxmMenu_DevEx1, .LayoutTabContainerWithNestedFrame > .Item:first-child > .NestedFrame > .ToolBarUpdatePanel > .ToolBar .dxmLite_DevEx1 .dxm-main
+{
+    border-top: 0px;
+}
+.LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .ToolBarUpdatePanel > .ToolBar .dxmMenu_DevEx1, .LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .ToolBarUpdatePanel > .ToolBar .dxmLite_DevEx1 .dxm-main
+{
+    border-left: 0px;
+    border-right: 0px;
+}
+.Layout .Item > .ACH .dxm-main
+{
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+}
+.Layout > .NestedFrameControl > .NestedFrame > .ToolBarUpdatePanel + .NestedFrameViewSite > .ListViewItem, .Layout > .Item > .Item > tbody > tr > .NestedFrameControl > .NestedFrame > .ToolBarUpdatePanel + .NestedFrameViewSite > .ListViewItem
+{
+    padding: 0px !important;
+}
+.GroupContent > .NestedFrameControl > .NestedFrame > .ToolBarUpdatePanel + .NestedFrameViewSite > .ListViewItem
+{
+    padding: 0px !important;
+}
+.NestedFrameViewSite > .Layout
+{
+    padding: 0px;
+}
+.LayoutTabContainer
+{
+    padding: 12px !important;
+}
+.LayoutTabContainer > .Item > .NestedFrame > .NestedFrameViewSite > .Item
+{
+    padding-top: 0px !important;
+}
+.LayoutTabContainer > .Item > .NestedFrame > .ToolBar
+{
+    padding: 0px 5px 0px 5px !important;
+}
+.LayoutTabContainer > .NestedFrameControl
+{
+    padding: 0px !important;
+}
+.Layout .TabControlContent
+{
+    padding: 0px !important;
+}
+.Layout .TabControlContent > div
+{
+    padding: 0px !important;
+}
+.LayoutTabContainerWithNestedFrame
+{
+    padding: 0px !important;
+}
+.LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .NestedFrameViewSite > .Item
+{
+    padding: 0px !important;
+}
+.LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .ToolBar
+{
+    padding: 0px !important;
+}
+.LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .NestedFrameViewSite > .Item > .GridView
+{
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .NestedFrameViewSite.WithoutToolbar > .Item > .GridView
+{
+    border-top: 0px;
+}
+.Content > div > .Layout
+{
+    padding-top: 15px;
+}
+.Content > div > .Layout > .GroupHeader:first-child
+{
+    margin-top: 0px !important;
+}
+/*# Grid #*/
+td.ActionCell
+{
+    text-align: center;
+    white-space: nowrap;
+}
+td.ActionCell *
+{
+    white-space: nowrap;
+}
+/*# Chart #*/
+.xafChartPanel label
+{
+    font-size: 85%;
+}
+.xafChartPanel .dxeMemoEditAreaXaf label
+{
+    font-size: 100%;
+}
+/*# ActionContainerHolder #*/
+.dxm-main .dxm-item .TemplatedItem input[type=text]::-ms-clear
+{
+    display: none;
+}
+.ACH .TemplatedItem
+{
+    padding: 0px 10px 0px 10px;
+}
+.ACH .dxm-item .TemplatedItem
+{
+    padding: 1px 10px 0px 9px;
+}
+.ACV .dxm-main .TemplatedItem
+{
+    padding-left: 7px !important;
+}
+.SingleChoiceActionItemLabel
+{
+    padding-left: 9px;
+    padding-right: 5px;
+}
+.TemplatedItem
+{
+    border-collapse: separate !important;
+}
+.TemplatedItem > table
+{
+    border-collapse: separate !important;
+}
+.ParametrizedActionControl .dxeButtonEditButton_DevEx1
+{
+    padding: 1px 2px 0px 3px;
+}
+.ParametrizedActionControl .dxeButtonEditButton_DevEx1 img
+{
+    padding-top: 1px;
+}
+.ACH.MainToolbar .dxmLite_DevEx1 .dxm-main
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.ACV .dxmVerticalMenuItemWithImage_DevEx1
+{
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+.EditModeActions .dxmLite_DevEx1
+{
+    margin-right: 3px !important;
+}
+.Content .EditModeActions .dxmLite_DevEx1
+{
+    margin-right: 2px !important;
+}
+/*# Lookup ComboBox #*/
+.xafLookupEditor
+{
+    border-collapse: separate;
+}
+/*# ASPxColorEdit - ShowDisplayText == false #*/
+.ColorEditHideText .dxeCIT
+{
+    display: none;
+}
+.ColorEditHideText div[class^='dxeColorIndicator']
+{
+    border: 1px solid #000;
+}
+.ColorEditHideText div[class^='dxeColorIndicator']:last-child
+{
+    border-right-color: #000;
+}
+/*# T519328 #*/
+.dx-toast-wrapper.dx-overlay-wrapper
+{
+    z-index: 15000 !important;
+}
+/*# Common #*/
+span, label, a, .GroupHeader, .StaticText, .TextCell, .Layout .Caption
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+body
+{
+    color: black;
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+}
+.BodyBackColor
+{
+    background-color: #EEEEF3;
+}
+div.PageContent
+{
+    padding: 0px 0px 0px 0px;
+}
+.ACPanel
+{
+    background: url('opacity50.png') repeat;
+    border-collapse: separate;
+    padding: 2px 20px 1px 5px;
+    height: 25px;
+}
+.ACPanel td td
+{
+    text-align: left;
+}
+.Main
+{
+    background: white;
+}
+h1
+{
+    color: Black;
+    font-size: 200%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+.HorizontalTemplateHeader, .VerticalTemplateHeader, .Header
+{
+    background: #EEEEF3;
+}
+.FooterCopyright
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: right;
+    color: #9D9DA9;
+}
+body.Dialog
+{
+    background-color: White !important;
+}
+div.DialogPageContent
+{
+    margin: 0px;
+}
+div.Header
+{
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+}
+.Error
+{
+    color: Black;
+}
+.ToolsActionContainerPanel
+{
+    margin: 15px;
+}
+.ToolsActionContainerPanel .dxrpcontent
+{
+    width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.LeftPane
+{
+    padding-bottom: 15px;
+}
+div.LeftPane > .ACV
+{
+    padding-top: 15px;
+}
+.DialogContent .HContainer
+{
+    display: table;
+}
+/*# Splitter #*/
+.HorizontalTemplate .dxsplLCC, .VerticalTemplate .dxsplLCC
+{
+    padding: 0px;
+}
+.xafChartToolBar td
+{
+    padding: 5px;
+}
+.height100
+{
+    height: 100%;
+}
+.posRelative
+{
+    position: relative;
+}
+.NoBorders .DialogContent .ContentCell
+{
+    padding: 0px;
+}
+.NoBorders .DialogContent.Content
+{
+    padding-bottom: 0px;
+}
+.NoBorders .Layout div.Item
+{
+    padding: 0px;
+}
+table.MainContent tr.Header td.Header
+{
+    padding: 3px 10px 10px 10px;
+}
+table.MainContent tr.Content td.Content
+{
+    padding: 10px 15px 2px 15px;
+}
+table.MainContent td.ViewImage
+{
+    width: 32px;
+    padding: 0px 5px 0px 15px;
+}
+table.ViewHeader
+{
+    margin: 10px 0px 0px 0px;
+}
+.EditModeActions
+{
+    padding: 5px 15px 5px 10px;
+    border-bottom: #b6bdcc 1px solid;
+}
+.Content .EditModeActions
+{
+    padding: 5px 0px 5px 10px;
+    border-bottom: 0px;
+}
+.ToolBar
+{
+    margin: 0px 0px 0px 0px;
+}
+.Links
+{
+    padding: 35px 40px 15px 40px !important;
+    line-height: 24px;
+}
+tr.Footer td.Right
+{
+    padding: 20px 10px 30px 0px;
+}
+div.Footer
+{
+    padding: 20px 10px 30px;
+}
+div.Header table
+{
+    margin: 0px 15px 0px 15px;
+}
+div.Header table td
+{
+    padding: 24px 0px 0px 0px;
+}
+/*# Dialog #*/
+.Dialog
+{
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.Dialog .Layout
+{
+    padding-left: 0px;
+}
+.DialogContent.Content
+{
+    border-collapse: separate;
+    height: 100%;
+    padding-bottom: 30px;
+}
+.DialogContent .ContentCell
+{
+    vertical-align: top;
+    padding: 30px 50px 30px 50px;
+}
+.Dialog .ViewImage img
+{
+    margin: 0px 5px 0px 0px;
+}
+.DockBottom
+{
+    border-collapse: separate;
+    margin-top: -30px;
+    padding-right: 50px;
+}
+.PopupSizeCalculated .Dialog
+{
+    position: absolute;
+}
+/*# Controls customization #*/
+.dxgvControl_DevEx1
+{
+    width: 100%;
+}
+.dxtcControl_DevEx1, .dxtcLite_DevEx1
+{
+    width: 100% !important;
+}
+.dxtvControl_DevEx1.TreeViewNavControl a
+{
+    color: #000;
+}
+/*# NavigationHistoryLinks #*/
+.NavigationHistoryLinks
+{
+    color: #86888D;
+    padding: 0px 0px 0px 2px;
+}
+.NavigationHistoryLinks a:hover
+{
+    text-decoration: underline;
+    color: #5a9ddb;
+}
+.NavigationHistoryLinks a, .NavigationHistoryLinks a:visited
+{
+    text-decoration: underline;
+    color: #5a9ddb;
+}
+.NavigationHistoryLinks a.Current, .NavigationHistoryLinks a.Current:hover, .NavigationHistoryLinks a.Current:visited
+{
+    text-decoration: none;
+    color: #86888D;
+}
+/*# Header #*/
+.Security .dxmMenuSeparator_DevEx1, .Security .dxmLite_DevEx1 .dxm-separator
+{
+    padding: 0px 11px 0px 11px !important;
+}
+table.Top td.Logo
+{
+    padding: 10px 20px 10px 15px;
+}
+table.Top td.Security
+{
+    padding: 15px 10px 0px 20px;
+    text-align: right;
+    vertical-align: top;
+}
+table.Top td.Security td
+{
+    text-align: left;
+}
+table.Top td.Security div.Security
+{
+    display: inline;
+    float: right;
+}
+/*# RecordsNavigationContainer #*/
+.RecordsNavigationContainer .dxmLite_DevEx1 .dxm-content, .RecordsNavigationContainer .dxmLite_DevEx1 .dxm-disabled.dxm-content
+{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+.RecordsNavigationContainer .dxmLite_DevEx1
+{
+    margin-right: 7px !important;
+}
+.RecordsNavigationContainer .menuLinks_DevEx1
+{
+    padding-left: 8px;
+}
+.RecordsNavigationContainer .menuLinks_DevEx1 .dxmMenuItemWithImage_DevEx1
+{
+    padding-left: 3px;
+}
+.RecordsNavigationContainer
+{
+    padding-right: 14px;
+}
+/*# NotificationsPopupWindowCustomization #*/
+.NotificationsPopupWindowCustomization .DialogContent.Content
+{
+    padding-bottom: 0px;
+}
+.NotificationsPopupWindowCustomization .DialogContent .ContentCell
+{
+    padding-bottom: 0px;
+}
+.NotificationsPopupWindowCustomization .notificationsStateItem.Item
+{
+    float: right;
+    padding-top: 6px;
+    padding-bottom: 12px;
+}
+.NotificationsPopupWindowCustomization .actionGroup.Item .ACH
+{
+    float: right;
+}
+.NotificationsPopupWindowCustomization .postponeItem.Item
+{
+    padding-top: 11px;
+    min-width: 200px;
+    max-width: 200px;
+}
+/*# NavigationTabsActionContainer #*/
+.NavigationTabsActionContainer .dxtc-content .dxmLite_DevEx1 .menuLinks_DevEx1
+{
+    padding-left: 22px !important;
+}
+.NavigationTabsActionContainer .dxtcLeftIndentCell_DevEx1 div, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-leftIndent
+{
+    width: 15px !important;
+}
+.NavigationTabsActionContainer .dxtcControl_DevEx1, .NavigationTabsActionContainer .dxtcLite_DevEx1
+{
+    background: url('opacity50.png') repeat;
+}
+.NavigationTabsActionContainer .dxtcPageContent_DevEx1, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-content
+{
+    padding-left: 18px;
+    border: none !important;
+}
+.NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-leftIndent, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-spacer, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-rightIndent, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-sbWrapper, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-sbIndent, .NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-sbSpacer
+{
+    height: 25px;
+}
+.NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-tab,
+.NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-activeTab
+{
+    margin-top: 4px !important;
+}
+.NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-rightIndent
+{
+    padding-top: !important;
+    padding-bottom: !important;
+}
+.NavigationTabsActionContainer .dxtcLite_DevEx1 .dxtc-strip
+{
+    padding-top: 0px !important;
+}
+/*# Logon #*/
+.DialogContent.Content.LogonContent
+{
+    background-color: White;
+    height: 300px;
+    padding-bottom: 0px;
+}
+.Logon
+{
+    width: 500px;
+    text-align: left;
+}
+.LogonContentCell .Layout .NextColumn div.Item
+{
+    padding-left: 10px;
+}
+/*# NavigationBarActionContainer #*/
+.xafNavigationBarActionContainer
+{
+    margin-bottom: 3px;
+}
+/*# Navigation Links (QuickAccessNavigationActionContainer) #*/
+.NavigationLinks a, .NavigationLinks a:hover, .NavigationLinks a:visited
+{
+    text-decoration: underline;
+    margin: 0px 6px;
+}
+.menuButtons_DevEx1 .dxm-item
+{
+    padding: 0 4px 0 4px !important;
+}

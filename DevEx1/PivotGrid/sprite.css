@@ -1,0 +1,45 @@
+
+.dxPivotGrid_CTNAttribute, .dxPivotGrid_CTNCalculatedMeasure, .dxPivotGrid_CTNDimension, .dxPivotGrid_CTNFolderClosed, .dxPivotGrid_CTNFolderOpen, .dxPivotGrid_CTNHierarchy, .dxPivotGrid_CTNKpi, .dxPivotGrid_CTNMeasure, .dxPivotGrid_FLBottomPanelOnly1by4_DevEx1, .dxPivotGrid_FLBottomPanelOnly2by2_DevEx1, .dxPivotGrid_FLButton_DevEx1, .dxPivotGrid_FLColumnAreaHeaders_DevEx1, .dxPivotGrid_FLDataAreaHeaders_DevEx1, .dxPivotGrid_FLFieldList_DevEx1, .dxPivotGrid_FLFilterAreaHeaders_DevEx1, .dxPivotGrid_FLRowAreaHeaders_DevEx1, .dxPivotGrid_FLStackedDefault_DevEx1, .dxPivotGrid_FLStackedSideBySide_DevEx1, .dxPivotGrid_FLTopPanelOnly_DevEx1, .dxPivotGrid_pgCollapsedButton_DevEx1, .dxPivotGrid_pgCustomizationFormCloseButton_DevEx1, .dxPivotGrid_pgDataHeaders_DevEx1, .dxPivotGrid_pgDragArrowDown_DevEx1, .dxPivotGrid_pgDragArrowLeft_DevEx1, .dxPivotGrid_pgDragArrowRight_DevEx1, .dxPivotGrid_pgDragArrowUp_DevEx1, .dxPivotGrid_pgDragHideField_DevEx1, .dxPivotGrid_pgExpandedButton_DevEx1, .dxPivotGrid_pgFilterButton_DevEx1, .dxPivotGrid_pgFilterButtonActive_DevEx1, .dxPivotGrid_pgFilterResizer_DevEx1, .dxPivotGrid_pgGroupSeparator_DevEx1, .dxPivotGrid_pgPrefilterButton_DevEx1, .dxPivotGrid_pgSortByColumn_DevEx1, .dxPivotGrid_pgSortDownButton_DevEx1, .dxPivotGrid_pgSortUpButton_DevEx1 { background-image: url('sprite.png'); background-repeat: no-repeat; background-color: transparent } 
+.dxPivotGrid_CTNAttribute { background-position: -284px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNCalculatedMeasure { background-position: -428px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNDimension { background-position: -392px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNFolderClosed { background-position: -374px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNFolderOpen { background-position: -356px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNHierarchy { background-position: -338px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNKpi { background-position: -320px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_CTNMeasure { background-position: -302px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLBottomPanelOnly1by4_DevEx1 { background-position: -102px 0px; width: 32px; height: 32px } 
+.dxPivotGrid_FLBottomPanelOnly2by2_DevEx1 { background-position: -136px 0px; width: 32px; height: 32px } 
+.dxPivotGrid_FLButton_DevEx1 { background-position: -410px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLColumnAreaHeaders_DevEx1 { background-position: -266px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLDataAreaHeaders_DevEx1 { background-position: -248px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLFieldList_DevEx1 { background-position: -230px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLFilterAreaHeaders_DevEx1 { background-position: -212px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLRowAreaHeaders_DevEx1 { background-position: -194px 0px; width: 16px; height: 16px } 
+.dxPivotGrid_FLStackedDefault_DevEx1 { background-position: -68px 0px; width: 32px; height: 32px } 
+.dxPivotGrid_FLStackedSideBySide_DevEx1 { background-position: 0px 0px; width: 32px; height: 32px } 
+.dxPivotGrid_FLTopPanelOnly_DevEx1 { background-position: -34px 0px; width: 32px; height: 32px } 
+.dxPivotGrid_pgCollapsedButton_DevEx1 { background-position: -523px -19px; width: 13px; height: 13px } 
+.dxPivotGrid_pgCustomizationFormCloseButton_DevEx1 { background-position: -446px 0px; width: 29px; height: 15px } 
+.dxPivotGrid_pgDataHeaders_DevEx1 { background-position: -479px -20px; width: 12px; height: 12px } 
+.dxPivotGrid_pgDragArrowDown_DevEx1 { background-position: -455px -23px; width: 11px; height: 9px } 
+.dxPivotGrid_pgDragArrowLeft_DevEx1 { background-position: -526px 0px; width: 9px; height: 11px } 
+.dxPivotGrid_pgDragArrowRight_DevEx1 { background-position: -468px -21px; width: 9px; height: 11px } 
+.dxPivotGrid_pgDragArrowUp_DevEx1 { background-position: -442px -23px; width: 11px; height: 9px } 
+.dxPivotGrid_pgDragHideField_DevEx1 { background-position: -170px 0px; width: 22px; height: 22px } 
+.dxPivotGrid_pgExpandedButton_DevEx1 { background-position: -493px -19px; width: 13px; height: 13px } 
+.dxPivotGrid_pgFilterButton_DevEx1 { background-position: -477px 0px; width: 15px; height: 15px } 
+.dxPivotGrid_pgFilterButtonActive_DevEx1 { background-position: -494px 0px; width: 15px; height: 15px } 
+.dxPivotGrid_pgFilterResizer_DevEx1 { background-position: -508px -19px; width: 13px; height: 13px } 
+.dxPivotGrid_pgGroupSeparator_DevEx1 { background-position: -404px -31px; width: 5px; height: 1px } 
+.dxPivotGrid_pgPrefilterButton_DevEx1 { background-position: -511px 0px; width: 13px; height: 13px } 
+.dxPivotGrid_pgSortByColumn_DevEx1 { background-position: -429px -26px; width: 11px; height: 6px } 
+.dxPivotGrid_pgSortDownButton_DevEx1 { background-position: -420px -27px; width: 7px; height: 5px } 
+.dxPivotGrid_pgSortUpButton_DevEx1 { background-position: -411px -27px; width: 7px; height: 5px } 
+.dxPivotGrid_pgCustomizationFormCloseButton_DevEx1,
+.dxPivotGrid_FLButton_DevEx1
+{
+    display:block;
+}
+
+

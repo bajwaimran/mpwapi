@@ -1,0 +1,12 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxGridView runat="server" CssFilePath="{0}/styles.css" CssPostfix="DevEx1">
+	<Images SpriteCssFilePath="{0}/sprite.css">
+	</Images>
+    <SettingsPager CurrentPageNumberFormat="{0}" />
+    <Styles GroupButtonWidth="19">
+        <Header SortingImageSpacing="5" />
+    </Styles>	
+</dx:ASPxGridView>
+

@@ -1,0 +1,73 @@
+﻿@{ 
+    List<BestellErfassung.DomainObjects.Artikel.Artikelstamm> list = ViewBag.Artikles;
+}
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new
+        {
+            Controller = "ArtikelStatus",
+            Action = "GridViewPartial" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "ArtikelStatus", Action = "GridViewPartialAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "ArtikelStatus", Action = "GridViewPartialUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "ArtikelStatus", Action = "GridViewPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Artikel.Artikeltext1";
+            c.SetEditItemTemplateContent(i =>
+            {
+                var extension = Html.DevExpress().ComboBox(comboBoxSettings =>
+                {
+                    comboBoxSettings.Name = "Artikel";
+                    ComboBoxProperties comboBoxProperties = comboBoxSettings.Properties;
+                    comboBoxProperties.TextField = "Artikeltext1";
+                    comboBoxProperties.ValueField = "Oid";
+                    comboBoxProperties.ValueType = typeof(int);
+                    comboBoxProperties.DropDownStyle = DropDownStyle.DropDown;
+                }).BindList(list).Bind(DataBinder.Eval(i.DataItem, "Artikel.Oid"));
+                extension.Render();
+            });
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Artikel.Artikeltext2";
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Artikel.Artikeltext3";
+        });
+        settings.Columns.Add(c => {
+            c.FieldName = "StueckzahlLieferbar";
+        });
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

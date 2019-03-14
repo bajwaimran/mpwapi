@@ -1,0 +1,30 @@
+﻿@using DX.Data.Xpo.Identity
+@if (Request.IsAuthenticated)
+{
+
+
+
+    <li class="heading">Menu</li>
+    <li><a href="@Url.Action("Index","Clients")"><i class="icon-basket"></i><span>Neue Bestellung</span></a></li>
+    <li><a href="@Url.Action("Index","Bestellungs")"><i class="icon-basket-loaded"></i><span>Bestellungen</span></a></li>
+
+
+    <li><a href="@Url.Action("CustomerManagement","Clients")"><i class="fa fa-users"></i><span>Kundenliste</span></a></li>
+
+    <li><a href="@Url.Action("ArtikelManagement","Clients")"><i class="icon-social-dropbox"></i><span>Artikelliste</span></a></li>
+    <li><a href="@Url.Action("ArtikelStatus","Clients")"><i class="icon-pin"></i><span>Artikel Status</span></a></li>
+
+
+    if (User.IsInRole("SuperAdmin"))
+    {
+        <li class="heading">Super Admin Menu</li>
+        <li><a href="@Url.Action("Users","Account")"><i class="icon-users"></i><span>Benutzerverwaltung</span></a></li>
+        <li><a href="@Url.Action("CustomerTypes","Clients")"><i class="icon-layers"></i><span>Kundentypen</span></a></li>
+        <li><a href="@Url.Action("Einstellungen","Clients")"><i class="icon-settings"></i><span>Einstellungen</span></a></li>
+    }
+}
+
+@*<li>
+        <img srcset="~/Content/images/logo-cargoeurope.svg" alt="" style="max-height:70px" />
+    </li>*@
+

@@ -1,0 +1,432 @@
+.dxssControl_DevEx1
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9da0aa;
+    font: 11px Verdana, Geneva, sans-serif;
+}
+.dxssControl_DevEx1 .dxrControl_DevEx1 .dxr-tabContent
+{
+    border-left-style: none;
+    border-right-style: none;
+}
+.dxssControl_DevEx1 .dxrControl_DevEx1.dxr-oneLineMode.dxr-tabsHidden .dxr-tabContent
+{
+    border-top-width: 0;
+}
+.dxssControl_DevEx1 .dxss-gl .dxss-v,
+.dxssControl_DevEx1 .dxss-gl .dxss-h
+{
+    border-color: #d9dae0;
+}
+.dxssControl_DevEx1 .dxss-rowHeader
+{
+    border-right: 1px solid #d9dae0;
+    border-top: 1px solid #d9dae0;
+}
+.dxssControl_DevEx1 .dxss-colHeader
+{
+    border-bottom: 1px solid #d9dae0;
+    border-left: 1px solid #d9dae0;
+}
+.dxssControl_DevEx1 .dxss-crse
+{
+    background-color: #A1BCFC;
+}
+.dxssControl_DevEx1 .dxss-trbe
+{
+    border-top-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-rrbe
+{
+    border-right-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-brbe
+{
+    border-bottom-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-lrbe
+{
+    border-left-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-fh
+{
+    background-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-sbe
+{
+    border-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-crs
+{
+    border-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-leftIndent
+{
+    width: 3px;
+}
+.dxssControl_DevEx1 .dxrControl_DevEx1 .dxtcLite_DevEx1
+{
+    padding-bottom: 0px;
+}
+.dxssControl_DevEx1 .dxtcLite_DevEx1,
+.dxssControl_DevEx1 .dxrControl_DevEx1 .dxtcLite_DevEx1
+{
+    background: #f1f2f6 url('RibbonBack.png') no-repeat right top;
+}
+.dxssControl_DevEx1 .dxss-hrg,
+.dxssControl_DevEx1 .dxss-vrg
+{
+    background-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxtcLite_DevEx1.dxtc-bottom .dxtc-stripContainer
+{
+    padding: 0 !important;
+}
+.dxssControl_DevEx1 .dxtcLite_DevEx1 .dxtc-stripContainer .dxtc-leftIndent
+{
+    width: 0;
+}
+.dxssControl_DevEx1 .dxtcLite_DevEx1.dxtc-bottom .dxtc-stripContainer .dxtc-tab,
+.dxssControl_DevEx1 .dxtcLite_DevEx1.dxtc-bottom .dxtc-stripContainer .dxtc-activeTab
+{
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+}
+.dxssControl_DevEx1 .dxtcLite_DevEx1.dxtc-bottom .dxtc-stripContainer .dxtc-link
+{
+    padding: 4px 35px 5px 34px;
+}
+.dxssControl_DevEx1 .dxtcLite_DevEx1.dxtc-bottom .dxtc-stripContainer .dxtc-spacer
+{
+    width: 0px;
+}
+.dxssControl_DevEx1 .dxrControl_DevEx1 .dxr-minBtn
+{
+    padding-right: 7px;
+}
+.dxssControl_DevEx1 .dxss-tse
+{
+    border-color: #a6a9b2;
+}
+.dxssControl_DevEx1 .dxss-tre
+{
+    background: url('TouchResize.png');
+}
+.dxssControl_DevEx1 .dxss-ddp,
+.dxssControl_DevEx1 .dxss-ddb
+{
+    border: 1px solid #c2c4cb;
+}
+.dxssControl_DevEx1 .dxss-ddp tr:hover
+{
+    background-color: #e2eafd;
+}
+/* Loading panel */
+.dxssLoadingDiv_DevEx1
+{
+    background: White;
+    opacity: 0.85 !important;
+    filter: alpha(opacity=85);
+}
+.dxssLoadingPanel_DevEx1
+{
+    font: 11px Verdana, Geneva, sans-serif;
+    color: #201f35;
+    background-color: White;
+    border: 1px solid #9da0aa;
+}
+.dxssLoadingPanel_DevEx1 td.dx
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 7px 10px;
+}
+.dxssLoadingPanel_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('../Web/Loading.gif');
+    height: 32px;
+    width: 32px;
+}
+/* DX Spreadsheet Cell Editor Element, Formula Bar, IntelliSense elements */
+.dxssControl_DevEx1 .dxss-ctve
+{
+    border: 2px solid #a6a9b2;
+    /*the same -dxss-cfe */
+}
+.dxssControl_DevEx1 .dxss-fb
+{
+    height: 21px;
+    padding: 10px;
+    border-bottom: 1px solid #9da0aa;
+}
+.dxFirefox .dxssControl_DevEx1 .dxss-fb
+{
+    height: 23px;
+}
+.dxssControl_DevEx1 .dxss-fbw
+{
+    border-top: 1px solid #9da0aa;
+    border-right: 1px solid #c2c4cb;
+    border-bottom: 1px solid #d9dae0;
+    border-left: 1px solid #c2c4cb;
+    background-color: white;
+}
+.dxssControl_DevEx1 .dxmLite_DevEx1 .dxss-fbMenu
+{
+    height: 21px;
+    border: 0;
+    background-color: transparent;
+    background-image: none;
+}
+.dxssControl_DevEx1 .dxss-fbMenu .dxm-content
+{
+    padding-top: 2px !important;
+}
+.dxssControl_DevEx1 .dxss-hint
+{
+    border: 1px solid #A8A8A8;
+    background-color: #FDFEFE;
+    padding: 3px 8px 4px 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FDFEFE', endColorstr='#EEEFF2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDFEFE), to(#EEEFF2));
+    background: -moz-linear-gradient(top, #FDFEFE, #EEEFF2);
+}
+.dxssControl_DevEx1 .dxss-hint.dxss-funcInfo
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup .dxm-checked img[class*="ssRibbonIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup .dxm-checked img[class*="ssRibbonIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup .dxm-checked img[class*="ssRibbonIcons_PageMarginsNarrow"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup .dxm-checked span[class*="ssRibbonIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup .dxm-checked span[class*="ssRibbonIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup .dxm-checked span[class*="ssRibbonIcons_PageMarginsNarrow"]
+{
+    margin-top: 2px !important;
+}
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup img[class*="ssRibbonIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup img[class*="ssRibbonIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup img[class*="ssRibbonIcons_PageMarginsNarrow"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup span[class*="ssRibbonIcons_PageMarginsNormal"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup span[class*="ssRibbonIcons_PageMarginsWide"],
+.dxssControlSys .dxmLite_DevEx1 .dxm-popup span[class*="ssRibbonIcons_PageMarginsNarrow"]
+{
+    margin-top: 4px !important;
+}
+.dxflGroup_DevEx1.dxssFCDescription
+{
+    height: 64px;
+    padding-top: 4px !important;
+}
+/* Cell Editing */
+.dxssControl_DevEx1.icbem .dxss-inputTarget
+{
+    border: 2px solid #a6a9b2;
+}
+/*Cell position hint*/
+.dxssControl_DevEx1 .dxss-cell-pos-hint
+{
+    background-color: #a6a9b2;
+    color: white;
+}
+.dxrControl_DevEx1 .dxssRibbonCBSmall
+{
+    width: 60px;
+}
+.dxrControl_DevEx1 .dxssRibbonCBLarge
+{
+    width: 130px;
+}
+/* --------------Select-All----------------- */
+.dxssControl_DevEx1 .dxss-ssbi
+{
+    border-color: transparent;
+    border-bottom-color: #cecece;
+}
+.dxssControl_DevEx1 .dxss-ssb:hover .dxss-ssbi
+{
+    border-bottom-color: #a8a8a8;
+}
+/* ----------Add-Sheet-Button---------------*/
+.dxssControl_DevEx1 .dxss-ast-btn:before,
+.dxssControl_DevEx1 .dxss-ast-btn:after
+{
+    background-color: #a9aab1;
+}
+.dxssControl_DevEx1 .dxss-ast-circle:hover .dxss-ast-btn:before,
+.dxssControl_DevEx1 .dxss-ast-circle:hover .dxss-ast-btn:after
+{
+    background-color: #1f1e34;
+}
+.dxssControl_DevEx1 .dxss-ast
+{
+    border-top: 1px solid #9da0aa;
+}
+/* --------------Dialogs----------------- */
+.dxssControl_DevEx1 .dxss-dialogSimpleFooterGroup,
+.dxssControl_DevEx1 .dxss-dialogFooter
+{
+    background-color: #ebecef;
+    border-top: 1px #a8aab4 solid;
+}
+.dxssControl_DevEx1 .dxss-dialog .dxss-imagePreviewCell
+{
+    color: #737373;
+    border: dashed 1px #cac8c8;
+}
+.dxssControl_DevEx1 .dxss-pageSetupForm .dxss-CustomHFButton
+{
+    min-width: 130px;
+}
+/*---------Change-Chart-Style-Dialog-------*/
+.dxss-modifyChartStyleContent .dxbButtonHover_DevEx1
+{
+    color: #201f35;
+    background: #dde6fe url('../Editors/edtBtnHBack.png') repeat-x left top;
+    border: 1px solid #a9acb5;
+}
+.dxss-modifyChartStyleContent .dxbButtonChecked_DevEx1
+{
+    color: #3c3c3c;
+    background: #dbdde2 url('../Editors/edtBtnPBack.png') repeat-x left top;
+    border: 1px solid #9da0aa;
+}
+.dxss-modifyChartStyleContent .dxbButtonPressed_DevEx1
+{
+    color: #3c3c3c;
+    background: #dbdde2 url('../Editors/edtBtnPBack.png') repeat-x left top;
+    border: 1px solid #9da0aa;
+}
+/*---------Change-Table-Style-Dialog-------*/
+@media (max-width: 400px)
+{
+    .dxssControl_DevEx1 .dxss-modifyTableStyleForm .dxss-dialogSimpleContentGroup
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .dxssControl_DevEx1 .dxss-modifyTableStyleForm .dxtcLite_DevEx1.dxtc-left > .dxtc-stripContainer .dxtc-link
+    {
+        padding-left: 6px;
+        padding-right: 5px;
+    }
+    .dxssControl_DevEx1 .dxss-modifyTableStyleForm .dxtcLite_DevEx1 > .dxtc-content
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+}
+.dxss-modifyChartStyleContent .dxbButton_DevEx1 div.dxb
+{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.dxss-modifyChartStyleContent .dxbButton_DevEx1 div.dxbf
+{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+/*-----Filter-Dialogs-----*/
+.dxss-dataFilterSimpleForm .dxbButton_DevEx1 div.dxb
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (max-width: 400px)
+{
+    .dxpnlControl_DevEx1 .dxss-dataFilterSimpleForm .dxss-dialogControlsWrapper > tbody > tr > td:first-child
+    {
+        display: none;
+    }
+}
+/***Data*Validation***/
+.dxss-dataValidationForm .dxtcLite_DevEx1 .dxss-dvContent
+{
+    min-height: 240px;
+}
+.dxss-dataValidationForm .dxtcLite_DevEx1 .dxss-dvSettingsContent
+{
+    min-height: 209px;
+}
+@media (max-width: 400px)
+{
+    .dxss-dataValidationForm .dxss-dvDescriptionRow .dxeBase_DevEx1 .dxichCellSys,
+    .dxss-dataValidationForm .dxss-dvApplyChanges .dxeBase_DevEx1 .dxichCellSys
+    {
+        vertical-align: top;
+        padding-top: 0px;
+    }
+}
+/****PivotTables*****/
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-filters,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-rows,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-columns,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-values
+{
+    background-position-y: 4px;
+}
+.dxssControlSys .dxss-pivotTableLabelFilterForm .dxss-dialogContentGroup .dxss-pivot-filterOperator .dxeButtonEditButton_DevEx1,
+.dxssControlSys .dxss-pivotTableValueFilterForm .dxss-dialogContentGroup .dxss-pivot-filterOperator .dxeButtonEditButton_DevEx1,
+.dxssControlSys .dxss-pivotTableValueFilterForm .dxss-dialogContentGroup .dxss-pivot-filterField .dxeButtonEditButton_DevEx1,
+.dxssControlSys .dxss-pivotTableDateFilterForm .dxss-dialogContentGroup .dxss-pivot-filterOperator .dxeButtonEditButton_DevEx1,
+.dxssControlSys .dxss-pivotTableTop10FilterForm .dxss-dialogContentGroup .dxss-pivot-top10DropDown .dxeButtonEditButton_DevEx1
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dxssControl_DevEx1 .dxss-pivotTableLabelFilterForm .dxss-dialogContentGroup .dxss-filter-value .dxeEditAreaSys,
+.dxssControl_DevEx1 .dxss-pivotTableValueFilterForm .dxss-dialogContentGroup .dxss-filter-value .dxeEditAreaSys
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.dxssControl_DevEx1 .dxss-pivotTableTop10FilterForm .dxss-dialogContentGroup .dxss-pivot-top10Spin .dxeSpinIncButton_DevEx1
+{
+    padding-top: 4px;
+}
+.dxssControl_DevEx1 .dxss-pivotTableTop10FilterForm .dxss-dialogContentGroup .dxss-pivot-top10Spin .dxeSpinDecButton_DevEx1
+{
+    padding-bottom: 4px;
+}
+/****PivotTable*FieldList****/
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-dialogContentGroup .dxss-fieldlist-source .dxeListBoxItemSelected_DevEx1
+{
+    background-color: transparent;
+}
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-dialogContentGroup .dxss-fieldlist-source .dxss-selected.dxeListBoxItemSelected_DevEx1,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-dialogContentGroup .dxss-fieldlist-source .dxss-selected
+{
+    color: #201f35;
+    background: #eff0f2 none;
+}
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-dialogContentGroup .dxss-fieldlist-source .dxeListBoxItemSelected_DevEx1.dxeListBoxItemHover_DevEx1,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-dialogContentGroup .dxss-fieldlist-source .dxss-selected.dxeListBoxItemHover_DevEx1
+{
+    color: #201f35;
+    background: #e2eafd none;
+}
+.dxssControl_DevEx1 .dxss-pivotfieltlist-item,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-filters .dxeListBoxItemSelected_DevEx1 .dxss-pivotfieltlist-item,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-columns .dxeListBoxItemSelected_DevEx1 .dxss-pivotfieltlist-item,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-rows .dxeListBoxItemSelected_DevEx1 .dxss-pivotfieltlist-item,
+.dxssControl_DevEx1 .dxss-pivotTableFieldListForm .dxss-pt-values .dxeListBoxItemSelected_DevEx1 .dxss-pivotfieltlist-item,
+.dxssControl_DevEx1 .dxss-selected .dxss-pivotfieltlist-item
+{
+    background-image: url('ColumnDrag.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    background-position: 0px 0px;
+}

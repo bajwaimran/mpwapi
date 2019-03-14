@@ -1,0 +1,10 @@
+﻿@Html.DevExpress().CallbackPanel( cpanel =>
+   {
+       cpanel.Name = "artikelPanel";
+       cpanel.CallbackRouteValues = new { Controller = "Clients", Action = "ArtikelDetails" };
+       cpanel.Height = System.Web.UI.WebControls.Unit.Pixel(250);
+       cpanel.SetContent(() =>
+       {
+           Html.RenderPartial("~/Views/Bestellungs/_GridViewPartialBestellArtikel.cshtml");
+       });
+   }).GetHtml()

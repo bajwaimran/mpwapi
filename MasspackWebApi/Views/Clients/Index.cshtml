@@ -1,0 +1,292 @@
+﻿@model MasspackWebApi.Models.MassOrder
+@{
+    ViewBag.Title = "Mass Order Creator";
+    Layout = "~/Views/Shared/_LayoutBackend.cshtml";
+    IEnumerable<BestellErfassung.DomainObjects.Kunden.Kundenstamm> Customers = ViewBag.Customers;
+    var cust = Customers.Where(i => i.kdauftrgesperrt == false);
+    IEnumerable<BestellErfassung.DomainObjects.Artikel.ArtikelLieferbar> Items = ViewBag.Items;
+}
+<style>
+    .table tr {
+        line-height: 10px;
+    }
+</style>
+<script>
+    var kundenList = [];
+    var artikelList = [];
+    var artikelQuantityList = [];
+    var orderID;
+    function SelectionChanged(s, e) {
+        s.GetSelectedFieldValues("Oid;Suchname", GetSelectedFieldValuesCallback);
+    }
+    function GetSelectedFieldValuesCallback(values) {
+        kundenList = [];
+        SelectedRows.BeginUpdate();
+        try {
+            SelectedRows.ClearItems();
+            for (var i = 0; i < values.length; i++) {
+                SelectedRows.AddItem(values[i][1]);
+                kundenList.push(values[i][0]);
+            }
+        } finally {
+            SelectedRows.EndUpdate();
+        }
+        $("#count").html(GridView.GetSelectedRowCount());
+        console.log(kundenList);
+    }
+
+
+    function SelectionChangedArtikels(s, e) {
+        s.GetSelectedFieldValues("Oid;Bezeichnung;ArtNr", GetSelectedArtikelValuesCallback);
+        //var xx = GridViewItems.GetRowValues(e.visibleIndex, 'ArtikelQuantity', OnGetRowValues);
+    }
+    function OnGetRowValues(values) {
+        alert(values[0]);
+    }
+    function GetSelectedArtikelValuesCallback(values) {
+        artikelList = [];
+        artikelQuantityList = [];
+        $("#itemquantity").empty();
+        //SelectedArtikels.BeginUpdate();
+        try {
+            //SelectedArtikels.ClearItems();
+            for (var i = 0; i < values.length; i++) {
+                console.log(values[i][2]);
+                artikelList.push(values[i][0]);
+                var tempObject = { Oid: values[i][0], ArtNr: values[i][2], Quantity: 1 };
+                artikelQuantityList.push(tempObject);
+                $("#itemquantity").append("<tr style='font-size:9px'><td>" + values[i][1] + "</td><td><input type='number' name= '" + values[i][0] + "' value='1' onChange='update_qunatity(" + values[i][0] + ", this.value)'></td></tr>");
+                
+            }
+        } finally {
+            //SelectedArtikels.EndUpdate();
+        }
+        $("#artcount").html(GridViewItems.GetSelectedRowCount());
+        console.log(artikelQuantityList);
+    }
+
+    
+    
+
+    function createOrder_CLICK(s, e) {
+        btnCreate.SetEnabled(false);
+        var orderNotes = txtBoxNotes.GetValue();
+        var arr = {
+            Zusatzangabe: orderNotes,
+            KundenIds: kundenList,
+            ArtikelIds: artikelList,
+            Items: artikelQuantityList
+        };
+        $.ajax({
+            url: "/api/orders/add",
+            type: "POST",
+            data: arr,
+            dataType: "json",
+            success: function (msg) {
+                console.log(msg);
+                alert("Ihre Bestellung wurde erfolgreich abgeschlossen");
+                $("#lableOrderNr").html("OrderNr: " + "<h3><a href='/bestellungs/view/" + msg + "'>" + msg + "</a></h3>")
+            }
+        });
+    }
+    
+
+    function update_qunatity(obj, val) {
+        let temp = artikelQuantityList.find(i => i.Oid == obj);
+        temp.Quantity = Number(val);
+        console.log(artikelQuantityList);
+
+    }
+    function completeCheckbox_CHECKED(s, e) {
+        var completeStatus = s.GetValue();
+        if (completeStatus == true) {
+            btnCreate.SetEnabled(true);
+        } else {
+            btnCreate.SetEnabled(false);
+        }
+            
+    }
+    
+
+    $(document).ready(function () {
+        if (completeCheck.GetValue() == false)
+            btnCreate.SetEnabled(false);
+    });
+
+</script>
+
+
+<div class="row">
+    @*<div class="col-md-12 text-center">
+            <label class="h3">Mass Order Creator</label>
+        </div>*@
+
+    <div class="col-lg-12">
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Verfahren zum Erstellen einer Massenbestellung
+            </a>
+            @*<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+            </button>*@
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h5>Verfahren zum Erstellen einer Massenbestellung</h5>
+                <ul>
+                    <li>Zuerst Wählen Sie den Kunden aus der Kundenliste aus. Sie können suchen, indem Sie in das Feld oben in der Spalte eingeben. Wenn Sie mit der Eingabe beginnen, wird das Ergebnis in der Tabelle angezeigt und Sie können das Kontrollkästchen in der ersten Spalte des Kunden aktivieren</li>
+                    <li>Alle Ihre ausgewählten Kunden werden in der Liste unten in der Kundens-Bestellliste angezeigt. Außerdem können Sie die Anzahl der ausgewählten Kunden im untenstehenden Formular anzeigen</li>
+                    <li>Wenn Sie mit der Kundenauswahl fertig sind, können Sie den Artikel im rechten Feld auf dieselbe Weise auswählen.</li>
+                    <li>Beachten Sie, dass Sie die Seite während des gesamten Auswahlvorgangs nicht aktualisieren oder zurückschlagen. Wenn Sie dies tun, wird Ihre gesamte Auswahl verschwinden.</li>
+                    <li>Sobald Sie den Artikel ausgewählt haben, können Sie die Anzahl der jeweiligen Artikel im unteren Bereich ändern. Jeder Artikel hat ein Mengenfeld, in dem Sie die Anzahl der jeweiligen Artikel eingeben können.</li>
+                    <li>Sie können Ihre Notiz in der Zusatzangabe-Textbox angeben</li>
+                    <li>Wenn Sie alle Einstellungen und Änderungen vorgenommen haben, klicken Sie auf die Schaltfläche Neuer Auftrag. Sie erhalten eine Warnmeldung und wenn Ihre Bestellung gespeichert wird, erhalten Sie eine Bestellnummer.</li>
+                    <li>Klicken Sie auf die Bestellnummer und Sie werden zur Bestellansicht weitergeleitet, auf der Sie Ihre Bestellung sehen können</li>
+
+                </ul>
+                <a href="">Für ein Video-Tutorial klicken Sie hier</a>
+            </div>
+        </div>
+        
+        <hr />
+    </div>
+
+
+
+    <div class="col-md-6">
+        @Html.Action("GridViewPartialOrder", "Customers")
+    </div>
+    <div class="col-md-6">
+        @Html.Action("GridViewPartialOrder", "Items")
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <hr />
+    </div>
+
+    <div class="col-lg-6">
+        @Html.DevExpress().Label(lbl =>
+   {
+       lbl.Name = "lableOrderNr";
+       lbl.Text = "OrderNr";
+   }).GetHtml()
+    </div>
+    <div class="col-lg-6">
+        @Html.DevExpress().Label(lbl =>
+   {
+       lbl.Name = "labledate";
+       lbl.Text = "Date: " + DateTime.Now.ToString();
+   }).GetHtml()
+    </div>
+   
+    <div class="col-lg-12">
+        <hr />
+    </div>
+    
+    
+</div>
+<div class="row">
+    <div class="col-lg-8">
+        @Html.DevExpress().FormLayout(settings =>
+   {
+       settings.Name = "massBestellungform";
+       settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+       var groupItems = settings.Items.AddGroupItem(groupSettings =>
+       {
+
+           groupSettings.Caption = "Mass Bestellung form";
+           groupSettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+           groupSettings.ColumnCount = 2;
+
+
+       });
+
+
+       groupItems.Items.Add(i =>
+       {
+           i.Caption = "Zusatzangabe";
+           i.ColumnSpan = 2;
+           i.NestedExtension().TextBox(tb =>
+           {
+               tb.Name = "txtBoxNotes";
+               tb.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+           });
+       });
+
+       groupItems.Items.Add(i =>
+       {
+           i.Caption = "Bestell Kundens";
+           i.NestedExtension().ListBox(lbsettings =>
+           {
+               lbsettings.Name = "SelectedRows";
+               lbsettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+               //lbsettings.Height = 250;
+               lbsettings.Properties.EnableClientSideAPI = true;
+               //settings.Theme = "MaterialCompactOrange";
+           });
+       });
+       //groupItems.Items.Add(i =>
+       //{
+       //    i.Caption = "Bestell Artikels";
+       //    i.NestedExtension().ListBox(lbsettings =>
+       //    {
+       //        lbsettings.Name = "SelectedArtikels";
+       //        lbsettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+       //        //lbsettings.Height = 250;
+       //        lbsettings.Properties.EnableClientSideAPI = true;
+       //        //settings.Theme = "MaterialCompactOrange";
+       //    });
+       //});
+
+   }).GetHtml()
+    </div>
+    <div class="col-lg-4" style="margin-top:15px">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="col-lg-6">Artikel</th>
+                    <th class="col-lg-6">Stük</th>
+                </tr>
+            </thead>
+            <tbody id="itemquantity"></tbody>
+        </table>
+    </div>
+
+
+    <div class="col-lg-6">
+        Selected Kunden Count:&nbsp;<strong id="count">0</strong>
+    </div>
+    <div class="col-lg-6">
+        Selected Artikels Count:&nbsp;<strong id="artcount">0</strong>
+    </div>
+    <div class="col-lg-12">
+        <hr />
+    </div>
+    <div class="col-lg-12">
+        @Html.Label("Have you finished your changes?")
+        @Html.DevExpress().CheckBox(settings =>
+   {
+       settings.Name = "completeCheck";
+       settings.Checked = false;
+       settings.Properties.ClientSideEvents.CheckedChanged = "completeCheckbox_CHECKED";
+   }).GetHtml()
+
+    </div>
+    <div class="col-lg-12 text-left">
+
+
+
+
+        @Html.DevExpress().Button(btn =>
+        {
+            btn.Name = "btnCreate";
+            btn.Text = "Neue Bestellung";
+            btn.ClientSideEvents.Click = "createOrder_CLICK";
+        }).GetHtml()
+
+    </div>
+</div>

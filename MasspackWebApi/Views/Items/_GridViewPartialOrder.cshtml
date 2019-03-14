@@ -1,0 +1,110 @@
+﻿
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewItems";
+        settings.CallbackRouteValues = new { Controller = "Items", Action = "GridViewPartialOrder" };
+
+
+
+
+
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchItemsOrder";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "Artikels";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+
+        //settings.SettingsEditing.Mode = GridViewEditingMode.Inline;
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowSelectCheckbox = true;
+        settings.CommandColumn.SelectAllCheckboxMode = GridViewSelectAllCheckBoxMode.AllPages;
+        //settings.CommandColumn.ShowEditButton = true;
+
+        settings.SettingsBehavior.AllowFocusedRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "ArtNr";
+        });
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "Bestand";
+        //    c.ColumnType = MVCxGridViewColumnType.SpinEdit;
+        //});
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Bezeichnung";
+        });
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "Artikeltext1";
+        //});
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "Artikeltext2";
+        //});
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "Artikeltext3";
+        //});
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "Stueckzahl";
+        //    c.ColumnType = MVCxGridViewColumnType.SpinEdit;
+        //});
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Verpackungseinheit";
+            c.ColumnType = MVCxGridViewColumnType.SpinEdit;
+        });
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "StueckzahlLieferbar";
+        //    //c.Caption = "Stueckzahl Lieferbar";
+        //    c.ColumnType = MVCxGridViewColumnType.SpinEdit;
+        //});
+
+
+
+
+
+        settings.ClientSideEvents.SelectionChanged = "SelectionChangedArtikels";
+
+        settings.Styles.Table.CssClass = "droppableRight";
+        settings.Styles.Row.CssClass = "draggableRow right";
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

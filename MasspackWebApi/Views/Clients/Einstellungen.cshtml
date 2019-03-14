@@ -1,0 +1,64 @@
+﻿@model BestellErfassung.DomainObjects.Tools.SQLConnection
+@{
+    ViewBag.Title = "Einstellungen";
+    Layout = "~/Views/Shared/_LayoutBackend.cshtml";
+}
+<script>    
+    function update_CLICK(s, e) {
+        var arr = {
+            IP: IP.GetValue(),
+            Datenbank: Datenbank.GetValue(),
+            Port: Port.GetValue(),
+            user: user.GetValue(),
+            password: password.GetValue(),
+            Mitarbeiter: Mitarbeiter.GetValue()
+        };
+        console.log(arr);
+        $.ajax({
+            url: "/api/connections",
+            type: "POST",
+            data: arr,
+            dataType: "json",
+            success: function (msg) {
+                alert("Updated Successfully");
+            }
+        });
+    }
+</script>
+
+@{
+    var formlayout = Html.DevExpress().FormLayout(settings =>
+    {
+        settings.Name = "einstellungenForm";
+        var groupItems = settings.Items.AddGroupItem(groupSettings =>
+        {
+
+            groupSettings.Caption = "Einstellungen";
+            groupSettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+            groupSettings.ColumnCount = 2;
+
+
+        });
+
+        groupItems.Items.Add(model => model.IP);
+        groupItems.Items.Add(model => model.Datenbank);
+        groupItems.Items.Add(model => model.Port);
+        groupItems.Items.Add(model => model.user);
+        groupItems.Items.Add(model => model.password);
+        groupItems.Items.Add(model => model.Mitarbeiter);
+
+
+
+
+    });
+    formlayout.Render();
+
+    Html.DevExpress().Button(btn =>
+    {
+        btn.Name = "btnUpdate";
+        btn.Text = "Update";
+        btn.ClientSideEvents.Click = "update_CLICK";
+    }).Render();
+
+}
+

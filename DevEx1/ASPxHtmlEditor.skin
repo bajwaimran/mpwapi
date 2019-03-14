@@ -1,0 +1,18 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.ASPxHtmlEditor.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxHtmlEditor" TagPrefix="dx" %>
+
+<dx:ASPxHtmlEditor runat="server" Width="740px">
+    <Images SpriteCssFilePath="{0}/sprite.css" MenuIconSet="Colored">
+	</Images>
+    <ImagesFileManager>
+        <FolderContainerNodeLoadingPanel Url="Web/tvNodeLoading.gif"></FolderContainerNodeLoadingPanel>
+    </ImagesFileManager>
+	<Styles CssPostfix="DevEx1" CssFilePath="{0}/styles.css">
+    </Styles>
+	<StylesStatusBar>
+        <StatusBar>
+            <Paddings Padding="0" />
+        </StatusBar>    
+    </StylesStatusBar>
+</dx:ASPxHtmlEditor>
+

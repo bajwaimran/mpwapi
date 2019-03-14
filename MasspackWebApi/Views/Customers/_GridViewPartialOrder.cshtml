@@ -1,0 +1,85 @@
+﻿
+@{
+    List<BestellErfassung.DomainObjects.Kunden.Kundenarten> list = ViewBag.KundenartenList;
+}
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new { Controller = "Customers", Action = "GridViewPartialOrder" };
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchCustomerOrder";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "Customers";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+        //settings.Width = System.Web.UI.WebControls.Unit.Percentage(90);
+        settings.SettingsBehavior.AllowFocusedRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowSelectCheckbox = true;
+        settings.CommandColumn.SelectAllCheckboxMode = GridViewSelectAllCheckBoxMode.AllPages;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Columns.Add("Suchname");
+        //settings.Columns.Add("Name1");
+        //settings.Columns.Add("Name2");
+        //settings.Columns.Add("Name3");
+        settings.Columns.Add("Strasse");
+        settings.Columns.Add("Nation");
+        settings.Columns.Add("PLZ");
+        settings.Columns.Add("Ort");
+        settings.Columns.Add("eMail");
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "kdauftrgesperrt";
+            c.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Kundenart.Kundenart";
+            c.Name = "Kundenart";
+            c.SetEditItemTemplateContent(i =>
+            {
+                var ex = Html.DevExpress().ComboBox(comboBoxSettings =>
+                {
+                    comboBoxSettings.Name = "Kundenart";
+                    ComboBoxProperties comboBoxProperties = comboBoxSettings.Properties;
+                    comboBoxProperties.TextField = "Kundenart";
+                    comboBoxProperties.ValueField = "Oid";
+                    comboBoxProperties.ValueType = typeof(int);
+                    comboBoxProperties.DropDownStyle = DropDownStyle.DropDown;
+                }).BindList(list).Bind(DataBinder.Eval(i.DataItem, "Kundenart.Oid"));
+                ex.Render();
+            });
+        });
+        settings.ClientSideEvents.SelectionChanged = "SelectionChanged";
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

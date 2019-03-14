@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BestellErfassung.DomainObjects.Bestellungen.BestellArtikel>
+@Html.DevExpress().CallbackPanel(
+    cbpsettings => {
+        cbpsettings.Name = "cbpExample";
+        cbpsettings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "BistellArtiklesPartial" };
+        cbpsettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        cbpsettings.Height = 250;
+
+        cbpsettings.SetContent(() =>
+        {
+            Html.RenderPartial("_GridCallBackPartial");
+        });
+
+        cbpsettings.ClientSideEvents.BeginCallback = "OnBeginCallback";
+        cbpsettings.ClientSideEvents.EndCallback = "OnEndCallback";
+    }
+).GetHtml()

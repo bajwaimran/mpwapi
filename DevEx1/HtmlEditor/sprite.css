@@ -1,0 +1,51 @@
+
+.dxHtmlEditor_heConstrainProportionsBottom_DevEx1, .dxHtmlEditor_heConstrainProportionsBottomRtl_DevEx1, .dxHtmlEditor_heConstrainProportionsMiddleOff_DevEx1, .dxHtmlEditor_heConstrainProportionsMiddleOffRtl_DevEx1, .dxHtmlEditor_heConstrainProportionsMiddleOn_DevEx1, .dxHtmlEditor_heConstrainProportionsMiddleOnRtl_DevEx1, .dxHtmlEditor_heConstrainProportionsTop_DevEx1, .dxHtmlEditor_heConstrainProportionsTopRtl_DevEx1, .dxHtmlEditor_heEnumIcon_DevEx1, .dxHtmlEditor_heErrorFrameCloseButton_DevEx1, .dxHtmlEditor_heEventIcon_DevEx1, .dxHtmlEditor_heFieldIcon_DevEx1, .dxHtmlEditor_heReset_DevEx1, .dxHtmlEditor_heSizeGrip_DevEx1, .dxHtmlEditor_heSizeGripRtl_DevEx1, .dxHtmlEditor_heTagInspectorChangeButton_DevEx1, .dxHtmlEditor_heTagInspectorRemoveButton_DevEx1, .dxHtmlEditor_heTagInspectorSeparator_DevEx1, .dxHtmlEditor_heToolbarPopOut_DevEx1, .dxHtmlEditor_heXmlItemIcon_DevEx1, .dxHtmlEditor_RoundPanel_herpBottomLeftCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpBottomRightCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpTopLeftCorner_DevEx1, .dxHtmlEditor_RoundPanel_herpTopRightCorner_DevEx1 { background-image: url('sprite.png'); background-repeat: no-repeat; background-color: transparent } 
+.dxHtmlEditor_heConstrainProportionsBottom_DevEx1 { background-position: -252px 0px; width: 11px; height: 6px } 
+.dxHtmlEditor_heConstrainProportionsBottomRtl_DevEx1 { background-position: -239px 0px; width: 11px; height: 6px } 
+.dxHtmlEditor_heConstrainProportionsMiddleOff_DevEx1 { background-position: -77px 0px; width: 11px; height: 18px } 
+.dxHtmlEditor_heConstrainProportionsMiddleOffRtl_DevEx1 { background-position: -64px 0px; width: 11px; height: 18px } 
+.dxHtmlEditor_heConstrainProportionsMiddleOn_DevEx1 { background-position: -103px 0px; width: 11px; height: 18px } 
+.dxHtmlEditor_heConstrainProportionsMiddleOnRtl_DevEx1 { background-position: -90px 0px; width: 11px; height: 18px } 
+.dxHtmlEditor_heConstrainProportionsTop_DevEx1 { background-position: -265px 0px; width: 11px; height: 5px } 
+.dxHtmlEditor_heConstrainProportionsTopRtl_DevEx1 { background-position: -278px 0px; width: 11px; height: 5px } 
+.dxHtmlEditor_heEnumIcon_DevEx1 { background-position: -134px 0px; width: 16px; height: 16px } 
+.dxHtmlEditor_heErrorFrameCloseButton_DevEx1 { background-position: -218px 0px; width: 13px; height: 9px } 
+.dxHtmlEditor_heEventIcon_DevEx1 { background-position: -152px 0px; width: 16px; height: 16px } 
+.dxHtmlEditor_heFieldIcon_DevEx1 { background-position: -170px 0px; width: 16px; height: 16px } 
+.dxHtmlEditor_heReset_DevEx1 { background-position: 0px 0px; width: 20px; height: 20px } 
+.dxHtmlEditor_heSizeGrip_DevEx1 { background-position: -188px 0px; width: 13px; height: 13px } 
+.dxHtmlEditor_heSizeGripRtl_DevEx1 { background-position: -203px 0px; width: 13px; height: 13px } 
+.dxHtmlEditor_heTagInspectorChangeButton_DevEx1 { background-position: -43px 0px; width: 19px; height: 19px } 
+.dxHtmlEditor_heTagInspectorRemoveButton_DevEx1 { background-position: -22px 0px; width: 19px; height: 19px } 
+.dxHtmlEditor_heTagInspectorSeparator_DevEx1 { background-position: -233px 0px; width: 4px; height: 7px } 
+.dxHtmlEditor_heToolbarPopOut_DevEx1 { background-position: -361px 0px; width: 7px; height: 4px } 
+.dxHtmlEditor_heXmlItemIcon_DevEx1 { background-position: -116px 0px; width: 16px; height: 16px } 
+.dxHtmlEditor_RoundPanel_herpBottomLeftCorner_DevEx1 { background-position: -291px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpBottomRightCorner_DevEx1 { background-position: -298px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_DevEx1 { background-position: -305px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_DevEx1 { background-position: -312px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_DevEx1 { background-position: -319px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_DevEx1 { background-position: -326px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_DevEx1 { background-position: -333px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_DevEx1 { background-position: -340px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpTopLeftCorner_DevEx1 { background-position: -347px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_RoundPanel_herpTopRightCorner_DevEx1 { background-position: -354px 0px; width: 5px; height: 5px } 
+.dxHtmlEditor_heConstrainProportionsMiddleOn_DevEx1,
+.dxHtmlEditor_heConstrainProportionsMiddleOff_DevEx1,
+.dxHtmlEditor_heConstrainProportionsBottom_DevEx1,
+.dxHtmlEditor_heConstrainProportionsTop_DevEx1,
+.dxHtmlEditor_RoundPanel_herpHeaderTopLeftCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpHeaderTopRightCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpBottomLeftCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpBottomRightCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpTopLeftCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpTopRightCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomLeftCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpGroupBoxBottomRightCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopLeftCorner_DevEx1,
+.dxHtmlEditor_RoundPanel_herpGroupBoxTopRightCorner_DevEx1
+{
+	display:block;
+}
+
+

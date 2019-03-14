@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.0.0.8</Version>
+    <FileVersion>1.0.0.8</FileVersion>
+    <Authors>Don Wibier (DevExpress)</Authors>
+    <Description>Several C# utility classes and extension methods</Description>
+    <Copyright>Copyright (c) 2017 Don Wibier</Copyright>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <PackageLicenseUrl>https://github.com/donwibier/DXWeb/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/donwibier/DXWeb/tree/master/DX.Utils</PackageProjectUrl>
+    <PackageIconUrl>https://www.devexpress.com/favicon.ico</PackageIconUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>DXWeb Wibier DevExpress</PackageTags>
+    <PackageReleaseNotes>
+	  1.0.0.8: Small refactorings to improve speed and support for Pageable (XP)DataStore	
+	  1.0.0.7: Abstract Generic DTO DataStore and Validator classes added	
+      1.0.0.6: Changed .NET Framework to v4.6.1
+      1.0.0.5: Initial dual mode package for .NET Framework and .NET Standard 2.0
+Some features don't work yet on .NET Standard 2.0</PackageReleaseNotes>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />    
+    
+    
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Configuration.ConfigurationManager">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="rem if exists &quot;$(ProjectDir)bin\$(ConfigurationName)\*.nupkg&quot; copy /Y &quot;$(ProjectDir)bin\$(ConfigurationName)\*.nupkg&quot; &quot;$(SolutionDir).deploy\$(ConfigurationName)&quot;" />
+  </Target>
+</Project>

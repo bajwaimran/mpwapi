@@ -1,0 +1,561 @@
+.dxcvControl_DevEx1,
+.dxcvDisabled_DevEx1
+{
+    border: 1px solid #9da0aa;
+    font: 11px Verdana, Geneva, sans-serif;
+    background-color: #f1f2f6;
+    color: #201f35;
+    cursor: default;
+}
+.dxcvDisabled_DevEx1
+{
+    color: #b1b1b8;
+}
+.dxcvControl_DevEx1 a.dxeHyperlink:not([href]):not([onclick]):not(.dxbButtonSys)
+{
+    color: #201f35;
+    text-decoration: none;
+}
+.dxcvControl_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxcvControl_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxcvControl_DevEx1 a:hover.dxbDisabled_DevEx1
+{
+    color: #babac1;
+    text-decoration: none;
+}
+.dxcvDisabled_DevEx1 a
+{
+    color: #b1b1b8;
+}
+/*Loading Panel*/
+.dxcvLoadingPanel_DevEx1
+{
+    font: 11px Verdana, Geneva, sans-serif;
+    color: #201f35;
+    background-color: White;
+    border: 1px solid #9da0aa;
+}
+.dxcvLoadingPanel_DevEx1 td.dx
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 7px 10px;
+}
+.dxcvLoadingPanel_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('../Web/Loading.gif');
+    height: 32px;
+    width: 32px;
+}
+.dxcvLoadingPanelStatusBar_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('StatusBarLoading.gif');
+    height: 15px;
+    width: 15px;
+}
+.dxcvLoadingPanelStatusBar_DevEx1
+{
+    background-color: Transparent;
+}
+.dxcvLoadingPanelStatusBar_DevEx1 td
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 2px;
+}
+.dxcvFilterPopupWindow_DevEx1
+{
+    color: #201f35;
+    border: 1px solid #9da0aa;
+}
+.dxcvFilterPopupItemsArea_DevEx1
+{
+    color: #201f35;
+    background-color: White;
+}
+.dxcvFilterPopupButtonPanel_DevEx1
+{
+    background-color: #ebecef;
+    border-top: 1px solid #9da0aa;
+    color: #201f35;
+}
+.dxcvFilterPopupItem_DevEx1 td.dxcv,
+.dxcvFilterPopupActiveItem_DevEx1 td.dxcv,
+.dxcvFilterPopupSelectedItem_DevEx1 td.dxcv
+{
+    padding: 3px 2px 3px 3px;
+    cursor: default;
+    white-space: nowrap;
+}
+.dxcvFilterPopupActiveItem_DevEx1
+{
+    background: #e2eafd none;
+    color: #201f35;
+}
+.dxcvFilterPopupSelectedItem_DevEx1
+{
+    background: #eff0f2 none;
+    color: #201f35;
+}
+.dxcvTable_DevEx1
+{
+    background-color: White;
+    border-width: 0;
+    border-collapse: separate !important;
+    overflow: hidden;
+    padding: 20px;
+}
+.dxcvHeader_DevEx1
+{
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 5px 6px;
+    border: 1px solid #cacbd3;
+    background: #f2f3f4 url('../GridView/gvHeaderBack.png') repeat-x left top;
+    overflow: hidden;
+    font-weight: normal;
+    text-align: left;
+}
+.dxcvHeader_DevEx1,
+.dxcvHeader_DevEx1 table
+{
+    color: #201f35;
+}
+.dxcvHeader_DevEx1 td
+{
+    white-space: nowrap;
+}
+.dxcvHeader_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: underline;
+}
+.dxcvHeader_DevEx1 a.dxcvCommandItem_DevEx1
+{
+    margin: 0px 3px 0px 0px;
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxcvHeader_DevEx1 a.dxcvCommandItem_DevEx1:hover
+{
+    text-decoration: underline;
+}
+.dxcvCustomization_DevEx1,
+.dxcvPopupEditForm_DevEx1
+{
+    padding: 0;
+    margin: 0;
+}
+.dxcvTitlePanel_DevEx1,
+.dxcvTable_DevEx1 caption
+{
+    font-weight: normal;
+    padding: 3px 3px 5px;
+    text-align: center;
+    background: #f2f3f4 url('cvTitleBack.png') repeat-x left top;
+    color: #201f35;
+    border-bottom: 1px solid #9da0aa;
+}
+.dxcvLoadingDiv_DevEx1
+{
+    background-color: Gray;
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+}
+.dxcvStatusBar_DevEx1
+{
+    background: #f9f9fc none;
+    border-top: 1px solid #cacbd3;
+}
+.dxcvStatusBar_DevEx1 tr.dxcv
+{
+    height: 20px;
+}
+.dxcvStatusBar_DevEx1 tr.dxcv > td
+{
+    padding: 4px;
+}
+.dxcvStatusBar_DevEx1 tr.dxcv span .dxbButtonSys:first-child
+{
+    margin-left: 2px;
+}
+.dxcvCommandItem_DevEx1
+{
+    vertical-align: middle;
+}
+.dxcvCommandItem_DevEx1 a
+{
+    margin: 0px 3px 0px 0px;
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxcvCommandItem_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxbButton_DevEx1[class~="dxcvCommandItem_DevEx1"]
+{
+    margin: -2px 2px;
+}
+.dxbButton_DevEx1[class~="dxcvCommandItem_DevEx1"] .dxb
+{
+    margin: -2px 2px;
+}
+.dxcvPagerTopPanel_DevEx1,
+.dxcvPagerBottomPanel_DevEx1
+{
+    background: #f1f2f6 url('cvPagerPanelBack.png') repeat-x left top;
+}
+.dxcvPagerTopPanel_DevEx1
+{
+    border-bottom: 1px solid #cacbd3;
+}
+.dxcvPagerBottomPanel_DevEx1
+{
+    border-top: 1px solid #cacbd3;
+}
+.dxcvControl_DevEx1 .dxctToolbar_DevEx1.dxm-main.dxcvCTTop
+{
+    border-bottom-width: 1px;
+}
+.dxcvControl_DevEx1 .dxctToolbar_DevEx1.dxm-main.dxcvCTBottom
+{
+    border-top-width: 1px;
+}
+.dxcvFilterBar_DevEx1
+{
+    border-top: 1px solid #cacbd3;
+    background: #f9f9fc none;
+}
+.dxcvFilterBar_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: underline;
+}
+.dxcvFilterBarCheckBoxCell_DevEx1
+{
+    padding: 0 7px 0 3px;
+}
+.dxcvFilterBarImageCell_DevEx1
+{
+    padding: 0 1px 0 3px;
+    cursor: pointer;
+}
+.dxcvFilterBarExpressionCell_DevEx1
+{
+    padding: 5px 5px 8px 0;
+    white-space: nowrap;
+}
+.dxcvFilterBarClearButtonCell_DevEx1
+{
+    padding: 5px 6px 8px;
+}
+.dxcvFilterBuilderMainArea_DevEx1
+{
+    background: white none;
+    padding: 6px 2px;
+}
+.dxcvFilterBuilderButtonArea_DevEx1
+{
+    background: #ebecef none;
+    border-top: 1px solid #abacb9;
+    padding: 6px;
+    white-space: nowrap;
+}
+.dxcvControl_DevEx1 .dxpLite_DevEx1,
+.dxcvDisabled_DevEx1 .dxpLite_DevEx1
+{
+    padding-top: 4px;
+}
+.dxcvControl_DevEx1 div[id$='DXEPLPC']
+{
+    height: 47px;
+}
+.dxcvControl_DevEx1 .dxcvHFSD
+{
+    height: 1px;
+    margin: 2px 0;
+}
+.dxcvControl_DevEx1 .dxcvHFDRC
+{
+    margin: 15px 15px 25px;
+}
+.dxcvControl_DevEx1 .dxcvHFDRP
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 9px 0 6px;
+}
+.dxcvControl_DevEx1 .dxcvHFDRP[id*="HFFDE"]
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.dxcvControl_DevEx1 .dxcvHFDRP[id*="HFTDE"]
+{
+    margin-bottom: 25px;
+}
+/* Removes flicking in iOS Safari*/
+.dxcvTable_DevEx1
+{
+    -webkit-tap-highlight-color: transparent;
+}
+.dxcvSearchPanel_DevEx1
+{
+    background: #ebecef;
+    border-bottom: 1px solid #cacbd3;
+    padding: 7px 6px;
+}
+.dxcvSearchPanel_DevEx1 > table
+{
+    width: 70%;
+    max-width: 450px;
+}
+.dxcvControl_DevEx1 .dxcvSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    margin-left: 7px;
+    margin-right: 0;
+}
+*[dir="rtl"].dxcvControl_DevEx1 .dxcvSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    margin-left: 0;
+    margin-right: 7px;
+}
+.dxcvControl_DevEx1 .dxcvHL
+{
+    background: #ffd83a;
+    color: #201f35;
+    font-weight: bold;
+    font-style: normal;
+}
+/* TODO remove (replace to command button style) */
+.dxcvControl_DevEx1 .dxcvSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    font-size: 0.9em;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+.dxcvControl_DevEx1 .dxcvSearchPanel_DevEx1 .dxbButton_DevEx1 .dxb
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dxcvCard_DevEx1,
+.dxcvFlowCard_DevEx1,
+.dxcvBreakpointsCard_DevEx1,
+.dxcvEmptyCard_DevEx1,
+.dxcvEmptyHiddenCard_DevEx1
+{
+    width: 250px;
+    height: 180px;
+    vertical-align: top;
+}
+.dxcvCard_DevEx1,
+.dxcvFlowCard_DevEx1,
+.dxcvBreakpointsCard_DevEx1,
+.dxcvEmptyCard_DevEx1
+{
+    border: 1px solid #CACBD3;
+    background-color: #F2F3F4;
+    color: #262626;
+    outline: none;
+}
+.dxcvEmptyCard_DevEx1
+{
+    text-align: center;
+    vertical-align: middle;
+}
+.dxcvEmptyHiddenCard_DevEx1
+{
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.dxcvGroupRow_DevEx1
+{
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+.dxcvGroupRow_DevEx1 .dxcvGRB
+{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.dxcvGroupRow_DevEx1,
+.dxcvFlowCard_DevEx1,
+.dxcvBreakpointsCard_DevEx1,
+div.dxcvEmptyCard_DevEx1
+{
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+}
+@media (max-width: 640px)
+{
+    .dxcvControl_DevEx1 .dxcvTable_DevEx1.dxcvBPT
+    {
+        padding: 0 8px 8px 0;
+    }
+    .dxcvBPT .dxcvBreakpointsCard_DevEx1
+    {
+        margin: 8px 0 0 8px;
+    }
+}
+.dxcvFlowCard_DevEx1,
+div.dxcvEmptyCard_DevEx1
+{
+    display: inline-block;
+}
+.dxcvBreakpointsCard_DevEx1
+{
+    width: auto;
+    display: block;
+}
+.dxcvSelectedCard_DevEx1,
+.dxcvFocusedCard_DevEx1
+{
+    border-color: #CACBD3;
+    outline: 3px solid #EFF0F2;
+}
+.dxcvFocusedCard_DevEx1
+{
+    background-color: White;
+}
+.dxcvCardHover_DevEx1
+{
+    border-color: #CACBD3;
+    outline: 3px solid #E2EAFD;
+}
+.dxcvCard_DevEx1 .dxflCaption_DevEx1,
+.dxcvBreakpointsCard_DevEx1 .dxflCaption_DevEx1,
+.dxcvFlowCard_DevEx1 .dxflCaption_DevEx1
+{
+    color: #7F7F7F;
+}
+.dxcvCard_DevEx1 .dxflViewFormLayoutSys .dxflCommandItemSys,
+.dxcvBreakpointsCard_DevEx1 .dxflViewFormLayoutSys .dxflCommandItemSys,
+.dxcvFlowCard_DevEx1 .dxflViewFormLayoutSys .dxflCommandItemSys
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.dxcvCard_DevEx1 .dxflViewFormLayoutSys
+{
+    color: inherit;
+}
+.dxcvHeaderPanel_DevEx1
+{
+    background: #ebecef;
+    border-bottom: 1px solid #cacbd3;
+    padding: 2px 20px 8px 20px;
+}
+.dxcvHeaderPanel_DevEx1 .dxcvHPGSC
+{
+    float: right;
+    margin-top: 12px;
+}
+div.dxcvHeader_DevEx1
+{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.dxcvSummaryPanel_DevEx1
+{
+    background: #f9f9fc;
+    border-top: 1px solid #cacbd3;
+    padding: 8px 21px;
+}
+.dxcvSummaryItem_DevEx1
+{
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+}
+.dxcvControl_DevEx1 .dxcvSeparator_DevEx1,
+.dxcvControl_DevEx1 .dxcvSeparator_DevEx1 div
+{
+    width: 20px;
+    height: 20px;
+}
+.dxcvControl_DevEx1 td.dxcvBatchEditCell_DevEx1
+{
+    padding: 0;
+    outline-width: 0 !important;
+}
+.dxcvControl_DevEx1 .dxcvBatchEditModifiedCell_DevEx1
+{
+    background: #d7f9c7;
+    outline-style: solid;
+    outline-color: #d7f9c7;
+    outline-width: 2px;
+}
+.dxcvBatchEditDeletedItem_DevEx1,
+.dxcvBatchEditDeletedItem_DevEx1.dxcvBatchEditNewItem_DevEx1
+{
+    background: white;
+}
+.dxcvBatchEditDeletedItem_DevEx1 td:not(.dxcvCommandColumn_DevEx1),
+.dxcvControl_DevEx1 .dxcvBatchEditDeletedItem_DevEx1 .dxflCaptionCell_DevEx1 .dxflCaption_DevEx1
+{
+    color: rgba(0,0,0,0.5) !important;
+}
+.dxcvBatchEditDeletedItem_DevEx1 td.dxcvBatchEditModifiedCell_DevEx1
+{
+    background-color: #eefbe7;
+    outline-style: none;
+}
+.dxcvBatchEditNewItem_DevEx1
+{
+    background: #F0FAEA;
+}
+.dxcvControl_DevEx1 .dxcvErrorCell
+{
+    padding-left: 5px;
+    width: 1px;
+}
+.dxcvControl_DevEx1 .dxcvErrorCell img
+{
+    margin: -3px 0;
+}
+.dxcvStatusBar_DevEx1 .dxbButton_DevEx1
+{
+    margin-right: 10px;
+}
+.dxcvControl_DevEx1 td.dxcvBatchEditCell_DevEx1 .dxichCellSys
+{
+    padding-left: 0;
+}
+.dxcvControl_DevEx1 .dxcvEMBC
+{
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: -20px;
+}
+.dxcvCardError_DevEx1
+{
+    background-color: #ebecef;
+    border-top: 1px solid #CACBD3;
+    color: #ba1717;
+    padding: 6px 13px;
+}
+.dxcvFocusedCell_DevEx1
+{
+    box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -webkit-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -moz-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+}
+.dxcvFocusedCell_DevEx1 .dxcvBatchEditModifiedCell_DevEx1:not(.dxcvBatchEditCell_DevEx1)
+{
+    outline: none;
+    box-shadow: 2px 1px 0 #d7f9c7, 2px 0px 0 #d7f9c7;
+    -webkit-box-shadow: 2px 1px 0 #d7f9c7, 2px 0px 0 #d7f9c7;
+    -moz-box-shadow: 2px 1px 0 #d7f9c7, 2px 0px 0 #d7f9c7;
+}

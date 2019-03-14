@@ -1,0 +1,97 @@
+﻿
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewBestellArtikel";
+        settings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartial" };
+
+        //settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartial" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartialUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellArtikel";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "BestellArtikels";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = false;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "ArtikelNr";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Bezeichnung";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Stueckzahl";
+        });
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Bestellung.Oid";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Artikel.Bezeichnung";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "mboid";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "AuftragsNrKW";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "BestellKunden.KDNr";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+

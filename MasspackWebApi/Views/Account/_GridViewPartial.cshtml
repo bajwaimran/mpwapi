@@ -1,0 +1,98 @@
+﻿@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewPartial";
+        settings.CallbackRouteValues = new { Controller = "Account", Action = "GridViewPartial" };
+
+        //settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Account", Action = "Edit" };
+        //settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellung";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "User Management";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+        settings.CommandColumn.Visible = true;
+        //settings.CommandColumn.ShowNewButton = true;
+        //settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+        settings.CommandColumn.ShowNewButtonInHeader = true;
+
+        settings.KeyFieldName = "Id";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Email";
+
+
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "UserName";
+        });
+
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Password";
+            c.UnboundType = DevExpress.Data.UnboundColumnType.String;
+            c.EditFormSettings.Visible = DefaultBoolean.True;
+            c.Visible = false;
+            c.VisibleIndex = 99;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "UserRole";
+            c.UnboundType = DevExpress.Data.UnboundColumnType.String;
+            c.SetEditItemTemplateContent(i =>
+            {
+                Html.DevExpress().ComboBox(combo =>
+                {
+                    combo.Name = "UserRole";
+                    combo.Properties.TextField = "Name";
+                    combo.Properties.ValueField = "Name";
+
+                }).BindList(ViewBag.RoleList).Render();
+            });
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Status";
+            c.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+
+

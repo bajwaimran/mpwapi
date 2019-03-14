@@ -1,0 +1,15 @@
+
+.dxRichEdit_CenterTabDragHandle_DevEx1, .dxRichEdit_ColumnSeparatorDragHandle_DevEx1, .dxRichEdit_DecimalTabDragHandle_DevEx1, .dxRichEdit_FirstLineIndentDragHandle_DevEx1, .dxRichEdit_LeftIndentDragHandle_DevEx1, .dxRichEdit_LeftTabDragHandle_DevEx1, .dxRichEdit_QuickSearchCloseButton_DevEx1, .dxRichEdit_QuickSearchCollapseButton_DevEx1, .dxRichEdit_QuickSearchNextButton_DevEx1, .dxRichEdit_QuickSearchPrevButton_DevEx1, .dxRichEdit_RightIndentDragHandle_DevEx1, .dxRichEdit_RightTabDragHandle_DevEx1 { background-image: url('sprite.png'); background-repeat: no-repeat; background-color: transparent } 
+.dxRichEdit_CenterTabDragHandle_DevEx1 { background-position: -114px 0px; width: 8px; height: 6px } 
+.dxRichEdit_ColumnSeparatorDragHandle_DevEx1 { background-position: -105px 0px; width: 7px; height: 8px } 
+.dxRichEdit_DecimalTabDragHandle_DevEx1 { background-position: -124px 0px; width: 8px; height: 6px } 
+.dxRichEdit_FirstLineIndentDragHandle_DevEx1 { background-position: -72px 0px; width: 9px; height: 8px } 
+.dxRichEdit_LeftIndentDragHandle_DevEx1 { background-position: -83px 0px; width: 9px; height: 8px } 
+.dxRichEdit_LeftTabDragHandle_DevEx1 { background-position: -134px 0px; width: 6px; height: 6px } 
+.dxRichEdit_QuickSearchCloseButton_DevEx1 { background-position: -42px 0px; width: 13px; height: 12px } 
+.dxRichEdit_QuickSearchCollapseButton_DevEx1 { background-position: -57px 0px; width: 13px; height: 12px } 
+.dxRichEdit_QuickSearchNextButton_DevEx1 { background-position: 0px 0px; width: 19px; height: 18px } 
+.dxRichEdit_QuickSearchPrevButton_DevEx1 { background-position: -21px 0px; width: 19px; height: 18px } 
+.dxRichEdit_RightIndentDragHandle_DevEx1 { background-position: -94px 0px; width: 9px; height: 8px } 
+.dxRichEdit_RightTabDragHandle_DevEx1 { background-position: -142px 0px; width: 6px; height: 6px } 
+

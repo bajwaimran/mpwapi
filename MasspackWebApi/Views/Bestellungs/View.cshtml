@@ -1,0 +1,240 @@
+﻿@model BestellErfassung.DomainObjects.Bestellung
+@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_LayoutBackend.cshtml";
+}
+<script>
+    var Oid;
+    function OnGridViewBestellKundenIndexChanged(s, e) {
+        var keys = gridViewBestellKundens.GetSelectedKeysOnPage();
+        if (keys != undefined && keys.length != 0) {
+            Oid = keys[0];
+            if (!cbpExample.InCallback())
+                cbpExample.PerformCallback();           
+        }
+    }
+    function OnBeginCallback(s, e) {
+        e.customArgs["Oid"] = Oid;
+        Oid = null;
+    }
+    function OnEndCallback(s, e) {
+        if (Oid != null)
+            cbpExample.PerformCallback();
+    }
+
+
+    function btnSendOrder_CLICK(s, e) {
+        var oid = $("#bestellungId").val();
+        console.log("btnSendOrder_CLICK" + oid);
+        
+        $.ajax({
+            url: "/api/BestellungAbsenden/",
+            type: "get",
+            data: { Oid: oid },
+            dataType: "json"
+        }).done(function (msg) {
+            alert(msg);
+            location.reload();
+            });
+    }
+
+    function fertigchange_CHECKED(s, e) {
+        
+        var oid = $("#bestellungId").val();
+        var ss = Fertig.GetValue();
+        $.ajax({
+            url: "/api/orders/" + oid,
+            type: "put",
+            data: { Fertig: ss },
+            dataType: "json"
+        }).done(function (result) {
+            alert("Der Fertig-Status wurde in " + result +" geändert!");
+                if (result == true) {
+                    btnSendOrder.SetEnabled(true);
+                } else {
+                    btnSendOrder.SetEnabled(false);
+                }
+            });
+        
+    }
+
+
+    $(document).ready(function () {
+        if ($("#fertigId").val() == false)
+            btnSendOrder.SetEnabled(false);           
+    });
+
+</script>
+<input type="hidden" id="bestellungId"  value="@Model.Oid"/>
+<input type="hidden" id="fertigId" value="@Model.Fertig" />
+<input type="hidden" id="statusId" value="@Model.Status" />
+<div class="row">
+    <div class="col-lg-12">
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Verfahren zum Ändern der Bestellungen
+            </a>
+            @*<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+            </button>*@
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <h5>Verfahren zum Ändern der Bestellungen</h5>
+                <ul>
+                    <li>Klicken Sie zunächst auf die Kundenbestellung, die Sie ändern möchten</li>
+                    <li>In der rechten Leiste werden dann die zugehörigen Kundenbestellungen angezeigt. Jetzt können Sie auf Bearbeiten klicken, um die Bestellmenge zu ändern, oder auf Löschen klicken, um Artikel aus dieser Kundenbestellung zu entfernen</li>
+                    <li>Wenn Sie etwas geändert haben, klicken Sie auf Aktualisieren oder auf Abbrechen, um nichts zu ändern.</li>
+                    <li>Wenn Sie die Anzahl für jeden Kunden ändern möchten, müssen Sie jeden Kunden auswählen und manuell oder einfach eine neue Bestellung erstellen.</li>
+                    <li>Wenn alle Änderungen abgeschlossen sind und Sie zum Weiterleiten bereit sind, klicken Sie auf das Kontrollkästchen Fertig</li>
+                    <li>Sie können den Auftrag erst weiterleiten, wenn Sie den Fertig-Status überprüft haben.</li>
+
+                </ul>
+                <a href="">Für ein Video-Tutorial klicken Sie hier</a>
+            </div>
+        </div>
+        
+        <hr />
+    </div>
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.DevExpress().Label(lbl =>
+                   {
+                       lbl.Name = "lblOrderNr";
+                       lbl.Text = "OrderNr: " + Model.Oid.ToString();
+                       lbl.Style["font-weight"] = "bold";
+                   }).GetHtml()
+                
+            </div>
+            <div class="col-lg-3">
+                @Html.DevExpress().Label(lbl =>
+                   {
+                       lbl.Name = "lbldatum";
+                       lbl.Text = "Datum: " + Model.Datum.ToString();
+                   }).GetHtml()
+                @*@Html.DevExpress().TextBox(tb =>
+                   {
+                       tb.Name = "tbDatum";
+                       tb.Text = Model.Datum.ToString();
+                       tb.ClientEnabled = false;
+                   }).GetHtml()*@
+            </div>
+            <div class="col-lg-3">
+                @Html.DevExpress().Label(lbl =>
+           {
+               lbl.Name = "lblStatus";
+               lbl.Text = "Status: ";
+           }).GetHtml()
+                @{
+                    if (Model.Status == true)
+                    {
+                        <i class="fa fa-check-square" style="color:green;"></i>
+                    }
+                    else
+                    {
+                        <i class="fa fa-times-circle" style="color:red"></i>
+                    }
+                }
+                @*@Html.DevExpress().TextBox(tb =>
+        {
+            tb.Name = "tbStatus";
+            tb.Text = Model.Status.ToString();
+            tb.ClientEnabled = false;
+        }).GetHtml()*@
+            </div>
+            <div class="col-lg-3">
+                @Html.DevExpress().Label(lbl =>
+           {
+               lbl.Name = "lblFertig";
+               lbl.Text = "Fertig: " ;
+               //lbl.Style["font-weight"] = "bold";
+           }).GetHtml()
+                @Html.DevExpress().CheckBoxFor(model => model.Fertig, set => {
+               set.Properties.ClientSideEvents.CheckedChanged = "fertigchange_CHECKED";
+           }).GetHtml()
+                @*@Html.DevExpress().TextBox(tb =>
+                   {
+                       tb.Name = "tbFertig";
+                       tb.Text = Model.Fertig.ToString();
+                       tb.ClientEnabled = false;
+                   }).GetHtml()*@
+            </div>
+            <div class="col-lg-12">
+                @Html.DevExpress().Label(lbl =>
+                {
+                    lbl.Name = "lblZusatzangabe";
+                    lbl.Text = "Zusatzangabe: " + Model.Zusatzangabe;
+                    lbl.Style["font-weight"] = "bold";
+                }).GetHtml()
+                    </div>
+        </div>
+    </div>
+    <div><hr /></div>
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-6">
+                @Html.DevExpress().GridView( settings =>
+                   {
+                       settings.Name = "gridViewBestellKundens";
+                       settings.SettingsSearchPanel.CustomEditorName = "asndjandsa";
+                       settings.Settings.ShowTitlePanel = true;
+                       settings.SetTitlePanelTemplateContent(content =>
+                       {
+                           Html.DevExpress().Label(lbl =>
+                           {
+                               lbl.Text = "BestellKundenList";
+                               lbl.Style["font-weight"] = "bold";
+                           }).Render();
+                       });
+                       settings.SettingsBehavior.AllowSelectByRowClick = true;
+                       settings.Width = System.Web.UI.WebControls.Unit.Percentage(99);
+                       settings.KeyFieldName = "Oid";
+                       settings.Columns.Add("KDNr");
+                       settings.Columns.Add(c => { c.FieldName = "Kunde.Suchname"; c.Caption = "Suchname"; });
+                       settings.ClientSideEvents.SelectionChanged = "OnGridViewBestellKundenIndexChanged";
+                   }).Bind(Model.Bestellung_BestellKunden_XPColl).GetHtml()
+            </div>
+            <div class="col-lg-6">
+                @*@Html.Action("GridViewPartialBestellArtikel", "Bestellungs")*@
+
+                @*@Html.Action("BistellArtiklesPartial")*@
+                @*@Html.DevExpress().CallbackPanel(
+                    cbpsettings => {
+                        cbpsettings.Name = "cbpExample";
+                        cbpsettings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "BistellArtiklesPartial" };
+                        cbpsettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+                        cbpsettings.Height = 250;
+
+                        cbpsettings.SetContent(() =>
+                        {
+                            
+                        });
+
+                        cbpsettings.ClientSideEvents.BeginCallback = "OnBeginCallback";
+                        cbpsettings.ClientSideEvents.EndCallback = "OnEndCallback";
+                    }
+                ).GetHtml()*@
+                @{ 
+                    var m = Model.Bestellung_BestellKunden_XPColl;
+                    var p = m.First();
+                    var modelArtikels = p.BestellKunden_BestellArtikel_XPColl;
+                }
+                @Html.Partial("BistellArtiklesPartial", modelArtikels)
+            </div>
+            <div class="col-lg-12">
+                @if (Model.Status == false)
+                {
+                    Html.DevExpress().Button(btn =>
+                       {
+                           btn.Name = "btnSendOrder";
+                           btn.Text = "Bestellungen Senden";
+
+                           btn.ClientSideEvents.Click = "btnSendOrder_CLICK";
+                       }).Render();
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

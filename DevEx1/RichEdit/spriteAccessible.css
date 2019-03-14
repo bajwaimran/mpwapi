@@ -1,0 +1,14 @@
+.dx-acc-r .dxRichEdit_CenterTabDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_ColumnSeparatorDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_DecimalTabDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_FirstLineIndentDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_LeftIndentDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_LeftTabDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_QuickSearchCloseButton_DevEx1:before, .dx-acc-r .dxRichEdit_QuickSearchCollapseButton_DevEx1:before, .dx-acc-r .dxRichEdit_QuickSearchNextButton_DevEx1:before, .dx-acc-r .dxRichEdit_QuickSearchPrevButton_DevEx1:before, .dx-acc-r .dxRichEdit_RightIndentDragHandle_DevEx1:before, .dx-acc-r .dxRichEdit_RightTabDragHandle_DevEx1:before { content: url('spriteAccessible.png'); }
+.dx-acc-r .dxRichEdit_CenterTabDragHandle_DevEx1:before { left: -114px; top: 0px; }
+.dx-acc-r .dxRichEdit_ColumnSeparatorDragHandle_DevEx1:before { left: -105px; top: 0px; }
+.dx-acc-r .dxRichEdit_DecimalTabDragHandle_DevEx1:before { left: -124px; top: 0px; }
+.dx-acc-r .dxRichEdit_FirstLineIndentDragHandle_DevEx1:before { left: -72px; top: 0px; }
+.dx-acc-r .dxRichEdit_LeftIndentDragHandle_DevEx1:before { left: -83px; top: 0px; }
+.dx-acc-r .dxRichEdit_LeftTabDragHandle_DevEx1:before { left: -134px; top: 0px; }
+.dx-acc-r .dxRichEdit_QuickSearchCloseButton_DevEx1:before { left: -42px; top: 0px; }
+.dx-acc-r .dxRichEdit_QuickSearchCollapseButton_DevEx1:before { left: -57px; top: 0px; }
+.dx-acc-r .dxRichEdit_QuickSearchNextButton_DevEx1:before { left: 0px; top: 0px; }
+.dx-acc-r .dxRichEdit_QuickSearchPrevButton_DevEx1:before { left: -21px; top: 0px; }
+.dx-acc-r .dxRichEdit_RightIndentDragHandle_DevEx1:before { left: -94px; top: 0px; }
+.dx-acc-r .dxRichEdit_RightTabDragHandle_DevEx1:before { left: -142px; top: 0px; }
+

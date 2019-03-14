@@ -1,0 +1,1174 @@
+.dxgvControl_DevEx1,
+.dxgvDisabled_DevEx1
+{
+    border: 1px solid #9da0aa;
+    font: 11px Verdana, Geneva, sans-serif;
+    background-color: #f1f2f6;
+    color: #201f35;
+    cursor: default;
+}
+.dxgvDisabled_DevEx1
+{
+    color: #b1b1b8;
+}
+.dxgvControl_DevEx1 a.dxeHyperlink:not([href]):not([onclick]):not(.dxbButtonSys)
+{
+    color: #201f35;
+    text-decoration: none;
+}
+.dxgvControl_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxgvControl_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxgvControl_DevEx1 a:hover.dxbDisabled_DevEx1
+{
+    color: #babac1;
+    text-decoration: none;
+}
+.dxgvDisabled_DevEx1 a
+{
+    color: #b1b1b8;
+}
+/*Loading Panel*/
+.dxgvEmptyDataRow_DevEx1.dxgvLVR > td.dxgv,
+.dxgvDataRow_DevEx1.dxgvLVR > td.dxgv,
+.dxgvGroupRow_DevEx1.dxgvLVR > td.dxgv
+{
+    border-bottom-width: 0;
+}
+.dxgvRBB .dxgvEmptyDataRow_DevEx1.dxgvLVR > td.dxgv,
+.dxgvRBB .dxgvDataRow_DevEx1.dxgvLVR > td.dxgv,
+.dxgvRBB .dxgvGroupRow_DevEx1.dxgvLVR > td.dxgv
+{
+    border-bottom-width: 1px !important;
+}
+.dxgvGroupRow_DevEx1 td.dxgv.dxgvPHEC, .dxgvPreviewRow_DevEx1 td.dxgv.dxgvPHEC,
+.dxgvDetailRow_DevEx1 td.dxgv.dxgvPHEC, .dxgvGroupFooter_DevEx1 td.dxgv.dxgvPHEC,
+.dxgvDataRow_DevEx1 td.dxgvPHEC
+{
+    border-right: 1px Solid #d9dae0;
+}
+.dxgvLoadingPanel_DevEx1
+{
+    font: 11px Verdana, Geneva, sans-serif;
+    color: #201f35;
+    background-color: White;
+    border: 1px solid #9da0aa;
+}
+.dxgvLoadingPanel_DevEx1 td.dx
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 7px 10px;
+}
+.dxgvLoadingPanel_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('../Web/Loading.gif');
+    height: 32px;
+    width: 32px;
+}
+.dxgvLoadingPanelStatusBar_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('StatusBarLoading.gif');
+    height: 15px;
+    width: 15px;
+}
+.dxgvLoadingPanelStatusBar_DevEx1
+{
+    background-color: Transparent;
+}
+.dxgvLoadingPanelStatusBar_DevEx1 td
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 2px;
+}
+.dxgvFilterPopupWindow_DevEx1
+{
+    color: #201f35;
+    border: 1px solid #9da0aa;
+}
+.dxgvFilterPopupItemsArea_DevEx1
+{
+    color: #201f35;
+    background-color: White;
+}
+.dxgvFilterPopupButtonPanel_DevEx1
+{
+    background-color: #ebecef;
+    border-top: 1px solid #9da0aa;
+    color: #201f35;
+}
+.dxgvFilterPopupItem_DevEx1 td.dxgv,
+.dxgvFilterPopupActiveItem_DevEx1 td.dxgv,
+.dxgvFilterPopupSelectedItem_DevEx1 td.dxgv
+{
+    padding: 3px 2px 3px 3px;
+    cursor: default;
+    white-space: nowrap;
+}
+.dxgvFilterPopupActiveItem_DevEx1
+{
+    background: #e2eafd none;
+    color: #201f35;
+}
+.dxgvFilterPopupSelectedItem_DevEx1
+{
+    background: #eff0f2 none;
+    color: #201f35;
+}
+.dxgvTable_DevEx1
+{
+    background-color: White;
+    border-width: 0;
+    border-collapse: separate !important;
+    overflow: hidden;
+}
+.dxgvTable_DevEx1 .dxgvHEC
+{
+    background-color: White;
+    border-width: 0;
+    overflow: hidden;
+}
+.dxgvControl_DevEx1 .dxgvFSDC
+{
+    background-color: #f9f9fc;
+}
+.dxgvControl_DevEx1 .dxgvFSDC .dxgvFooter_DevEx1 td.dxgv
+{
+    border-bottom-width: 0;
+}
+.dxgvControl_DevEx1 .dxgvFGI
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.dxgvControl_DevEx1 .dxgvFGI
+{
+    right: 5px;
+    left: auto;
+}
+*[dir="rtl"].dxgvControl_DevEx1 .dxgvFGI
+{
+    right: auto;
+    left: 5px;
+}
+.dxgvInlineEditRow_DevEx1 td.dxgv
+{
+    border-bottom: 1px solid #d9dae0;
+    border-right: 1px solid #d9dae0;
+}
+.dxgvInlineEditRow_DevEx1 td.dxgvIndentCell
+{
+    background: #f9f9fc none;
+}
+.dxgvInlineEditRow_DevEx1 .dxgvCommandColumn_DevEx1
+{
+    background: #f9f9fc none;
+}
+.dxgvDataRowAlt_DevEx1
+{
+    background-color: #f7f4fd;
+}
+.dxgvFilterRow_DevEx1
+{
+    background-color: #ebecef;
+}
+.dxgvEditForm_DevEx1
+{
+    background-color: #f9f9fc;
+}
+.dxgvEditForm_DevEx1 > td.dxgv
+{
+    border-bottom: 1px solid #d9dae0;
+    padding: 8px 10px 10px;
+}
+.dxgvEditForm_DevEx1 > td.dxgvIndentCell
+{
+    background: #f9f9fc none;
+    border-right: 1px Solid #d9dae0;
+    border-left: 1px Solid #d9dae0;
+    border-top-width: 0px;
+}
+.dxgvSelectedRow_DevEx1
+{
+    background-color: #eff0f2;
+    color: #201f35;
+}
+.dxgvFocusedRow_DevEx1
+{
+    background: #d9e4fd url('gvFocusedBack.png') repeat-x left top;
+    color: #201f35;
+}
+.dxgvSelectedRow_DevEx1 .dxgvCommandColumn_DevEx1 a,
+.dxgvSelectedRow_DevEx1 .dxgvAIC a,
+.dxgvFocusedRow_DevEx1 .dxgvCommandColumn_DevEx1 a,
+.dxgvFocusedRow_DevEx1 .dxgvAIC a
+{
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxgvSelectedRow_DevEx1 .dxgvCommandColumn_DevEx1 a:hover,
+.dxgvSelectedRow_DevEx1 .dxgvAIC a:hover,
+.dxgvFocusedRow_DevEx1 .dxgvCommandColumn_DevEx1 a:hover,
+.dxgvFocusedRow_DevEx1 .dxgvAIC a:hover
+{
+    text-decoration: underline;
+}
+.dxgvPreviewRow_DevEx1
+{
+    background-color: #f7f7f8;
+    color: #777777;
+}
+.dxgvDetailRow_DevEx1 td.dxgv,
+.dxgvPreviewRow_DevEx1 td.dxgv,
+.dxgvEmptyDataRow_DevEx1 td.dxgv
+{
+    padding: 20px 2px 20px 4px;
+    border-bottom: 1px solid #d9dae0;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.dxgvDetailRow_DevEx1 td.dxgvDetailCell_DevEx1
+{
+    border-bottom-color: #d9dae0;
+    padding: 16px 18px;
+}
+.dxgvPreviewRow_DevEx1 td.dxgv
+{
+    padding: 10px 10px 10px 15px;
+}
+.dxgvDetailRow_DevEx1 td.dxgvIndentCell
+{
+    padding-right: 0px;
+    border-bottom: 1px solid #d9dae0;
+}
+.dxgvDetailRow_DevEx1.dxgvADR .dxgvADT > tbody > tr > td
+{
+    padding: 6px 6px 6px 0;
+}
+.dxgvDetailRow_DevEx1.dxgvADR .dxgvADT > tbody > tr > td .dxeTextBoxSys,
+.dxgvDetailRow_DevEx1.dxgvADR .dxgvADT > tbody > tr > td .dxichCellSys
+{
+    margin: -4px 0 -4px 0;
+}
+.dxgvDetailRow_DevEx1.dxgvADR .dxgvADCC
+{
+    color: #7F7F7F;
+}
+.dxgvEmptyDataRow_DevEx1
+{
+    color: #777777;
+}
+.dxgvEmptyDataRow_DevEx1 td.dxgv
+{
+    border-bottom: 1px solid #d9dae0;
+    text-align: center;
+}
+.dxgvEditFormDisplayRow_DevEx1 td.dxgv,
+.dxgvDetailCell_DevEx1 td.dxgv,
+.dxgvDataRow_DevEx1 td.dxgv,
+.dxgvDetailRow_DevEx1.dxgvADR td.dxgvAIC
+{
+    overflow: hidden;
+    border-bottom: 1px solid #d9dae0;
+    border-right: 1px solid #d9dae0;
+    border-top-width: 0;
+    border-left-width: 0;
+    padding: 4px 6px;
+}
+.dxgvDataRow_DevEx1 td.dxgvAIC,
+.dxgvInlineEditRow_DevEx1 td.dxgvAIC
+{
+    padding: 0 4px;
+}
+.dxgvDetailRow_DevEx1.dxgvADR td.dxgvAIC
+{
+    padding: 6px 4px;
+}
+.dxgvEditFormDisplayRow_DevEx1 td.dxgvIndentCell
+{
+    background: #f9f9fc none;
+    border-right: 1px Solid #d9dae0;
+    border-left: 1px Solid #d9dae0;
+    border-top-width: 0px;
+}
+.dxgvEditingErrorRow_DevEx1
+{
+    background-color: #ebecef;
+    color: #ba1717;
+}
+.dxgvEditingErrorRow_DevEx1 td.dxgv
+{
+    white-space: pre-wrap;
+    border-bottom: 1px solid #d9dae0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-left-width: 0;
+    padding: 6px 10px;
+}
+.dxgvFilterRow_DevEx1 td.dxgv
+{
+    border-bottom: 1px solid #abacb9;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-left-width: 0;
+    padding: 2px 3px 2px 2px;
+    overflow: hidden;
+}
+.dxgvGroupRow_DevEx1,
+.dxgvBatchEditChangesPreviewGroupRow_DevEx1
+{
+    background-color: #f9f9fc;
+}
+.dxgvFocusedGroupRow_DevEx1
+{
+    background: #d9e4fd url('gvFocusedBack.png') repeat-x left top;
+    color: #201f35;
+}
+.dxgvGroupRow_DevEx1 td.dxgv,
+.dxgvFocusedGroupRow_DevEx1 td.dxgv,
+.dxgvBatchEditChangesPreviewGroupRow_DevEx1 td.dxgv
+{
+    border: 0 none;
+    vertical-align: middle;
+    border-bottom: 1px solid #d9dae0;
+    padding: 4px 6px;
+    background-color: inherit;
+}
+.dxgvFocusedRow_DevEx1 td.dxgvIndentCell,
+.dxgvFocusedGroupRow_DevEx1 td.dxgvIndentCell,
+.dxgvSelectedRow_DevEx1 td.dxgvIndentCell
+{
+    background: #f9f9fc !important;
+    border-right: 1px solid #d9dae0;
+    border-left: 1px solid #d9dae0;
+    border-top-width: 0px;
+}
+.dxgvHeaderPanel_DevEx1
+{
+    background-color: #ebecef;
+    color: #201f35;
+    padding: 8px 6px;
+    border-bottom: 1px solid #abacb9;
+}
+.dxIE .dxgvMSDraggable .dxgvHeader_DevEx1,
+.dxIE .dxgvMSDraggable.dxgvGroupPanel_DevEx1
+{
+    -ms-touch-action: pinch-zoom;
+}
+.dxEdge .dxgvMSDraggable .dxgvHeader_DevEx1,
+.dxEdge .dxgvMSDraggable.dxgvGroupPanel_DevEx1
+{
+    touch-action: pinch-zoom;
+}
+.dxgvHeader_DevEx1
+{
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 5px 6px;
+    border: 1px solid #cacbd3;
+    background: #f2f3f4 url('gvHeaderBack.png') repeat-x left top;
+    overflow: hidden;
+    font-weight: normal;
+    text-align: left;
+}
+.dxgvHeader_DevEx1,
+.dxgvHeader_DevEx1 table
+{
+    color: #201f35;
+}
+.dxgvHeader_DevEx1 td
+{
+    white-space: nowrap;
+}
+.dxgvHeader_DevEx1.dxgvAIC
+{
+    padding-left: 4px;
+    padding-right: 5px;
+}
+.dxgvHeader_DevEx1 a,
+.dxgvHeader_DevEx1 a.dxgvCommandColumnItem_DevEx1,
+.dxgvHeader_DevEx1 a.dxgvCommandColumnItem_DevEx1.dxbDisabled_DevEx1,
+.dxgvCommandColumn_DevEx1 a,
+.dxgvCommandColumn_DevEx1 a.dxgvCommandColumnItem_DevEx1.dxbDisabled_DevEx1
+{
+    color: #1b3f91;
+}
+.dxgvHeader_DevEx1 a
+{
+    text-decoration: underline;
+}
+.dxgvHeader_DevEx1 a.dxgvCommandColumnItem_DevEx1
+{
+    margin: 0px 3px 0px 0px;
+    text-decoration: none;
+}
+.dxgvHeader_DevEx1 a.dxgvCommandColumnItem_DevEx1:hover
+{
+    text-decoration: underline;
+}
+.dxgvHeader_DevEx1 a.dxgvCommandColumnItem_DevEx1.dxbDisabled_DevEx1,
+.dxgvCommandColumn_DevEx1 a.dxgvCommandColumnItem_DevEx1.dxbDisabled_DevEx1
+{
+    opacity: 0.5;
+    text-decoration: none;
+}
+.dxgvCustomization_DevEx1,
+.dxgvPopupEditForm_DevEx1
+{
+    padding: 0;
+    margin: 0;
+}
+.dxgvPopupEditForm_DevEx1 .dxgvEditingErrorRow_DevEx1 .dxgv
+{
+    border-bottom-width: 0;
+}
+.dxgvAdaptiveGroupPanel_DevEx1,
+.dxgvGroupPanel_DevEx1
+{
+    color: #201f35;
+    background: #ebecef url('gvGroupPanelBack.png') no-repeat right top;
+    border-bottom: 1px solid #cacbd3;
+}
+.dxgvGroupPanel_DevEx1
+{
+    padding: 7px 6px;
+    white-space: nowrap;
+}
+.dxgvAdaptiveGroupPanel_DevEx1
+{
+    padding-left: 6px;
+    padding-top: 7px;
+}
+.dxgvAdaptiveGroupPanel_DevEx1 div.dxgvADH
+{
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+.dxgvAdaptiveGroupPanel_DevEx1.dxgvEAHP
+{
+    padding-bottom: 7px;
+}
+.dxgvAdaptiveHeaderPanel_DevEx1
+{
+    color: #201f35;
+    background: #ebecef;
+    border-bottom: 1px solid #cacbd3;
+    padding-top: 10px;
+}
+.dxgvAdaptiveHeaderPanel_DevEx1.dxgvEAHP
+{
+    padding: 10px 7px;
+}
+.dxgvAdaptiveFooterPanel_DevEx1
+{
+    background-color: #f9f9fc;
+    padding-top: 6px;
+}
+.dxgvAdaptiveHeaderPanel_DevEx1,
+.dxgvAdaptiveFooterPanel_DevEx1
+{
+    padding-left: 24px;
+}
+.dxgvFooter_DevEx1
+{
+    background-color: #f9f9fc;
+    white-space: nowrap;
+}
+.dxgvFooter_DevEx1 td.dxgv
+{
+    padding: 6px;
+    border-bottom: 1px solid #d9dae0;
+    border-right-width: 0;
+}
+.dxgvABRL .dxgvFooter_DevEx1 td.dxgv,
+.dxgvABRL .dxgvGroupFooter_DevEx1 td.dxgv
+{
+    border-right: 1px solid #d9dae0;
+}
+.dxgvGroupFooter_DevEx1
+{
+    background-color: #f9f9fc;
+}
+.dxgvGroupFooter_DevEx1 td.dxgv
+{
+    padding: 6px;
+    border-bottom: 1px solid #d9dae0;
+    border-right-width: 0;
+}
+.dxgvDataRow_DevEx1 td.dxgvIndentCell,
+.dxgvDetailRow_DevEx1 td.dxgvIndentCell,
+.dxgvPreviewRow_DevEx1 td.dxgvIndentCell,
+.dxgvGroupRow_DevEx1 td.dxgvIndentCell,
+.dxgvGroupFooter_DevEx1 td.dxgvIndentCell
+{
+    background-color: #f9f9fc;
+    border-right: 1px solid #d9dae0;
+    border-left: 1px solid #d9dae0;
+    border-top-width: 0px;
+}
+.dxgvTitlePanel_DevEx1,
+.dxgvTable_DevEx1 caption
+{
+    font-weight: normal;
+    padding: 3px 3px 5px;
+    text-align: center;
+    background: #f2f3f4 url('gvTitleBack.png') repeat-x left top;
+    color: #201f35;
+    border-bottom: 1px solid #9da0aa;
+}
+.dxgvLoadingDiv_DevEx1
+{
+    background-color: Gray;
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+}
+.dxgvStatusBar_DevEx1
+{
+    background: #f9f9fc none;
+    border-top: 1px solid #cacbd3;
+}
+.dxgvStatusBar_DevEx1 tr.dxgv
+{
+    height: 20px;
+}
+.dxgvStatusBar_DevEx1 tr.dxgv > td
+{
+    padding: 4px;
+}
+.dxgvStatusBar_DevEx1 tr.dxgv span .dxbButtonSys:first-child
+{
+    margin-left: 2px;
+}
+.dxgvCommandColumn_DevEx1
+{
+    padding: 2px;
+    white-space: nowrap;
+}
+.dxgvCommandColumn_DevEx1 a
+{
+    margin: 0px 3px 0px 0px;
+    text-decoration: none;
+}
+.dxgvCommandColumn_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxbButton_DevEx1[class~="dxgvCommandColumnItem_DevEx1"]
+{
+    margin: -2px 2px;
+}
+.dxbButton_DevEx1[class~="dxgvCommandColumnItem_DevEx1"] .dxb
+{
+    margin: -2px 2px;
+}
+.dxgvEditFormTable_DevEx1
+{
+    padding: 2px 6px 6px 4px;
+    color: #201f35;
+}
+.dxgvEditFormTable_DevEx1 div.dxbButton_DevEx1
+{
+    margin: 0px 2px;
+}
+.dxgvEditFormTable_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxgvEditFormTable_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxgvEditFormCaption_DevEx1
+{
+    padding: 4px 4px 4px 10px;
+    white-space: nowrap;
+}
+.dxgvInlineEditCell_DevEx1
+{
+    padding: 1px;
+}
+.dxgvEditFormCell_DevEx1
+{
+    padding: 4px;
+    border-width: 0;
+}
+.dxgvPagerTopPanel_DevEx1,
+.dxgvPagerBottomPanel_DevEx1
+{
+    background: #f1f2f6 url('gvPagerPanelBack.png') repeat-x left top;
+}
+.dxgvControl_DevEx1 .dxctToolbar_DevEx1.dxm-main.dxgvCTTop
+{
+    border-bottom-width: 1px;
+}
+.dxgvControl_DevEx1 .dxctToolbar_DevEx1.dxm-main.dxgvCTBottom
+{
+    border-top-width: 1px;
+}
+.dxgvFilterBar_DevEx1
+{
+    border-top: 1px solid #cacbd3;
+    background: #f9f9fc none;
+}
+.dxgvFilterBar_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: underline;
+}
+.dxgvFilterBarCheckBoxCell_DevEx1
+{
+    padding: 0 7px 0 3px;
+}
+.dxgvFilterBarImageCell_DevEx1
+{
+    padding: 0 1px 0 3px;
+    cursor: pointer;
+}
+.dxgvFilterBarExpressionCell_DevEx1
+{
+    padding: 5px 5px 8px 0;
+    white-space: nowrap;
+}
+.dxgvFilterBarClearButtonCell_DevEx1
+{
+    padding: 5px 6px 8px;
+}
+.dxgvFilterBuilderMainArea_DevEx1
+{
+    background: white none;
+    padding: 6px 2px;
+}
+.dxgvFilterBuilderButtonArea_DevEx1
+{
+    background: #ebecef none;
+    border-top: 1px solid #abacb9;
+    padding: 6px;
+    white-space: nowrap;
+}
+.dxgvDataRowHover_DevEx1
+{
+    background: #e2eafd none;
+    color: #201f35;
+}
+.dxgvControl_DevEx1 .dxpLite_DevEx1,
+.dxgvDisabled_DevEx1 .dxpLite_DevEx1
+{
+    padding-top: 7px;
+}
+.dxgvControl_DevEx1 .dxgvHFC
+{
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+.dxgvControl_DevEx1 .dxgvHFC .dxeCalendar_DevEx1
+{
+    margin-left: 23px;
+}
+.dxgvControl_DevEx1 div[id$='DXEPLPC']
+{
+    height: 47px;
+}
+.dxgvControl_DevEx1 .dxgvHFSD
+{
+    height: 1px;
+    margin: 2px 0;
+}
+.dxgvControl_DevEx1 .dxgvHFDRC
+{
+    margin: 15px 15px 25px;
+}
+.dxgvControl_DevEx1 .dxgvHFDRP
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 9px 0 6px;
+}
+.dxgvControl_DevEx1 .dxgvHFDRP[id*="HFFDE"]
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.dxgvControl_DevEx1 .dxgvHFDRP[id*="HFTDE"]
+{
+    margin-bottom: 25px;
+}
+/* Removes flicking in iOS Safari*/
+.dxgvTable_DevEx1
+{
+    -webkit-tap-highlight-color: transparent;
+}
+.dxgvControl_DevEx1 td.dxgvBatchEditCell_DevEx1
+{
+    padding: 0 2px;
+}
+.dxgvControl_DevEx1 td.dxgvBatchEditModifiedCell_DevEx1
+{
+    background: #d7f9c7;
+}
+.dxgvBatchEditDeletedItem_DevEx1,
+.dxgvBatchEditNewItem_DevEx1.dxgvBatchEditDeletedItem_DevEx1
+{
+    background: #EFEFEF;
+}
+.dxgvBatchEditDeletedItem_DevEx1 > td:not(.dxgvCommandColumn_DevEx1)
+{
+    color: rgba(0,0,0,0.5);
+}
+.dxgvBatchEditDeletedItem_DevEx1 td.dxgvBatchEditModifiedCell_DevEx1
+{
+    background: #eefbe7;
+}
+.dxgvBatchEditNewItem_DevEx1
+{
+    background: #F0FAEA;
+}
+.dxgvControl_DevEx1 .dxgvErrorCell
+{
+    padding-left: 5px;
+    width: 1px;
+}
+.dxgvControl_DevEx1 .dxgvErrorCell img
+{
+    margin: -2px 0;
+}
+.dxgvStatusBar_DevEx1 .dxgvCommandColumn_DevEx1 a
+{
+    margin-right: 10px;
+}
+.dxgvControl_DevEx1 td.dxgvBatchEditCell_DevEx1 .dxichCellSys
+{
+    padding-left: 0;
+}
+.dxgvSearchPanel_DevEx1
+{
+    background: #ebecef;
+    border-bottom: 1px solid #cacbd3;
+    padding: 7px 6px;
+}
+.dxgvSearchPanel_DevEx1 > table
+{
+    width: 70%;
+    max-width: 450px;
+}
+.dxgvControl_DevEx1 .dxgvSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    margin-left: 7px;
+    margin-right: 0;
+}
+*[dir="rtl"].dxgvControl_DevEx1 .dxgvSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    margin-left: 0;
+    margin-right: 7px;
+}
+.dxgvControl_DevEx1 .dxgvHL
+{
+    background: #ffd83a;
+    color: #201f35;
+    font-weight: bold;
+    font-style: normal;
+}
+/* TODO remove (replace to command button style) */
+.dxgvControl_DevEx1 .dxgvSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    font-size: 0.9em;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+.dxgvControl_DevEx1 .dxgvSearchPanel_DevEx1 .dxbButton_DevEx1 .dxb
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dxgvEditForm_DevEx1 .dxflGroupBoxCaption_DevEx1
+{
+    background-color: #f9f9fc;
+}
+.dxgvFocusedCell_DevEx1
+{
+    box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -webkit-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -moz-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+}
+.dxgvStatusBar_DevEx1 .dxgvBEPCBC
+{
+    background-color: #d489df;
+}
+/* Customization Dialog */
+.dxgvCustDialog_DevEx1
+{
+    font-size: 15px;
+    font-weight: 400;
+    background-color: White;
+}
+.dxpcLite_DevEx1 .dxgvCustDialog_DevEx1.dxpc-mainDiv
+{
+    border: none;
+}
+.dxpcLite_DevEx1 .dxgvCustDialog_DevEx1 .dxpc-content
+{
+    padding: 0;
+}
+.dxgvCustDialogHeader_DevEx1
+{
+    padding-top: 11px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #9DA0AA;
+}
+.dxgvCustDialogHeader_DevEx1 > div
+{
+    display: table-cell;
+}
+.dxgvCustDialogHeader_DevEx1 > div:first-child,
+.dxgvCustDialogHeader_DevEx1 > div:last-child
+{
+    vertical-align: top;
+}
+.dxgvCustDialogHeader_DevEx1 > div:first-child
+{
+    padding-left: 11px;
+}
+.dxgvCustDialogHeader_DevEx1 > div:last-child
+{
+    padding-right: 11px;
+}
+.dxgvCustDialogHeader_DevEx1 a.dxbButton_DevEx1
+{
+    padding: 10px 10px 6px 10px;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TSC
+{
+    vertical-align: bottom;
+    padding: 0;
+    width: 100%;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS
+{
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    margin-bottom: -1px;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxgvCD_TSBW
+{
+    overflow: hidden;
+    padding: 0 16px;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxtcLite_DevEx1.dxtc-top > .dxtc-stripContainer .dxtc-tab,
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxtcLite_DevEx1.dxtc-top > .dxtc-stripContainer .dxtc-activeTab
+{
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxtcLite_DevEx1.dxtc-top > .dxtc-stripContainer .dxtc-last
+{
+    margin-right: 16px;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxtcLite_DevEx1.dxtc-top[dir="rtl"] > .dxtc-stripContainer .dxtc-last
+{
+    margin-left: 16px;
+    margin-right: 0;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxtcLite_DevEx1.dxtc-top > .dxtc-stripContainer .dxtc-leftIndent,
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxtcLite_DevEx1.dxtc-top > .dxtc-stripContainer .dxtc-rightIndent
+{
+    display: none;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxgvCD_TSLS,
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxgvCD_TSRS
+{
+    position: absolute;
+    top: -1px;
+    width: 16px;
+    height: 100%;
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxgvCD_TSLS
+{
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255,255,255,0));
+}
+.dxgvCustDialogHeader_DevEx1 .dxgvCD_TS .dxgvCD_TSRS
+{
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255,255,255,0));
+}
+.dxgvCustDialogDragArea_DevEx1
+{
+    padding-bottom: 16px !important;
+}
+.dxgvCustDialogDragArea_DevEx1,
+.dxgvCustDialogFilteringPage_DevEx1
+{
+    padding: 0;
+}
+.dxgvCustDialogSortingPage_DevEx1 .dxgvCustDialogDragArea_DevEx1,
+.dxgvCustDialogGroupingPage_DevEx1 .dxgvCustDialogDragArea_DevEx1
+{
+    padding: 0 0 16px 0;
+    min-height: 49px;
+}
+.dxgvCustDialogDragArea_DevEx1 .dxgvCD_DAETC
+{
+    color: #999999;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 24px;
+}
+.dxgvCustDialogListArea_DevEx1 .dxgvCD_LAC
+{
+    color: #666666;
+    font-weight: bold;
+    padding: 14px 0 8px 15px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.dxgvControl_DevEx1[dir="rtl"] .dxgvCustDialogListArea_DevEx1 .dxgvCD_LAC
+{
+    padding-left: 0;
+    padding-right: 15px;
+}
+.dxgvCustDialogListArea_DevEx1 .dxgvCD_LAIW
+{
+    padding-left: 4px;
+}
+.dxgvCustDialogColumnItem_DevEx1
+{
+    background-color: #FFFFFF;
+    color: rgba(0,0,0,0.64);
+    min-height: 48px;
+    transition: all 0.2s;
+}
+.dxgvCustDialogColumnItem_DevEx1 > div
+{
+    display: table-cell;
+    padding: 10px;
+    vertical-align: middle;
+}
+.dxgvCustDialogColumnItem_DevEx1 > div:first-child
+{
+    padding-left: 18px;
+}
+.dxgvCustDialogColumnItem_DevEx1 > div:last-child
+{
+    padding-right: 21px;
+}
+.dxgvCustDialogListArea_DevEx1 .dxgvCustDialogColumnItem_DevEx1 > div:first-child
+{
+    padding-left: 10px;
+}
+.dxgvCustDialogColumnItem_DevEx1 div img
+{
+    vertical-align: middle;
+}
+.dxgvCustDialogDragArea_DevEx1 .dxgvCustDialogColumnItem_DevEx1
+{
+    border-bottom: 1px solid #DCDCDC;
+}
+.dxgvCustDialogDragArea_DevEx1 .dxgvCustDialogColumnItem_DevEx1 > div:first-child
+{
+    height: 48px;
+    padding: 0;
+    padding-left: 8px;
+    text-align: center;
+    min-width: 28px;
+}
+.dxgvCustDialogDragArea_DevEx1 .dxgvCustDialogColumnItem_DevEx1 div:last-child,
+.dxgvCustDialogListArea_DevEx1 .dxgvCustDialogColumnItem_DevEx1 div:last-child
+{
+    height: 48px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dxgvCustDialogDragArea_DevEx1 .dxgvCustDialogColumnItem_DevEx1.DXCDDraggingItem
+{
+    transition: none;
+    position: relative;
+    box-shadow: 0 10px 0.25rem rgba(0,0,0,0.12), 0 0.25rem 0.5rem rgba(0,0,0,0.24);
+    z-index: 1;
+}
+.dxgvCustDialogSortingPage_DevEx1 .dxgvCD_DAW,
+.dxgvCustDialogGroupingPage_DevEx1 .dxgvCD_DAW
+{
+    position: relative;
+}
+.dxgvCustDialogSortingPage_DevEx1 .dxgvCD_DAEB,
+.dxgvCustDialogGroupingPage_DevEx1 .dxgvCD_DAEB
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    background: #EFEFEF;
+    box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.11);
+    cursor: pointer;
+    text-align: center;
+}
+.dxgvCustDialogSortingPage_DevEx1 .dxgvCD_DAEB img,
+.dxgvCustDialogGroupingPage_DevEx1 .dxgvCD_DAEB img
+{
+    margin-top: 14px;
+}
+.dxgvCustDialogFilteringPage_DevEx1
+{
+    background: #EFEFEF;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogColumnItem_DevEx1,
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1
+{
+    transition: none;
+    border-bottom: 1px solid #DCDCDC;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogColumnItem_DevEx1.dxgvCD_EFCI,
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogColumnItem_DevEx1.dxgvCD_EFCI + .dxgvCustDialogFilterItem_DevEx1 + .dxgvCustDialogColumnItem_DevEx1
+{
+    border-top: 1px solid #DCDCDC;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogColumnItem_DevEx1:first-child
+{
+    border-top: none;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogColumnItem_DevEx1 > div
+{
+    height: 28px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogColumnItem_DevEx1 > div:first-child
+{
+    padding-left: 10px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 a
+{
+    cursor: pointer;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 a,
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxgvCD_FR > span.dxeBase_DevEx1
+{
+    font-size: medium;
+    line-height: 50px;
+}
+.dxgvCustDialogFilterItem_DevEx1
+{
+    margin-bottom: 17px;
+    background: white;
+}
+.dxgvCustDialogFilterItem_DevEx1 + .dxgvCustDialogColumnItem_DevEx1.dxgvCD_EFCI
+{
+    margin-top: 17px;
+}
+.dxgvCustDialogColumnItem_DevEx1 + .dxgvCustDialogFilterItem_DevEx1
+{
+    display: none;
+}
+.dxgvCustDialogColumnItem_DevEx1.dxgvCD_EFCI + .dxgvCustDialogFilterItem_DevEx1
+{
+    display: block;
+}
+.dxgvCustDialogFilterItem_DevEx1 .dxgvCD_FR
+{
+    padding: 0 10px 18px 10px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCD_UF
+{
+    text-align: center;
+    vertical-align: middle;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCD_UF a
+{
+    text-transform: uppercase;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCD_FR + .dxgvCD_UF
+{
+    border-top: 1px solid #DCDCDC;
+}
+.dxgvCustDialogFilterItem_DevEx1 .dxgvCD_UF.dxgvCD_UFLBV
+{
+    border-bottom: 1px solid #DCDCDC;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCD_UF.dxgvCD_UFLBV a,
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCD_UFSC
+{
+    display: none;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCD_UF.dxgvCD_UFLBV .dxgvCD_UFSC
+{
+    display: block;
+}
+.dxgvCustDialogFilterItem_DevEx1 .dxgvCD_UF.dxgvCD_UFLBV
+{
+    margin-bottom: 19px;
+}
+.dxgvCustDialogFilterItem_DevEx1 .dxgvCD_UFSC
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 200px;
+}
+/* CustDialog filter editors */
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxeEditAreaSys
+{
+    font-size: 15px !important;
+    font-weight: 400;
+    margin-top: 2px !important;
+    margin-bottom: 1px !important;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 td.dxic
+{
+    padding: 4px 2px 4px 7px !important;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxeButtonEditButton_DevEx1
+{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxeSpinIncButton_DevEx1,
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxeSpinDecButton_DevEx1
+{
+    padding: 4px 8px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxichTextCellSys,
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxeListBoxItem_DevEx1
+{
+    font-size: 14px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxichTextCellSys
+{
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxeListBoxItem_DevEx1
+{
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 td.dxeC
+{
+    padding-right: 6px !important;
+}
+.dxgvCustDialogFilteringPage_DevEx1 .dxgvCustDialogFilterItem_DevEx1 .dxichCellSys
+{
+    padding-right: 7px;
+}
+/* CustDialog popup menu */
+.dxgvControl_DevEx1 .dxmLite_DevEx1 .dxgvCD_FRM
+{
+    font-size: 14px;
+}
+.dxgvControl_DevEx1 .dxmLite_DevEx1 .dxgvCD_FRM .dxm-popup .dxm-content
+{
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}

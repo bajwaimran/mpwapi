@@ -1,0 +1,72 @@
+﻿
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewBestellKunden";
+        settings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellKunden" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellKundenAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellKundenUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellKundenDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellKunden";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "BestellKunden";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Kunde.Suchname";
+
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "KDNr";
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Bestellung.Oid";
+        });
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "BestellKunden_BestellArtikel_XPColl";
+        //});
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

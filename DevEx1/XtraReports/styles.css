@@ -1,0 +1,13 @@
+.dxsplControl_DevEx1 .dxmLiteReportToolbarPane
+{
+    border: 1px solid #9da0aa;
+    background: #f1f2f6 url('../Web/mItemBack.png') repeat-x left top;
+    padding: 0;
+}
+table.dxXtraReports_PageTable .dxXtraReports_PageBorder_blc_DevEx1:before,
+table.dxXtraReports_PageTable .dxXtraReports_PageBorder_brc_DevEx1:before,
+table.dxXtraReports_PageTable .dxXtraReports_PageBorder_tlc_DevEx1:before,
+table.dxXtraReports_PageTable .dxXtraReports_PageBorder_trc_DevEx1:before
+{
+    content: none;
+}

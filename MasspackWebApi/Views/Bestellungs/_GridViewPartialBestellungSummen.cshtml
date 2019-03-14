@@ -1,0 +1,77 @@
+﻿
+
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewPartialBestellungSummen";
+        settings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellungSummen" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellungSummenAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellungSummenUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialBestellungSummenDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellungSummen";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "BestellungSummen";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Artikel";
+           
+
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "StueckSumme";
+        });
+
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Lieferbar";
+        });
+        
+
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+
+

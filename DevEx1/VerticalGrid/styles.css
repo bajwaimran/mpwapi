@@ -1,0 +1,503 @@
+.dxvgControl_DevEx1,
+.dxvgDisabled_DevEx1
+{
+    border: 1px solid #9da0aa;
+    font: 11px Verdana, Geneva, sans-serif;
+    background-color: #f1f2f6;
+    color: #201f35;
+    cursor: default;
+}
+.dxvgDisabled_DevEx1
+{
+    color: #b1b1b8;
+}
+.dxvgControl_DevEx1 a.dxeHyperlink:not([href]):not([onclick]):not(.dxbButtonSys)
+{
+    color: #201f35;
+    text-decoration: none;
+}
+.dxvgControl_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxvgControl_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxvgControl_DevEx1 a:hover.dxbDisabled_DevEx1
+{
+    color: #babac1;
+    text-decoration: none;
+}
+.dxvgDisabled_DevEx1 a
+{
+    color: #b1b1b8;
+}
+.dxvgTable_DevEx1
+{
+    background-color: White;
+    border-width: 0;
+    border-collapse: separate !important;
+    overflow: hidden;
+    table-layout: fixed;
+}
+.dxvgTable_DevEx1 .dxvgHEC
+{
+    background-color: White;
+    border-width: 0;
+    overflow: hidden;
+}
+.dxvgHeader_DevEx1
+{
+    cursor: pointer;
+    color: #201f35;
+    font-weight: normal;
+    text-align: left;
+    background-color: #f2f3f4;
+    padding: 5px 6px;
+    border: 1px Solid #cacbd3;
+    border-width: 0 1px 1px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dxvgCategory_DevEx1
+{
+    font-weight: bold;
+    background-color: #f9f9fc;
+    padding: 9px 6px;
+    border-bottom: 1px solid #cacbd3;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dxvgCSD .dxvgCategory_DevEx1:not(.dxvg__I)
+{
+    border-right: 1px solid #cacbd3;
+}
+.dxvgCategoryRow_DevEx1.dxvgER .dxvgCategory_DevEx1,
+.dxvgCategoryRow_DevEx1.dxvgCR .dxvgCategory_DevEx1
+{
+    cursor: pointer;
+}
+.dxvgCategoryRow_DevEx1.dxvgER .dxvgCategory_DevEx1.dxvg__I,
+.dxvgCategoryRow_DevEx1.dxvgCR .dxvgCategory_DevEx1.dxvg__I
+{
+    cursor: default;
+}
+.dxvgRecord_DevEx1
+{
+    padding: 4px 6px;
+    border: 1px Solid #d9dae0;
+    border-width: 0 1px 1px 0;
+    background: White;
+    overflow: hidden;
+}
+.dxvgRecord_DevEx1:last-child
+{
+    border-right-width: 0;
+}
+.dxvgRPFC .dxvgRecord_DevEx1
+{
+    border-bottom: 1px Solid #cacbd3;
+}
+.dxvgRPFC.dxvgER .dxvgRecord_DevEx1
+{
+    border-bottom-color: #d9dae0;
+}
+.dxvgGLNV .dxvgRecord_DevEx1
+{
+    border-right-width: 0;
+}
+.dxvgGLNH .dxvgRecord_DevEx1
+{
+    border-bottom-width: 0;
+}
+.dxvgGLNH .dxvgRPFC .dxvgRecord_DevEx1
+{
+    border-bottom-width: 1px;
+}
+.dxvgGLNH .dxvgRPFC.dxvgER .dxvgRecord_DevEx1
+{
+    border-bottom-width: 0;
+}
+.dxvgFC .dxvgGLNH tr:last-child .dxvgRecord_DevEx1
+{
+    border-bottom-width: 1px;
+}
+.dxvgControl_DevEx1 .dxvgFCSD
+{
+    border-top: 1px solid #cacbd3;
+}
+.dxvgRecordAlt_DevEx1
+{
+    background-color: #f7f4fd;
+}
+/* Select, Hover */
+.dxvgSelectedRecord_DevEx1
+{
+    background-color: #eff0f2;
+    color: #201f35;
+}
+.dxvgSelectedRecord_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: none;
+}
+.dxvgSelectedRecord_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxvgDataRowHover_DevEx1 .dxvgRecord_DevEx1
+{
+    background: #e2eafd none;
+    color: #201f35;
+}
+/* Command Items */
+.dxvgCommandCell_DevEx1 a,
+.dxvgHeader_DevEx1 a.dxvgCommandItem_DevEx1
+{
+    margin: 0 3px 0 0;
+}
+.dxvgHeader_DevEx1 a,
+.dxvgCommandCell_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: underline;
+}
+.dxvgHeader_DevEx1 a.dxvgCommandItem_DevEx1:hover,
+.dxvgCommandCell_DevEx1 a:hover
+{
+    text-decoration: underline;
+}
+.dxbButton_DevEx1[class~="dxvgCommandItem_DevEx1"],
+.dxbButton_DevEx1[class~="dxvgCommandItem_DevEx1"] .dxb
+{
+    margin: -2px 2px;
+}
+/* Indents */
+.dxvgControl_DevEx1 .dxvg__I
+{
+    border-style: solid;
+    border-color: #cacbd3;
+    border-width: 0 1px 0 0;
+    cursor: default;
+}
+.dxvgControl_DevEx1 .dxvg__I.dxvg__BB
+{
+    border-bottom-width: 1px;
+}
+.dxvgControl_DevEx1 .dxvgER .dxvg__I.dxvg__BB
+{
+    border-bottom-width: 0;
+}
+.dxvgControl_DevEx1 .dxvgMHI .dxvg__I
+{
+    border-right-width: 0;
+}
+.dxvgControl_DevEx1 .dxvgMHI .dxvgER .dxvg__I.dxvg__BB
+{
+    border-bottom-width: 1px;
+}
+/* Title Panel, Status bar, Summary Panel */
+.dxvgTitlePanel_DevEx1,
+.dxvgTable_DevEx1 caption
+{
+    font-weight: normal;
+    padding: 3px 3px 5px;
+    text-align: center;
+    background: #f2f3f4 url('../GridView/gvTitleBack.png') repeat-x left top;
+    color: #201f35;
+    border-bottom: 1px solid #9da0aa;
+}
+.dxvgLoadingDiv_DevEx1
+{
+    background-color: Gray;
+    opacity: 0.01;
+    filter: alpha(opacity=1);
+}
+.dxvgStatusBar_DevEx1
+{
+    background: #f9f9fc none;
+    border-top: 1px solid #cacbd3;
+}
+.dxvgStatusBar_DevEx1 tr.dxvg
+{
+    height: 20px;
+}
+.dxvgStatusBar_DevEx1 tr.dxvg > td
+{
+    padding: 4px;
+}
+.dxvgStatusBar_DevEx1 tr.dxvg span .dxbButtonSys:first-child
+{
+    margin-left: 2px;
+}
+.dxvgSummaryPanel_DevEx1
+{
+    background: #f9f9fc;
+    border-top: 1px solid #cacbd3;
+    padding: 8px 21px;
+}
+.dxvgSummaryItem_DevEx1
+{
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+}
+/* Pager */
+.dxvgPagerTopPanel_DevEx1,
+.dxvgPagerBottomPanel_DevEx1
+{
+    background: #f1f2f6 url('../GridView/gvPagerPanelBack.png') repeat-x left top;
+}
+.dxvgPagerTopPanel_DevEx1
+{
+    border-bottom: 1px solid #cacbd3;
+}
+.dxvgPagerBottomPanel_DevEx1
+{
+    border-top: 1px solid #cacbd3;
+}
+.dxvgControl_DevEx1 .dxpLite_DevEx1,
+.dxvgDisabled_DevEx1 .dxpLite_DevEx1
+{
+    padding-top: 4px;
+}
+/* Toolbar */
+.dxvgControl_DevEx1 .dxctToolbar_DevEx1.dxm-main.dxvgCTTop
+{
+    border-bottom: 1px solid #cacbd3;
+}
+.dxvgControl_DevEx1 .dxctToolbar_DevEx1.dxm-main.dxvgCTBottom
+{
+    border-top: 1px solid #cacbd3;
+}
+/* Filter Builder, Filter Bar */
+.dxvgFilterBar_DevEx1
+{
+    border-top: 1px solid #cacbd3;
+    background: #f9f9fc none;
+}
+.dxvgFilterBar_DevEx1 a
+{
+    color: #1b3f91;
+    text-decoration: underline;
+}
+.dxvgFilterBarCheckBoxCell_DevEx1
+{
+    padding: 0 7px 0 3px;
+}
+.dxvgFilterBarImageCell_DevEx1
+{
+    padding: 0 1px 0 3px;
+    cursor: pointer;
+}
+.dxvgFilterBarExpressionCell_DevEx1
+{
+    padding: 5px 5px 8px 0;
+    white-space: nowrap;
+}
+.dxvgFilterBarClearButtonCell_DevEx1
+{
+    padding: 5px 6px 8px;
+}
+.dxvgFilterBuilderMainArea_DevEx1
+{
+    background: white none;
+    padding: 6px 2px;
+}
+.dxvgFilterBuilderButtonArea_DevEx1
+{
+    background: #ebecef none;
+    border-top: 1px solid #abacb9;
+    padding: 6px;
+    white-space: nowrap;
+}
+/* Header Filter */
+.dxvgControl_DevEx1 .dxvgHFC
+{
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+.dxvgControl_DevEx1 .dxvgHFC .dxeCalendar_DevEx1
+{
+    margin-left: 23px;
+}
+.dxvgControl_DevEx1 div[id$='DXEPLPC']
+{
+    height: 47px;
+}
+.dxvgControl_DevEx1 .dxvgHFSD
+{
+    height: 1px;
+    margin: 2px 0;
+}
+.dxvgControl_DevEx1 .dxvgHFDRC
+{
+    margin: 15px 15px 25px;
+}
+.dxvgControl_DevEx1 .dxvgHFDRP
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 9px 0 6px;
+}
+.dxvgControl_DevEx1 .dxvgHFDRP[id*="HFFDE"]
+{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.dxvgControl_DevEx1 .dxvgHFDRP[id*="HFTDE"]
+{
+    margin-bottom: 25px;
+}
+/* Batch Edit */
+.dxvgControl_DevEx1 td.dxvgBatchEditCell_DevEx1
+{
+    padding: 0 2px;
+}
+.dxvgControl_DevEx1 td.dxvgBatchEditModifiedCell_DevEx1
+{
+    background: #d7f9c7;
+}
+.dxvgBatchEditDeletedItem_DevEx1,
+.dxvgBatchEditNewItem_DevEx1.dxvgBatchEditDeletedItem_DevEx1
+{
+    background: #EFEFEF;
+}
+td.dxvgBatchEditDeletedItem_DevEx1:not(.dxvgCommandColumn_DevEx1)
+{
+    color: rgba(0,0,0,0.5);
+}
+.dxvgBatchEditDeletedItem_DevEx1.dxvgBatchEditModifiedCell_DevEx1
+{
+    background: #eefbe7 !important;
+}
+.dxvgBatchEditNewItem_DevEx1
+{
+    background: #F0FAEA;
+}
+.dxvgControl_DevEx1 .dxvgErrorCell
+{
+    padding-left: 5px;
+    width: 1px;
+}
+.dxvgControl_DevEx1 .dxvgErrorCell img
+{
+    margin: -2px 0;
+}
+.dxvgStatusBar_DevEx1 .dxbButton_DevEx1
+{
+    margin-right: 10px;
+}
+.dxvgControl_DevEx1 td.dxvgBatchEditCell_DevEx1 .dxichCellSys
+{
+    padding-left: 0;
+}
+.dxvgRecordError_DevEx1
+{
+    background-color: #ebecef;
+    color: #ba1717;
+    padding: 6px 10px;
+    height: 100%;
+}
+.dxvgERV .dxvgRecord_DevEx1
+{
+    display: none;
+}
+.dxvgEmptyRecord_DevEx1
+{
+    display: none;
+    text-align: center;
+}
+.dxvgERV .dxvgEmptyRecord_DevEx1
+{
+    display: table-cell;
+}
+/* LoadingPanel */
+.dxvgLoadingPanel_DevEx1
+{
+    font: 11px Verdana, Geneva, sans-serif;
+    color: #201f35;
+    background-color: White;
+    border: 1px solid #9da0aa;
+}
+.dxvgLoadingPanel_DevEx1 td.dx
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 7px 10px;
+}
+.dxvgLoadingPanel_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('../Web/Loading.gif');
+    height: 32px;
+    width: 32px;
+}
+.dxvgLoadingPanelStatusBar_DevEx1 .dxlp-loadingImage
+{
+    background-image: url('../GridView/StatusBarLoading.gif');
+    height: 15px;
+    width: 15px;
+}
+.dxvgLoadingPanelStatusBar_DevEx1
+{
+    background-color: Transparent;
+}
+.dxvgLoadingPanelStatusBar_DevEx1 td
+{
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 2px;
+}
+/* Search Panel */
+.dxvgSearchPanel_DevEx1
+{
+    background: #ebecef;
+    border-bottom: 1px solid #cacbd3;
+    padding: 7px 6px;
+}
+.dxvgSearchPanel_DevEx1 > table
+{
+    width: 70%;
+    max-width: 450px;
+}
+.dxvgControl_DevEx1 .dxvgSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    margin-left: 7px;
+    margin-right: 0;
+}
+*[dir="rtl"].dxvgControl_DevEx1 .dxvgSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    margin-left: 0;
+    margin-right: 7px;
+}
+.dxvgControl_DevEx1 .dxvgHL
+{
+    background: #ffd83a;
+    color: #201f35;
+    font-weight: bold;
+    font-style: normal;
+}
+/* TODO remove (replace to command button style) */
+.dxvgControl_DevEx1 .dxvgSearchPanel_DevEx1 .dxbButton_DevEx1
+{
+    font-size: 0.9em;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+.dxvgControl_DevEx1 .dxvgSearchPanel_DevEx1 .dxbButton_DevEx1 .dxb
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* Removes flicking in iOS Safari*/
+.dxvgTable_DevEx1
+{
+    -webkit-tap-highlight-color: transparent;
+}
+.dxvgFocusedCell_DevEx1
+{
+    box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -webkit-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+    -moz-box-shadow: inset 2px 2px 0 #2292B1, inset -2px -2px 0 #2292B1;
+}

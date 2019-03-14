@@ -1,0 +1,105 @@
+﻿
+
+@{
+    var grid = Html.DevExpress().GridView(settings =>
+    {
+        settings.Name = "GridViewPartial";
+        settings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartial" };
+
+        //settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialUpdate" };
+        //settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Bestellungs", Action = "GridViewPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellung";
+        settings.Settings.ShowTitlePanel = true;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.SetTitlePanelTemplateContent(content =>
+        {
+            Html.DevExpress().Label(label =>
+            {
+
+                label.Text = "Bestellung";
+                label.Style["font-weight"] = "bold";
+
+            }).Render();
+
+        });
+
+        settings.CommandColumn.Visible = true;
+        //settings.CommandColumn.ShowNewButton = true;
+        //settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Oid";
+           
+
+
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Datum";
+            c.ColumnType = MVCxGridViewColumnType.DateEdit;
+
+
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "AuftragsNr";
+        });
+
+
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Zusatzangabe";
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Status";
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+            c.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Fertig";
+            c.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.EditFormSettings.Visible = DefaultBoolean.False;
+            c.Visible = true;
+            c.UnboundType = DevExpress.Data.UnboundColumnType.String;
+            c.SetDataItemTemplateContent(x =>
+            {
+                ViewContext.Writer.Write(string.Format("<a target='_blanck' href='/bestellungs/view/{0}'>View</a>", x.KeyValue));
+            });
+        });
+
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
+
+

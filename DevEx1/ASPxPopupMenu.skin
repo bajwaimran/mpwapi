@@ -1,0 +1,9 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxPopupMenu runat="server" CssFilePath="{0}/styles.css" SpriteCssFilePath="{0}/sprite.css" CssPostfix="DevEx1"
+	ShowPopOutImages="True">
+	<ItemStyle PopOutImageSpacing="10" DropDownButtonSpacing="10" />
+	<ItemSubMenuOffset FirstItemX="2" LastItemX="2" X="2" />
+    <RootItemSubMenuOffset FirstItemX="2" LastItemX="2" X="2" />
+</dx:ASPxPopupMenu>

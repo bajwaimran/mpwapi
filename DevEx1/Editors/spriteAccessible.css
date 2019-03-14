@@ -1,0 +1,138 @@
+.dx-acc-r .dxdd-root.dxmodalSys .dxeButtonEditButtonHover_DevEx1 .dxEditors_edtClear_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarFNNextPeriod_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarFNPrevPeriod_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarNextMonth_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarNextYear_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarPrevMonth_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarPrevYear_DevEx1:before, .dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtClear_DevEx1:before, .dx-acc-r .dxEditors_ddapply_DevEx1:before, .dx-acc-r .dxEditors_ddclose_DevEx1:before { content: url('sprite.svg'); }
+.dx-acc-r .dxdd-root.dxmodalSys .dxeButtonEditButtonHover_DevEx1 .dxEditors_edtClear_DevEx1:before { left: -48px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarFNNextPeriod_DevEx1:before { left: -92px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarFNPrevPeriod_DevEx1:before { left: -106px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarNextMonth_DevEx1:before { left: -120px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarNextYear_DevEx1:before { left: -134px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarPrevMonth_DevEx1:before { left: -148px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtCalendarPrevYear_DevEx1:before { left: -162px; top: 0px; }
+.dx-acc-r .dxdd-root.dxmodalSys .dxEditors_edtClear_DevEx1:before { left: -70px; top: 0px; }
+.dx-acc-r .dxEditors_ddapply_DevEx1:before { left: 0px; top: 0px; }
+.dx-acc-r .dxEditors_ddclose_DevEx1:before { left: -24px; top: 0px; }
+.dx-acc-r .dxeButtonEditButtonHover_DevEx1 .dxEditors_edtClear_DevEx1:before, .dx-acc-r .dxEditors_caRefresh_DevEx1:before, .dx-acc-r .dxEditors_edtBinaryImageDelete_DevEx1:before, .dx-acc-r .dxEditors_edtBinaryImageOpenDialog_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarFastNavBackToPrevMode_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarFastNavBackToPrevModeRtl_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarFNNextPeriod_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarFNNextYear_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarFNPrevPeriod_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarFNPrevYear_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarNextMonth_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarNextMonthDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarNextYear_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarNextYearDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarPrevMonth_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarPrevMonthDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarPrevYear_DevEx1:before, .dx-acc-r .dxEditors_edtCalendarPrevYearDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtClear_DevEx1:before, .dx-acc-r .dxEditors_edtDETSClockFace_DevEx1:before, .dx-acc-r .dxEditors_edtDETSHourHand_DevEx1:before, .dx-acc-r .dxEditors_edtDETSMinuteHand_DevEx1:before, .dx-acc-r .dxEditors_edtDETSSecondHand_DevEx1:before, .dx-acc-r .dxEditors_edtDropDown_DevEx1:before, .dx-acc-r .dxEditors_edtDropDownDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtEllipsis_DevEx1:before, .dx-acc-r .dxEditors_edtEllipsisDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtError_DevEx1:before, .dx-acc-r .dxEditors_edtListBoxFilterBtn_DevEx1:before, .dx-acc-r .dxEditors_edtListBoxFilterBtnDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtListBoxHideFilterBtn_DevEx1:before, .dx-acc-r .dxEditors_edtListBoxHideFilterBtnDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtListBoxHideFilterBtnRtl_DevEx1:before, .dx-acc-r .dxEditors_edtListBoxHideFilterBtnRtlDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtRadioButtonChecked_DevEx1:before, .dx-acc-r .dxEditors_edtRadioButtonCheckedDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtRadioButtonUnchecked_DevEx1:before, .dx-acc-r .dxEditors_edtRadioButtonUncheckedDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditDecrementImage_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditDecrementImageDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditIncrementImage_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditIncrementImageDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditLargeDecImage_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditLargeDecImageDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditLargeIncImage_DevEx1:before, .dx-acc-r .dxEditors_edtSpinEditLargeIncImageDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtTBDecBtn_DevEx1:before, .dx-acc-r .dxEditors_edtTBDecBtnDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtTBDecBtnHover_DevEx1:before, .dx-acc-r .dxEditors_edtTBDecBtnPressed_DevEx1:before, .dx-acc-r .dxEditors_edtTBIncBtn_DevEx1:before, .dx-acc-r .dxEditors_edtTBIncBtnDisabled_DevEx1:before, .dx-acc-r .dxEditors_edtTBIncBtnHover_DevEx1:before, .dx-acc-r .dxEditors_edtTBIncBtnPressed_DevEx1:before, .dx-acc-r .dxEditors_edtTokenBoxTokenRemoveButton_DevEx1:before, .dx-acc-r .dxEditors_edtTokenBoxTokenRemoveButtonDisabled_DevEx1:before, .dx-acc-r .dxEditors_fcadd_DevEx1:before, .dx-acc-r .dxEditors_fcaddhot_DevEx1:before, .dx-acc-r .dxEditors_fcgroupaddcondition_DevEx1:before, .dx-acc-r .dxEditors_fcgroupaddgroup_DevEx1:before, .dx-acc-r .dxEditors_fcgroupand_DevEx1:before, .dx-acc-r .dxEditors_fcgroupnotand_DevEx1:before, .dx-acc-r .dxEditors_fcgroupnotor_DevEx1:before, .dx-acc-r .dxEditors_fcgroupor_DevEx1:before, .dx-acc-r .dxEditors_fcgroupremove_DevEx1:before, .dx-acc-r .dxEditors_fcopany_DevEx1:before, .dx-acc-r .dxEditors_fcopavg_DevEx1:before, .dx-acc-r .dxEditors_fcopbegin_DevEx1:before, .dx-acc-r .dxEditors_fcopbetween_DevEx1:before, .dx-acc-r .dxEditors_fcopblank_DevEx1:before, .dx-acc-r .dxEditors_fcopcontain_DevEx1:before, .dx-acc-r .dxEditors_fcopcount_DevEx1:before, .dx-acc-r .dxEditors_fcopend_DevEx1:before, .dx-acc-r .dxEditors_fcopequal_DevEx1:before, .dx-acc-r .dxEditors_fcopexists_DevEx1:before, .dx-acc-r .dxEditors_fcopgreater_DevEx1:before, .dx-acc-r .dxEditors_fcopgreaterorequal_DevEx1:before, .dx-acc-r .dxEditors_fcopless_DevEx1:before, .dx-acc-r .dxEditors_fcoplessorequal_DevEx1:before, .dx-acc-r .dxEditors_fcoplike_DevEx1:before, .dx-acc-r .dxEditors_fcopmax_DevEx1:before, .dx-acc-r .dxEditors_fcopmin_DevEx1:before, .dx-acc-r .dxEditors_fcopnotany_DevEx1:before, .dx-acc-r .dxEditors_fcopnotbetween_DevEx1:before, .dx-acc-r .dxEditors_fcopnotblank_DevEx1:before, .dx-acc-r .dxEditors_fcopnotcontain_DevEx1:before, .dx-acc-r .dxEditors_fcopnotequal_DevEx1:before, .dx-acc-r .dxEditors_fcopnotlike_DevEx1:before, .dx-acc-r .dxEditors_fcopsingle_DevEx1:before, .dx-acc-r .dxEditors_fcopsum_DevEx1:before, .dx-acc-r .dxEditors_fcoptypefield_DevEx1:before, .dx-acc-r .dxEditors_fcoptypefieldhot_DevEx1:before, .dx-acc-r .dxEditors_fcoptypevalue_DevEx1:before, .dx-acc-r .dxEditors_fcoptypevaluehot_DevEx1:before, .dx-acc-r .dxEditors_fcremove_DevEx1:before, .dx-acc-r .dxEditors_fcremovehot_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before, .dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDH_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDHDisabled_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDHHover_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDHPressed_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDH_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDHDisabled_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before, .dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDH_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDHDisabled_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDHHover_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDHPressed_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDH_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDHDisabled_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before, .dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before { content: url('spriteAccessible.png'); }
+.dx-acc-r .dxeButtonEditButtonHover_DevEx1 .dxEditors_edtClear_DevEx1:before { left: -93px; top: -121px; }
+.dx-acc-r .dxEditors_caRefresh_DevEx1:before { left: -225px; top: 0px; }
+.dx-acc-r .dxEditors_edtBinaryImageDelete_DevEx1:before { left: -191px; top: 0px; }
+.dx-acc-r .dxEditors_edtBinaryImageOpenDialog_DevEx1:before { left: -157px; top: 0px; }
+.dx-acc-r .dxEditors_edtCalendarFastNavBackToPrevMode_DevEx1:before { left: -498px; top: -121px; }
+.dx-acc-r .dxEditors_edtCalendarFastNavBackToPrevModeRtl_DevEx1:before { left: -15px; top: -138px; }
+.dx-acc-r .dxEditors_edtCalendarFNNextPeriod_DevEx1:before { left: -483px; top: 0px; }
+.dx-acc-r .dxEditors_edtCalendarFNNextYear_DevEx1:before { left: -504px; top: 0px; }
+.dx-acc-r .dxEditors_edtCalendarFNPrevPeriod_DevEx1:before { left: -517px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarFNPrevYear_DevEx1:before { left: -475px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarNextMonth_DevEx1:before { left: -349px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarNextMonthDisabled_DevEx1:before { left: -496px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarNextYear_DevEx1:before { left: -433px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarNextYearDisabled_DevEx1:before { left: -454px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarPrevMonth_DevEx1:before { left: -391px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarPrevMonthDisabled_DevEx1:before { left: -412px; top: -101px; }
+.dx-acc-r .dxEditors_edtCalendarPrevYear_DevEx1:before { left: -462px; top: 0px; }
+.dx-acc-r .dxEditors_edtCalendarPrevYearDisabled_DevEx1:before { left: -370px; top: -101px; }
+.dx-acc-r .dxEditors_edtClear_DevEx1:before { left: -45px; top: -138px; }
+.dx-acc-r .dxEditors_edtDETSClockFace_DevEx1:before { left: 0px; top: 0px; }
+.dx-acc-r .dxEditors_edtDETSHourHand_DevEx1:before { left: -148px; top: 0px; }
+.dx-acc-r .dxEditors_edtDETSMinuteHand_DevEx1:before { left: -139px; top: 0px; }
+.dx-acc-r .dxEditors_edtDETSSecondHand_DevEx1:before { left: -130px; top: 0px; }
+.dx-acc-r .dxEditors_edtDETSSecondHand_DevEx1:before { left: -121px; top: 0px; }
+.dx-acc-r .dxEditors_edtDropDown_DevEx1:before { left: -525px; top: -71px; }
+.dx-acc-r .dxEditors_edtDropDownDisabled_DevEx1:before { left: -525px; top: -86px; }
+.dx-acc-r .dxEditors_edtEllipsis_DevEx1:before { left: -525px; top: 0px; }
+.dx-acc-r .dxEditors_edtEllipsisDisabled_DevEx1:before { left: -122px; top: -106px; }
+.dx-acc-r .dxEditors_edtError_DevEx1:before { left: -17px; top: -121px; }
+.dx-acc-r .dxEditors_edtListBoxFilterBtn_DevEx1:before { left: -75px; top: -138px; }
+.dx-acc-r .dxEditors_edtListBoxFilterBtnDisabled_DevEx1:before { left: -60px; top: -138px; }
+.dx-acc-r .dxEditors_edtListBoxHideFilterBtn_DevEx1:before { left: -303px; top: -121px; }
+.dx-acc-r .dxEditors_edtListBoxHideFilterBtnDisabled_DevEx1:before { left: -90px; top: -138px; }
+.dx-acc-r .dxEditors_edtListBoxHideFilterBtnRtl_DevEx1:before { left: -423px; top: -121px; }
+.dx-acc-r .dxEditors_edtListBoxHideFilterBtnRtlDisabled_DevEx1:before { left: -333px; top: -121px; }
+.dx-acc-r .dxEditors_edtRadioButtonChecked_DevEx1:before { left: -462px; top: -22px; }
+.dx-acc-r .dxEditors_edtRadioButtonCheckedDisabled_DevEx1:before { left: -157px; top: -48px; }
+.dx-acc-r .dxEditors_edtRadioButtonUnchecked_DevEx1:before { left: -139px; top: -84px; }
+.dx-acc-r .dxEditors_edtRadioButtonUncheckedDisabled_DevEx1:before { left: 0px; top: -121px; }
+.dx-acc-r .dxEditors_edtSpinEditDecrementImage_DevEx1:before { left: -139px; top: -77px; }
+.dx-acc-r .dxEditors_edtSpinEditDecrementImageDisabled_DevEx1:before { left: -175px; top: -73px; }
+.dx-acc-r .dxEditors_edtSpinEditIncrementImage_DevEx1:before { left: -148px; top: -73px; }
+.dx-acc-r .dxEditors_edtSpinEditIncrementImageDisabled_DevEx1:before { left: -225px; top: -31px; }
+.dx-acc-r .dxEditors_edtSpinEditLargeDecImage_DevEx1:before { left: -216px; top: -48px; }
+.dx-acc-r .dxEditors_edtSpinEditLargeDecImageDisabled_DevEx1:before { left: -217px; top: -63px; }
+.dx-acc-r .dxEditors_edtSpinEditLargeIncImage_DevEx1:before { left: -157px; top: -39px; }
+.dx-acc-r .dxEditors_edtSpinEditLargeIncImageDisabled_DevEx1:before { left: -164px; top: -39px; }
+.dx-acc-r .dxEditors_edtTBDecBtn_DevEx1:before { left: -289px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBDecBtnDisabled_DevEx1:before { left: -229px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBDecBtnHover_DevEx1:before { left: -329px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBDecBtnPressed_DevEx1:before { left: -309px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBIncBtn_DevEx1:before { left: -209px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBIncBtnDisabled_DevEx1:before { left: -269px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBIncBtnHover_DevEx1:before { left: -189px; top: -101px; }
+.dx-acc-r .dxEditors_edtTBIncBtnPressed_DevEx1:before { left: -249px; top: -101px; }
+.dx-acc-r .dxEditors_edtTokenBoxTokenRemoveButton_DevEx1:before { left: -462px; top: -39px; }
+.dx-acc-r .dxEditors_edtTokenBoxTokenRemoveButtonDisabled_DevEx1:before { left: -121px; top: -84px; }
+.dx-acc-r .dxEditors_fcadd_DevEx1:before { left: -48px; top: -121px; }
+.dx-acc-r .dxEditors_fcaddhot_DevEx1:before { left: -33px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupaddcondition_DevEx1:before { left: -63px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupaddgroup_DevEx1:before { left: -78px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupand_DevEx1:before { left: -213px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupnotand_DevEx1:before { left: -513px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupnotor_DevEx1:before { left: -183px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupor_DevEx1:before { left: -273px; top: -121px; }
+.dx-acc-r .dxEditors_fcgroupremove_DevEx1:before { left: -258px; top: -121px; }
+.dx-acc-r .dxEditors_fcopany_DevEx1:before { left: -243px; top: -121px; }
+.dx-acc-r .dxEditors_fcopavg_DevEx1:before { left: -157px; top: -83px; }
+.dx-acc-r .dxEditors_fcopbegin_DevEx1:before { left: -318px; top: -121px; }
+.dx-acc-r .dxEditors_fcopbetween_DevEx1:before { left: -228px; top: -121px; }
+.dx-acc-r .dxEditors_fcopblank_DevEx1:before { left: -198px; top: -121px; }
+.dx-acc-r .dxEditors_fcopcontain_DevEx1:before { left: -168px; top: -121px; }
+.dx-acc-r .dxEditors_fcopcount_DevEx1:before { left: -252px; top: -83px; }
+.dx-acc-r .dxEditors_fcopend_DevEx1:before { left: -135px; top: -138px; }
+.dx-acc-r .dxEditors_fcopequal_DevEx1:before { left: -120px; top: -138px; }
+.dx-acc-r .dxEditors_fcopexists_DevEx1:before { left: -135px; top: -103px; }
+.dx-acc-r .dxEditors_fcopgreater_DevEx1:before { left: -138px; top: -121px; }
+.dx-acc-r .dxEditors_fcopgreaterorequal_DevEx1:before { left: -153px; top: -121px; }
+.dx-acc-r .dxEditors_fcopless_DevEx1:before { left: 0px; top: -138px; }
+.dx-acc-r .dxEditors_fcoplessorequal_DevEx1:before { left: -123px; top: -121px; }
+.dx-acc-r .dxEditors_fcoplike_DevEx1:before { left: -288px; top: -121px; }
+.dx-acc-r .dxEditors_fcopmax_DevEx1:before { left: -153px; top: -103px; }
+.dx-acc-r .dxEditors_fcopmin_DevEx1:before { left: -171px; top: -103px; }
+.dx-acc-r .dxEditors_fcopnotany_DevEx1:before { left: -378px; top: -121px; }
+.dx-acc-r .dxEditors_fcopnotbetween_DevEx1:before { left: -468px; top: -121px; }
+.dx-acc-r .dxEditors_fcopnotblank_DevEx1:before { left: -453px; top: -121px; }
+.dx-acc-r .dxEditors_fcopnotcontain_DevEx1:before { left: -438px; top: -121px; }
+.dx-acc-r .dxEditors_fcopnotequal_DevEx1:before { left: -483px; top: -121px; }
+.dx-acc-r .dxEditors_fcopnotlike_DevEx1:before { left: -108px; top: -121px; }
+.dx-acc-r .dxEditors_fcopsingle_DevEx1:before { left: -225px; top: -83px; }
+.dx-acc-r .dxEditors_fcopsum_DevEx1:before { left: -157px; top: -65px; }
+.dx-acc-r .dxEditors_fcoptypefield_DevEx1:before { left: -393px; top: -121px; }
+.dx-acc-r .dxEditors_fcoptypefieldhot_DevEx1:before { left: -348px; top: -121px; }
+.dx-acc-r .dxEditors_fcoptypevalue_DevEx1:before { left: -30px; top: -138px; }
+.dx-acc-r .dxEditors_fcoptypevaluehot_DevEx1:before { left: -105px; top: -138px; }
+.dx-acc-r .dxEditors_fcremove_DevEx1:before { left: -408px; top: -121px; }
+.dx-acc-r .dxEditors_fcremovehot_DevEx1:before { left: -363px; top: -121px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_DevEx1:before { left: -357px; top: 0px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_DevEx1:before { left: -402px; top: 0px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_DevEx1:before { left: -297px; top: 0px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_DevEx1:before { left: -417px; top: 0px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before { left: -447px; top: 0px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBHSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before { left: -432px; top: 0px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDH_DevEx1:before { left: -462px; top: -71px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHHover_DevEx1:before { left: -252px; top: -38px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedMDHSys .dxEditors_edtTBMainDHPressed_DevEx1:before { left: -462px; top: -86px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDH_DevEx1:before { left: -225px; top: -53px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before { left: -462px; top: -56px; }
+.dx-acc-r .dxeFocused_DevEx1 .dxeTBVSys .dxeFocusedSDHSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before { left: -195px; top: -42px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDH_DevEx1:before { left: -282px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDHDisabled_DevEx1:before { left: -372px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDHHover_DevEx1:before { left: -252px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBMainDHPressed_DevEx1:before { left: -267px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDH_DevEx1:before { left: -342px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDHDisabled_DevEx1:before { left: -387px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before { left: -312px; top: 0px; }
+.dx-acc-r .dxeTBHSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before { left: -327px; top: 0px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDH_DevEx1:before { left: -196px; top: -57px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDHDisabled_DevEx1:before { left: -225px; top: -38px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDHHover_DevEx1:before { left: -252px; top: -23px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBMainDHPressed_DevEx1:before { left: -252px; top: -68px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDH_DevEx1:before { left: -174px; top: -42px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDHDisabled_DevEx1:before { left: -252px; top: -53px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDHHover_DevEx1:before { left: -175px; top: -57px; }
+.dx-acc-r .dxeTBVSys .dxEditors_edtTBSecondaryDHPressed_DevEx1:before { left: -225px; top: -68px; }
+

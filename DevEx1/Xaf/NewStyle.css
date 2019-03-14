@@ -1,0 +1,1677 @@
+/*# --- ASPxMenu Lite skins for XAF --- #*/
+.menuLinks_DevEx1, .menuLinks_DevEx1 .dxm-item,
+.menuLinks_DevEx1 .dxm-hovered,
+.menuLinks_DevEx1 .dxm-disabled
+{
+    background: none !important;
+    border-style: none !important;
+}
+.menuLinks_DevEx1 .dxm-popOut
+{
+    border-style: none !important;
+}
+.menuLinks_DevEx1 .dxm-item a.dx > span
+{
+    color: #201f35;
+    text-decoration: underline !important;
+}
+.menuLinks_DevEx1 .dxm-hovered a.dx > span
+{
+    color: #2C4D79 !important;
+    text-decoration: underline !important;
+}
+.menuButtons_DevEx1 .dxm-popOut
+{
+    padding: 6px 4px 6px !important;
+}
+.menuButtons_DevEx1 .dxm-content
+{
+    padding: 2px 8px 1px 8px !important;
+    height: 16px !important;
+}
+.menuButtons_DevEx1 .dxm-item
+{
+    background: #ebedf2 url('../Editors/edtBtnBack.png') repeat-x left top !important;
+    border: solid 1px #a9acb5 !important;
+}
+.menuButtons_DevEx1 .dxm-item.dxm-hovered
+{
+    background: #dde6fe url('../Editors/edtBtnHBack.png') repeat-x left top !important;
+}
+.menuButtons_DevEx1, .menuButtons_DevEx1 .dxm-tmpl
+{
+    color: #201f35;
+    background: none !important;
+}
+.menuButtons_DevEx1 .dxm-item.dxm-tmpl
+{
+    border-color: transparent !important;
+}
+.menuButtons_DevEx1 .dxm-item.dxm-tmpl > *
+{
+    margin: -1px 0;
+}
+.menuButtons .dxm-item:not(.dxm-ami) .dxm-content
+{
+    /*# B254142 #*/
+    min-width: 60px !important;
+    text-align: center;
+}
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-l .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-r .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-l .dxm-subMenu .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-r .dxm-subMenu .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-t .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-b .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-t .dxm-subMenu .dxm-content.dxalink,
+.dxmLite_DevEx1 .menuLinks_DevEx1.dxm-horizontal .dxm-image-b .dxm-subMenu .dxm-content.dxalink
+{
+    padding: 4px 4px 3px;
+}
+.menuLinks_DevEx1.dxm-horizontal.dxm-main,
+.menuLinks_DevEx1.dxm-horizontal.dxm-main .dxm-item
+{
+    padding: 1px;
+}
+.dxmLite_DevEx1 .dxm-main.menuButtons
+{
+    padding: 1px;
+}
+.menuLinks_DevEx1.dxm-horizontal .dxm-spacing
+{
+    width: 1px;
+    min-width: 1px;
+}
+/* Common */
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #E9E9E9;
+    font: 14px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+}
+body.dialog
+{
+    background-color: white;
+}
+.dxm-popup .TemplatedItem
+{
+    padding-left: 7px;
+}
+.ToggleNavigationActiveImage,
+.ToggleNavigationImage
+{
+    margin-left: -15px;
+    cursor: pointer;
+}
+.dxrpCollapseButton
+{
+    margin-right: 8px;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+}
+.CardGroupContent
+{
+    padding: 19px 30px 25px 30px;
+    background-color: white;
+}
+.cgc-np
+{
+    padding: 0px;
+}
+table
+{
+    border-collapse: separate !important;
+}
+.xafCover
+{
+    background-color: #777777;
+    opacity: 0.7;
+}
+.overflowHidden
+{
+    overflow: hidden;
+}
+.movedMenu
+{
+    top: 0px;
+    position: fixed;
+}
+.movedInnerTable
+{
+    position: relative;
+}
+.GroupHeader
+{
+    font-size: 1.08em;
+}
+.dxrpHeader_DevEx1.GroupHeader.Label
+{
+    color: #848484;
+    background-color: #F7F7F7;
+    padding-left: 19px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1.08em;
+    border-bottom: 0px;
+}
+.Shadow
+{
+    border-bottom: 1px solid #BFBFBF;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.white
+{
+    background-color: white;
+}
+.darkGray
+{
+    background-color: #E9E9E9;
+}
+.gray
+{
+    background-color: #F7F7F7;
+}
+.width100
+{
+    width: 100%;
+}
+.GridView
+{
+    width: 100%;
+}
+.FindGridView
+{
+    width: 100% !important;
+}
+.xafHidden
+{
+    display: none;
+}
+.xafBackLayer
+{
+    overflow: hidden;
+}
+.xafFrontLayer
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    overflow: auto;
+}
+.borderBottom
+{
+    border-bottom: 1px solid #c6c6c6;
+}
+.border
+{
+    border: 1px solid #c6c6c6;
+}
+.xafNavToggle
+{
+    vertical-align: top;
+}
+.disable-hover,
+.disable-hover *
+{
+    pointer-events: none !important;
+}
+.viewCaption
+{
+    font-size: larger;
+    padding-left: 20px;
+}
+.ViewImage
+{
+    padding-right: 20px;
+}
+.sizeLimit
+{
+    max-width: 1200px;
+}
+.xafAlignCenter
+{
+    margin: 0 auto;
+}
+.minHeight
+{
+    min-height: 60px;
+}
+.paddings
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.headerTable
+{
+    min-height: 61px;
+}
+.dialog.headerTable
+{
+    top: 0px;
+    z-index: 1000;
+}
+.vertical.headerTable
+{
+    white-space: nowrap;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin: 0px;
+}
+.xafNavHiddenManually
+{
+    display: none;
+}
+.xafFooter
+{
+    color: #b8b8b8;
+    background-color: #4a4a4a;
+    padding: 6px 0px;
+}
+.xafNavVisible
+{
+    display: none;
+}
+@media all and (max-width: 1000px)
+{
+    .xafNavHidden
+    {
+        display: none;
+    }
+    .xafNavVisible
+    {
+        display: block;
+    }
+    .xafFooter
+    {
+        display: none;
+    }
+    .xafNavToggleConteiner
+    {
+        display: table-cell;
+    }
+}
+.xafNavVisibleManually
+{
+    display: block;
+}
+.xafNav
+{
+    float: left;
+    z-index: 1000;
+}
+.FindDialogActionsOverflow
+{
+    background-color: white;
+    width: 100%;
+}
+.searchDialogContent
+{
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.searchDialogContent .NestedFrame .Item.ListViewItem
+{
+    padding-top: 0px;
+}
+.searchDialogContent .right
+{
+    right: 20px;
+}
+.searchDialogContent .left
+{
+    left: 20px;
+}
+.searchDialogContent .bottom
+{
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 20px;
+}
+.searchDialogContent .search ul,
+.searchDialogContent .search .TemplatedItem,
+.searchDialogContent .search .TemplatedItem .dxeButtonEdit_DevEx1
+{
+    width: 100% !important;
+}
+.searchDialogContent .searchViewCaption
+{
+    font-size: 21px;
+    padding-bottom: 20px;
+}
+.LogonContent
+{
+    padding: 50px 75px;
+    background-color: white;
+}
+.LogonMainTable
+{
+    border: 1px solid #d4d4d4;
+    margin: 0 auto;
+}
+.ErrorMessage
+{
+    background-color: #ffedf0;
+    color: #D33751;
+    padding: 24px 75px;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #c6c6c6;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    table-layout: fixed;
+}
+.ErrorMessage.WarningMessage
+{
+    background-color: #FFF0B6;
+    color: #EB7F00;
+    border: 1px solid #DFC45A;
+}
+.dialog .ErrorInfo
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.LogonContentWidth
+{
+    width: 470px;
+}
+.StaticText
+{
+    color: #9a9a9a;
+}
+.errorIcon
+{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.height100
+{
+    height: 100%;
+}
+.posRelative
+{
+    position: relative;
+}
+.ValidationFailed td.dxic,
+.ValidationFailed td.dxic > input,
+.ValidationFailed .dxeButton
+{
+    background-color: #FFEDF0 !important;
+}
+.ValidationFailed.ValidationWarning td.dxic,
+.ValidationFailed.ValidationInformation td.dxic,
+.ValidationFailed.ValidationWarning td.dxic > input,
+.ValidationFailed.ValidationInformation td.dxic > input,
+.ValidationFailed.ValidationWarning .dxeButton,
+.ValidationFailed.ValidationInformation .dxeButton
+{
+    background-color: #FFF0B6 !important;
+}
+.ValidationFailed .dxeErrorCell_DevEx1.dxeErrorFrame_DevEx1
+{
+    padding-right: 5px;
+    padding-bottom: 1px;
+}
+.dxGridView_gvCellError_DevEx1.xafGridCellError
+{
+    background-image: none !important;
+}
+.WebEditorCell .dxeErrorCell_DevEx1.dxeErrorFrame_DevEx1.dxeErrorFrameSys .dxEditors_edtError_DevEx1.XafInplaceValidationErrorIcon
+{
+    background-image: none !important;
+    height: 16px;
+    width: 16px;
+    margin: 0;
+}
+.GroupContent.Adaptivity.validationImage,
+.validationImage
+{
+    width: 50px !important;
+    display: table-cell;
+}
+.validationImage img
+{
+    width: 48px;
+    height: 48px;
+}
+.validationText
+{
+    width: 90% !important;
+    padding-top: 5px;
+    display: table-cell;
+    vertical-align: top;
+}
+.parameterlessLogonGroup .validationText
+{
+    width: 83% !important;
+}
+.validationTextValid
+{
+    padding-top: 10px;
+}
+.Item.validationText
+{
+    padding-left: 11px;
+}
+.validationText .StaticText, .validationTextValid .StaticText
+{
+    color: #4a4a4a;
+}
+.LayoutTabContainer .GroupHeader .Label
+{
+    padding-left: 0px;
+}
+.LayoutTabContainer .GroupHeader .Image
+{
+    padding-right: 19px;
+    padding-left: 0px;
+}
+.LayoutTabContainer .GroupHeader
+{
+    margin: 25px 0px 10px;
+}
+.LayoutTabContainer .GroupHeader:first-child
+{
+    margin: 0px 0px 10px;
+}
+/*# ActionContainerHolder #*/
+.ACH
+{
+    padding-left: 4px;
+}
+.ACHOC
+{
+    padding-left: 0px;
+}
+.dialogContent .ACH
+{
+    margin-right: 31px;
+}
+/*# FileDataEdit #*/
+.XafFileDataAnchor
+{
+    white-space: nowrap;
+    margin-right: 5px;
+}
+/*# ASPxSchedulerListEditor #*/
+.dateNavigatorIndent
+{
+    margin-bottom: 20px;
+}
+/*#ViewCaptionControl#*/
+.XafVCap-First
+{
+    font-size: 14px;
+    color: #848484;
+    display: block;
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+.XafVCap-Second
+{
+    display: block;
+    font-size: x-large;
+    color: #4a4a4a;
+    white-space: normal;
+}
+.MainMenuTruncateCaption
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*#xafHeaderMenu#*/
+.xafHeaderMenu .accountItem .dxm-popOut
+{
+    display: none !important;
+    padding: 0px !important;
+    height: 0px !important;
+}
+.xafHeaderMenu .dxm-item.accountItem.dxm-subMenu .dx-vam
+{
+    padding-left: 10px;
+}
+.xafHeaderMenu .dxm-item.accountItem.dxm-subMenu .dxm-image.dx-vam
+{
+    border-radius: 24px;
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    height: 24px;
+    width: 24px;
+    padding-left: 0px;
+}
+.xafHeaderMenu .menuLinks_XafTheme .dxm-content
+{
+    padding: 4px 1px 4px 2px !important;
+}
+.xafHeaderMenu .menuLinks.dxm-horizontal.dxmtb .dxm-item.dxm-hovered
+{
+    background: none !important;
+    border-color: transparent !important;
+}
+.xafHeaderMenu .menuLinks.dxm-horizontal.dxmtb .dxm-item.dxm-hovered .dx-vam
+{
+    text-decoration: none !important;
+}
+.dxm-item.accountItem.dropDownSecurity.dxm-subMenu .dx-vam
+{
+    text-decoration: underline !important;
+}
+/*#NestedFrame#*/
+.nf_leftMenu
+{
+    float: left;
+}
+.nf_rightMenu
+{
+    width: 85%;
+    float: right;
+}
+.nf_rightMenu_AC
+{
+    float: right;
+    padding: 3px 5px;
+}
+.nf_leftMenu_AC
+{
+    float: left;
+    padding: 3px 5px;
+}
+/*# T378858 #*/
+.cgc-np .NestedFrame .dxAC,
+.dxtc-content.TabControlContent .NestedFrame .dxAC,
+.DashboardView .NestedFrame .dxAC
+{
+    border: none;
+}
+.dialogContent .dxAC .dxgvEmptyDataRow_DevEx1 td.dxgv,
+.dxtc-content.TabControlContent .NestedFrame .dxgvEmptyDataRow_DevEx1 td.dxgv,
+.dialogContent .dxtc-content.TabControlContent .NestedFrame .dxAC .dxgvEmptyDataRow_DevEx1 td.dxgv
+{
+    border-bottom: 0 !important;
+}
+.dialogContent .NestedFrame .dxAC .dxgvEmptyDataRow_DevEx1 td.dxgv,
+.NestedFrame .dxgvEmptyDataRow_DevEx1 td.dxgv
+{
+    border-bottom: 1px Solid #c6c6c6 !important;
+}
+/*#end NestedFrame#*/
+.dxbButtonHover_DevEx1
+{
+    /*# T323156 #*/
+    background: #F0F0F0 !important;
+    border: 1px solid #c6c6c6 !important;
+}
+.xafChartToolBar td
+{
+    padding: 5px;
+}
+/*# T329842 #*/
+.xafNav .dxtvControl_DevEx1.TreeViewNavControl .dxtv-nd
+{
+    text-wrap: normal;
+    padding-bottom: 2px !important;
+}
+.dxtvControl_DevEx1.TreeViewNavControl > div > ul
+{
+    width: 289px;
+}
+.dxtvControl_DevEx1.TreeViewNavControl > div > ul > li
+{
+    padding: 0 4px;
+}
+/*# Tree List node images #*/
+.XafTreeNode .ImageCell .dxeImage
+{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+/*# T389724 Grid ContextMenu #*/
+.GridView .dxmLite_DevEx1.dxm-ltr .dxgvContextMenu_DevEx1 .dxm-separator
+{
+    display: block;
+}
+.GridView .dxmLite_DevEx1.dxm-ltr .dxgvContextMenu_DevEx1 .dxm-item
+{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.GridView .dxmLite_DevEx1.dxm-ltr .dxgvContextMenu_DevEx1 .dxm-item.dxm-noImage .dxm-content.dxm-hasText
+{
+    padding-left: 5px !important;
+}
+.GridView .dxmLite_DevEx1.dxm-ltr .dxgvContextMenu_DevEx1 .dxm-content .dxm-image.dxWeb_mSubMenuItem_DevEx1
+{
+    margin-right: 11px;
+}
+.GridView .dxmLite_DevEx1.dxm-ltr .dxgvContextMenu_DevEx1 .dxm-content .dxm-image.dxWeb_mSubMenuItem_DevEx1.dxWeb_mSubMenuItemChecked_DevEx1
+{
+    margin-right: 9px;
+}
+/*# T389388 TreeList double borders on touch devices #*/
+.TreeList .dxAC
+{
+    border-right: 0;
+    border-left: 0;
+}
+.Layout .ACH .dxmLite_DevEx1.dxm-ltr .dxm-item
+{
+    margin-bottom: 0px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+.Layout .ACH .dxmLite_DevEx1.dxm-ltr .dxm-popup .dxm-item
+{
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.Layout .ACH .dxmLite_DevEx1 .dxm-popup .dxm-popOut
+{
+    padding-top: 4px;
+    padding-bottom: 0px;
+}
+.Layout .ACH .dxmLite_DevEx1.dxm-ltr .dxm-spacing
+{
+    display: none;
+}
+.Layout .ACH .dxmLite_DevEx1.dxm-ltr .dxm-horizontal.dxm-noWrap > ul > li
+{
+    float: left !important;
+}
+/*#T409072 - Ribbon in XAF#*/
+.WebEditorCell .dxrControl_DevEx1 .dxr-blRegItems .dxr-item
+{
+    overflow: visible;
+}
+.WebEditorCell .dxrControl_DevEx1 .dxr-item.dxr-edtItem .dxeButtonEditButton_DevEx1
+{
+    padding: 3px 3px 1px 4px;
+}
+.WebEditorCell .dxrControl_DevEx1 .dxr-item.dxr-edtItem .dxeButtonEdit_DevEx1 td.dxic
+{
+    padding: 0 2px 0 7px !important;
+}
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-tab,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-leftIndent,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-spacer,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-rightIndent,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-sbIndent,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top .dxtc-sbSpacer
+{
+    padding-top: 4px;
+}
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxr-item.dxr-edtItem .dxeBase_DevEx1 .dxichCellSys,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxr-item.dxr-edtItem .dxeBase_DevEx1.dxichCellSys
+{
+    padding: 0px 3px 0px;
+}
+.WebEditorCell .dxrControl_DevEx1 .dxr-buttonItem,
+.WebEditorCell .dxrControl_DevEx1 .dxr-grExpBtn
+{
+    border-radius: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1 > .dxtc-stripContainer .dxtc-spacer
+{
+    width: 0px;
+}
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1 .dxtc-tab.dxtc-lead.dxtc-psi
+{
+    border-left-width: 1px !important;
+}
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtc-sbIndent,
+.LayoutTabbedGroupContainer .WebEditorCell .dxrControl_DevEx1 .dxtc-leftIndent
+{
+    display: none;
+}
+.WebEditorCell .dxrControl_DevEx1 .dxtcLite_DevEx1.dxtc-top > ul
+{
+    border: 0;
+}
+.WebEditorCell .dxrControl_DevEx1 .dxr-blRegItems .dxr-item.dxr-itemHover.dxr-ddMode .dxr-label .dxr-popOut,
+.WebEditorCell .dxrControl_DevEx1 .dxr-blHorItems .dxr-item.dxr-itemHover.dxr-ddMode .dxr-label .dxr-popOut
+{
+    border-left-color: transparent;
+}
+/*# T390761 #*/
+.searchDialogContent .search .TemplatedItem .dxeButtonEdit_DevEx1
+{
+    border-radius: 0px;
+}
+.searchDialogContent .dxmLite_DevEx1 .dxm-tmpl td.dxic > input
+{
+    padding-top: 4px !important;
+    padding-bottom: 3px !important;
+}
+.searchDialogContent .dxm-horizontal .dxm-spacing
+{
+    padding-left: 10px;
+}
+.PopupSizeCalculated .searchDialogContent
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.tableWrapperContent
+{
+    padding-bottom: 70px;
+    border-collapse: separate;
+    height: 100%;
+}
+.tableWrapperActions
+{
+    margin-top: -70px;
+    border-collapse: separate;
+}
+.searchDialogContent #headerContent .dxeFocused_DevEx1
+{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.searchDialogContent .right
+{
+    right: 30px;
+}
+.searchDialogContent .left
+{
+    left: 30px;
+}
+.searchDialogContent .bottom
+{
+    padding-bottom: 32px;
+}
+.findPopupControl.dxpcLite_DevEx1 .dxpc-header, .findPopupControl.dxdpLite_DevEx1 .dxpc-header
+{
+    border-bottom: none;
+    padding: 0;
+    background: none;
+}
+.findPopupControl .dxpc-headerContent
+{
+    color: #4A4A4A;
+    font-size: 18px;
+    padding: 18px 30px 10px 30px;
+}
+.findPopupControl .dxpc-headerContent,
+.findPopupControl .dxpc-footerContent,
+.findPopupControl.dxpcLite_DevEx1 .dxpc-headerText,
+.findPopupControl.dxdpLite_DevEx1 .dxpc-headerText
+{
+    white-space: normal;
+}
+.headerContent
+{
+    overflow: hidden;
+    background-color: white;
+    padding-top: 16px;
+    right: 30px;
+    left: 30px;
+}
+.WebEditorCell .ValidationFailed
+{
+    border: 1px solid #f2b1bf;
+}
+.WebEditorCell .ValidationFailed.ValidationWarning,
+.WebEditorCell .ValidationFailed.ValidationInformation
+{
+    border: 1px solid #DFC45A;
+}
+.WebEditorCell .ValidationFailed.CheckBox
+{
+    border: 0;
+}
+/*# EndlessPaging borders #*/
+.GridView .dxgvHSDC tr[id$="DXHeadersRow0"] > .dxgvHeader_DevEx1
+{
+    border-top-width: 0px !important;
+}
+.GridView .dxgvCSD .dxgvDataRow_DevEx1:last-child td.dxgv
+{
+    border-bottom: 0 !important;
+}
+.LayoutTabContainerWithNestedFrame .NestedFrame .GridView .dxgvCSD,
+.cgc-np .NestedFrame .GridView .dxgvCSD
+{
+    border: 0;
+}
+.LayoutTabContainerWithNestedFrame .NestedFrame .GridView.dxgvControl_DevEx1 .dxgvHSDC,
+.cgc-np .NestedFrame .GridView.dxgvControl_DevEx1 .dxgvHSDC
+{
+    border-left: 0;
+    border-right: 0;
+}
+.dialogContent .cgc-np .NestedFrame .GridView .dxgvCSD
+{
+    border-bottom: Solid 1px #c6c6c6;
+    border-right: Solid 1px #c6c6c6;
+    border-left: Solid 1px #c6c6c6;
+}
+.dialogContent .cgc-np .NestedFrame .GridView.dxgvControl_DevEx1 .dxgvHSDC
+{
+    border-left: Solid 1px #c6c6c6;
+    border-right: Solid 1px #c6c6c6;
+}
+.GridView.dxgvControl_DevEx1 .dxgvFSDC
+{
+    border-bottom: 0;
+}
+.dialogContent .cgc-np .NestedFrame .GridView .dxgvHSDC .dxgvTable_DevEx1,
+.dialogContent .cgc-np .NestedFrame .GridView .dxgvCSD .dxgvTable_DevEx1
+{
+    border-left: 0;
+    border-right: 0;
+}
+.GridView .dxgvHSDC .dxgvHeader_DevEx1:last-child
+{
+    border-right: 0;
+}
+a.baseColorLink
+{
+    color: #2C86D3;
+}
+/*# T424697 #*/
+.GridView .dxgvSearchPanel_DevEx1
+{
+    background-color: #E9E9E9;
+}
+.PopupNewStyle .GridView .dxgvSearchPanel_DevEx1,
+.NestedFrame .GridView .dxgvSearchPanel_DevEx1
+{
+    background-color: #fff;
+}
+.NestedFrame .GridView .dxgvSearchPanel_DevEx1
+{
+    padding-left: 16px;
+}
+/*# T475015 #*/
+.TreeList .XafTreeNode .ImageCell
+{
+    vertical-align: middle;
+}
+.TreeList .XafTreeNode .ImageCell img
+{
+    display: inherit;
+}
+.TreeList .XafTreeNode .TextCell
+{
+    padding: 0px 5px;
+}
+.TreeList .dxtlIndentWithButton_DevEx1
+{
+    vertical-align: middle;
+}
+.TreeList .dxtlCommandCell_DevEx1
+{
+    vertical-align: middle;
+}
+.TreeList .dxtlCommandCell_DevEx1 .dxbButton_DevEx1
+{
+    display: block;
+}
+/*# T492034 #*/
+.ActionUrlItem.dxeHyperlink_DevEx1,
+.ActionUrlItem.dxeHyperlink_DevEx1:visited,
+.ActionUrlItem.dxeHyperlink_DevEx1:hover
+{
+    color: #2C86D3;
+    text-decoration: none;
+    padding: 0;
+}
+.dxm-popup .ActionUrlItem.dxeHyperlink_DevEx1,
+.dxm-popup .ActionUrlItem.dxeHyperlink_DevEx1:visited,
+.dxm-popup .ActionUrlItem.dxeHyperlink_DevEx1:hover
+{
+    color: #4a4a4a;
+}
+/*# Error.aspx #*/
+.Error .PageContent
+{
+    margin: 8px;
+}
+.Error .StaticText
+{
+    color: #000;
+}
+/*# T519328 #*/
+.dx-toast-wrapper.dx-overlay-wrapper
+{
+    z-index: 15000 !important;
+}
+.Layout
+{
+    font: 14px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+    color: #4a4a4a;
+}
+.Layout .WebEditorCell::after
+{
+    display: block;
+    content: "";
+    clear: both;
+}
+.FixedEditorContainer
+{
+    vertical-align: top;
+}
+.FixedEditorContainer.firstEditorContainer .Item
+{
+    padding-right: 10px;
+}
+.FixedEditorContainer.secondEditorContainer .Item
+{
+    padding-right: 10px;
+    padding-left: 11px;
+}
+.FixedEditorContainer.lastEditorContainer .Item
+{
+    padding-left: 11px;
+}
+.dialogContent .CardGroupBase
+{
+    border: none;
+}
+.dialogContent .CardGroupBase > tbody > tr > td > .GroupHeader
+{
+    background-color: #fff;
+    padding-bottom: 0;
+}
+.dialogContent .GroupHeader .Label
+{
+    padding-left: 30px;
+    color: #4a4a4a;
+    font-size: 1.4em;
+}
+.dialogContent .CardGroupContent
+{
+    padding: 15px 30px 7px 30px;
+}
+/* T305393 */
+.dialogContent .LayoutTabbedGroupContainer > .dxtcLite_DevEx1.dxtc-top > .TabControlContent,
+.dialogContent .LayoutTabbedGroupContainer > .dxtcLite_DevEx1.dxtc-top > .dxtc-stripContainer
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.Item
+{
+    padding-bottom: 5px;
+    padding-top: 6px;
+}
+.Item.ListViewItem
+{
+    overflow-x: auto;
+}
+.searchDialogContent .Item.ListViewItem
+{
+    padding-top: 20px;
+    padding-bottom: 0px;
+    overflow: inherit;
+}
+.searchDialogContent .FindGridView .dxgvCSD
+{
+    width: auto !important;
+}
+.LayoutEditMode.Layout td.Caption
+{
+    height: 15px;
+}
+.Caption
+{
+    color: #9a9a9a;
+    font-size: 0.85em;
+    padding-bottom: 3px;
+}
+.Caption.dxeTAR
+{
+    padding-bottom: 0px;
+}
+.lftCL .Caption
+{
+    padding-bottom: 0;
+}
+.GroupHeader div
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.GroupHeader .Image
+{
+    padding-left: 19px;
+}
+.GroupHeader .Label
+{
+    padding-left: 19px;
+    display: inline-block;
+}
+.CardGroupContent .GroupHeader .Label
+{
+    color: #4a4a4a;
+    padding-left: 0px;
+    font-size: 1.2em;
+}
+.CardGroupBase > tbody > tr > td > .GroupHeader
+{
+    color: #848484;
+    background-color: #F7F7F7;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    border-collapse: separate !important;
+}
+.CardGroupBase > tbody > tr > td.CardGroupContent > .GroupHeader
+{
+    background-color: white;
+    padding-top: 30px;
+}
+.CardGroupBase .NestedFrame .CardGroupBase, .CardGroupBase .NestedFrame .CardGroupBase .lastCardGroup, .CardGroupBase .NestedFrame .CardGroupBase .CardGroupContent
+{
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.LogonTemplate .right
+{
+    float: right;
+}
+.LogonTemplate .ErrorMessage
+{
+    border: 0;
+    margin-bottom: 0;
+}
+.LogonTemplate .CardGroupContent
+{
+    padding: 0px !important;
+}
+.LogonTemplate .GroupContent.lastEditorContainer .Item
+{
+    padding-left: 0px;
+}
+.LogonTemplate .CardGroupBase
+{
+    border: none !important;
+}
+.LogonTemplate .LogonItemClassCSS
+{
+    padding-bottom: 15px;
+}
+.LogonTemplate .LogonTextClassCSS
+{
+    padding-top: 0px;
+    padding-bottom: 38px;
+    text-align: left;
+}
+.LogonTemplate .LogonTextClassCSS .StaticText
+{
+    font-size: 1.8em;
+    color: #4a4a4a;
+}
+.LogonTemplate .LogonTextClassCSS .dxm-tmpl td.dxic,
+.LogonTemplate .WebEditorCell td.dxic
+{
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+.LogonTemplate .PasswordHintClassCSS
+{
+    text-align: left;
+    padding-bottom: 20px;
+}
+.LogonTemplate .PasswordHintClassCSS .StaticText
+{
+    font-size: 0.85em;
+}
+.LogonTemplate .smallImage .dxm-image,
+.LogonTemplate .dxm-popup .smallImage .dxm-image
+{
+    padding: 12px 7px 6px 8px !important;
+}
+.LogonTemplate .smallImage2 .dxm-image,
+.LogonTemplate .dxm-popup .smallImage2 .dxm-image
+{
+    padding: 8px 4px 3px 4px !important;
+}
+.LogonTemplate .menuActionImageSVG .dxm-image,
+.LogonTemplate .dxm-popup .menuActionImageSVG .dxm-image
+{
+    padding: 8px 4px 3px 4px !important;
+}
+@media all and (min-width: 600px)
+{
+    .AdaptivityEditorContainer
+    {
+        float: left;
+    }
+    .WrappedAdaptivityEditorContainer
+    {
+        float: none;
+    }
+    .firstEditorContainer
+    {
+        min-width: 32px;
+    }
+    .firstEditorContainer .Item
+    {
+        padding-right: 19px;
+    }
+    .secondEditorContainer
+    {
+        min-width: 32px;
+        margin-bottom: 8px;
+    }
+    .secondEditorContainer .Item
+    {
+        padding-right: 19px;
+    }
+    .secondHorizontalEditorContainer
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .lastEditorContainer
+    {
+        min-width: 32px;
+    }
+    .lastEditorContainer .Item
+    {
+        padding-right: 14px;
+    }
+    table.CardGroupBase
+    {
+        border: 1px solid #c6c6c6;
+    }
+    .CardGroupBase.GroupContent
+    {
+        border-collapse: separate !important;
+    }
+    .dxrpControl_DevEx1.CardGroupBase, .dxrpControlGB_DevEx1.CardGroupBase
+    {
+        border: 1px solid #c6c6c6;
+    }
+    .LayoutTabbedGroupContainer
+    {
+        overflow-x: auto;
+        width: 100%;
+    }
+    .LayoutTabbedGroupContainer .CardGroupBase.GroupContent
+    {
+        padding: 0px;
+    }
+    .NestedFrame .CardGroupBase
+    {
+        border: none;
+    }
+    .NestedFrame > .ToolBarUpdatePanel > .ToolBar
+    {
+        float: right;
+    }
+    .NestedFrame .Layout
+    {
+        overflow: hidden;
+    }
+    .firstVerticalCardGroup
+    {
+        margin-bottom: 10px;
+    }
+    .secondVerticalCardGroup
+    {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .lastVerticalCardGroup
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .firstCardGroup
+    {
+        padding-bottom: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .secondCardGroup
+    {
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .lastCardGroup
+    {
+        padding-bottom: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .GroupContent
+    {
+        width: 100%;
+    }
+    .GroupContent .Item
+    {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .GroupContent .GroupHeader
+    {
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+    .GroupContent.firstEditorContainer .Item,
+    .GroupContent.firstEditorContainer .GroupHeader
+    {
+        padding-right: 10px;
+    }
+    .GroupContent.secondEditorContainer .Item,
+    .GroupContent.secondEditorContainer .GroupHeader
+    {
+        padding-right: 10px;
+        padding-left: 11px;
+    }
+    .GroupContent.lastEditorContainer .Item,
+    .GroupContent.lastEditorContainer .GroupHeader
+    {
+        padding-left: 11px;
+    }
+    .LayoutTabContainer
+    {
+        padding: 30px;
+    }
+    .LayoutTabContainer:after
+    {
+        display: table;
+        content: "";
+        line-height: 0;
+        clear: both;
+    }
+    .LayoutTabContainer .CardGroupBase
+    {
+        margin: 0px;
+    }
+    .LayoutTabContainer .Item
+    {
+        padding-right: 0px;
+    }
+    .LayoutTabContainer.LayoutTabContainerWithNestedFrame
+    {
+        padding: 0px;
+    }
+    .LayoutTabContainer.LayoutTabContainerWithNestedFrame .Item
+    {
+        padding: 0px;
+    }
+    .NestedFrameViewSite .Item.ListViewItem
+    {
+        border: none;
+    }
+    .NestedFrameViewSite .Item.ListViewItem .GridView
+    {
+        border: none;
+    }
+    .DashboardView .NestedFrameViewSite .Item.ListViewItem
+    {
+        padding-left: 0px;
+        border: none;
+    }
+    .DashboardView .NestedFrameViewSite .Item.ListViewItem .GridView
+    {
+        border: 1px solid #c6c6c6;
+    }
+    .LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .NestedFrameViewSite > .Item.ListViewItem
+    {
+        border: none;
+    }
+    .LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .NestedFrameViewSite > .Item.ListViewItem .GridView .dxgvTable_DevEx1
+    {
+        border: none;
+    }
+    .LayoutTabContainerWithNestedFrame > .Item > .NestedFrame > .NestedFrameViewSite > .Item.ListViewItem .GridView .dxgvTable_DevEx1 .dxgvHeader_DevEx1
+    {
+        border-top: 1px solid #c6c6c6;
+    }
+    .LayoutTabContainer:not(.LayoutTabContainerWithNestedFrame) > .Item > .NestedFrame > .NestedFrameViewSite > .Item.ListViewItem .GridView
+    {
+        border-bottom: 1px solid #c6c6c6;
+        border-left: 1px solid #c6c6c6;
+        border-right: 1px solid #c6c6c6;
+    }
+    .LayoutTabContainer:not(.LayoutTabContainerWithNestedFrame) > .Item > .NestedFrame > .NestedFrameViewSite > .Item.ListViewItem .GridView .dxgvTable_DevEx1
+    {
+        border: 0;
+    }
+    .Item.ListViewItem
+    {
+        padding-right: 0px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .Item.NestedFrameControl
+    {
+        padding-right: 0px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 600px)
+{
+    .GroupHeader
+    {
+        padding-top: 20px;
+    }
+    .GroupContent
+    {
+        width: 100%;
+    }
+    .GroupContent.Adaptivity
+    {
+        width: 100% !important;
+    }
+    .LayoutTabContainer:after
+    {
+        display: table;
+        content: "";
+        line-height: 0;
+        clear: both;
+    }
+    .LayoutTabContainer > *
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+        border-collapse: separate !important;
+    }
+    .LayoutTabContainer > *:last-child
+    {
+        padding-bottom: 30px;
+    }
+    .LayoutTabContainer .dxgvTable_DevEx1
+    {
+        border: none;
+    }
+    .LayoutTabContainer.LayoutTabContainerWithNestedFrame > .Item
+    {
+        padding: 0px;
+    }
+    .CardGroupBase
+    {
+        margin-bottom: 20px;
+        border: 1px solid #c6c6c6;
+        border-collapse: separate !important;
+    }
+    .dxrpControl_DevEx1.CardGroupBase, .dxrpControlGB_DevEx1.CardGroupBase
+    {
+        border: 1px solid #c6c6c6;
+    }
+    .Layout .Layout .CardGroupBase
+    {
+        border: none !important;
+    }
+    .Layout .Layout .CardGroupBase > tbody > tr > td
+    {
+        padding: 0px;
+    }
+    .LayoutTabbedGroupContainer
+    {
+        padding-bottom: 30px;
+    }
+    .NotificationsPopupWindowCustomization .notificationsStateItem.Item,
+    .NotificationsPopupWindowCustomization .actionGroup.Item .ACH
+    {
+        float: none;
+    }
+    .NotificationsPopupWindowCustomization .emptyItem,
+    .NotificationsPopupWindowCustomization .emptyItemActionGroup
+    {
+        display: none;
+    }
+}
+@media all and (max-width: 480px), (max-height: 480px)
+{
+    .LogonTemplate .LogonItemClassCSS
+    {
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .LogonTemplate .LogonContent
+    {
+        padding: 15px 25px;
+    }
+}
+@media all and (max-width: 480px)
+{
+    .LogonTemplate .LogonTextClassCSS
+    {
+        padding-bottom: 10px;
+    }
+    .LogonTemplate .LogonContentWidth
+    {
+        width: 90%;
+    }
+    .LogonTemplate .LogonContent.LogonContentWidth
+    {
+        width: 100%;
+    }
+    .LogonTemplate .PasswordHintClassCSS
+    {
+        padding-bottom: 5px;
+    }
+    .LogonTemplate .LogonTextClassCSS .dxm-tmpl td.dxic,
+    .LogonTemplate .WebEditorCell td.dxic
+    {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .paddings
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .paddings .headerTable,
+    .paddings .menuAreaDiv
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media all and (max-height: 480px)
+{
+    .LogonTemplate .LogonTextClassCSS
+    {
+        padding-bottom: 2px;
+    }
+    .LogonTemplate .PasswordHintClassCSS
+    {
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+    .LogonTemplate .LogonTextClassCSS .dxm-tmpl td.dxic > input,
+    .LogonTemplate .WebEditorCell td.dxic > input
+    {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+    .LogonTemplate .dxmLite_DevEx1 .dxm-main.dxmtb
+    {
+        padding: 0px;
+    }
+}
+@media all and (max-height: 350px)
+{
+    .LogonTemplate .LogonTextClassCSS
+    {
+        padding-bottom: 2px;
+    }
+    .LogonTemplate .PasswordHintClassCSS
+    {
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+    .LogonTemplate .LogonTextClassCSS .dxm-tmpl td.dxic,
+    .LogonTemplate .WebEditorCell td.dxic
+    {
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+    .LogonTemplate .dxmLite_DevEx1 .dxm-main.dxmtb
+    {
+        padding: 0px;
+    }
+}
+/*#Reports ===============================================#*/
+.ReportViewMainGroup .Item
+{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.ReportViewMainGroup .CardGroupContent
+{
+    padding: 0px;
+}
+.ReportViewMainGroup .dxsplPane_DevEx1
+{
+    border: none;
+}
+.ReportViewMainGroup .dxmLite_DevEx1 .dxm-tmpl td.dxic > input
+{
+    padding-top: 0px !important;
+    padding-bottom: 2px !important;
+    padding-right: 4px;
+}
+/*#Reports End ===============================================#*/
+/*#HTML Editor ===============================================#*/
+.dxheControl_DevEx1 .dxmLite_DevEx1 .dxm-tmpl td.dxic > input
+{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.dxheControl_DevEx1 .dxmLite_DevEx1 .dxm-horizontal.dxmtb .dxtb-comboBoxMenuItem .dxeButtonEditButton_DevEx1
+{
+    padding: 1px 0px;
+}
+/*#HTML Editor End ===============================================#*/
+/*#Dashboards ===============================================#*/
+.DashboardsViewMainGroup .CardGroupContent
+{
+    padding: 0px;
+}
+.DashboardsViewMainGroup .Item
+{
+    padding: 0px;
+}
+.DashboardsViewMainGroup .CardGroupContent .Item
+{
+    padding: 0px;
+}
+.DashboardsViewMainGroup.CardGroupBase
+{
+    border: 0px;
+}
+.NoBorders .firstVerticalCardGroup
+{
+    margin-bottom: 0px;
+}
+.NoBorders .dialogContent .viewSite
+{
+    margin-top: 0px !important;
+}
+.NoBorders .DashboardsViewMainGroup .dx-dashboard-widget-container > .dx-dashboard-surface
+{
+    background-color: initial;
+}
+.DashboardsViewMainGroup .dx-dashboard-widget-container > .dx-dashboard-surface
+{
+    background-color: #E9E9E9;
+}
+#mainDiv .DashboardsViewMainGroup dashboard-viewer .dx-dsh-title .dx-toolbar-after
+{
+    visibility: hidden;
+}
+#mainDiv .DashboardsViewMainGroup dashboard-viewer > dashboard-title .dx-dashboard-title-caption
+{
+    margin-left: 0px !important;
+    padding: 0px !important;
+}
+#mainDiv .DashboardsViewMainGroup dashboard-viewer .dx-toolbar-center
+{
+    margin: 0px !important;
+}
+#mainDiv .DashboardsViewMainGroup dashboard-viewer > dashboard-title .dx-dashboard-title-image
+{
+    margin-left: 0px !important;
+    margin-right: 10px !important;
+}
+#mainDiv .DashboardsViewMainGroup .dx-dashboard-widget-container > .dx-dashboard-surface > .dx-dashboard-viewer-content
+{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+/*#Dashboards End ===========================================#*/
+/* TreeList styles begin */
+.dxtlDataTable .dxtlHeader_DevEx1
+{
+    border-bottom: 0;
+}
+.NestedFrameViewSite .Item.ListViewItem .dxtlDataTable .dxgvTable_DevEx1
+{
+    border: none;
+}
+.NestedFrameViewSite .Item.ListViewItem .dxtlDataTable .dxgvTable_DevEx1 .dxgvHeader_DevEx1
+{
+    border-top: none;
+}
+.DashboardView .dxtlControl_DevEx1 .dxtlDataTable
+{
+    padding-left: 0px;
+    border: none;
+}
+.DashboardView .NestedFrameViewSite .Item.ListViewItem .dxtlDataTable
+{
+    border: 1px solid #c6c6c6;
+}
+.cgc-np .dxtlDataTable
+{
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+.cgc-np .dxtlDataTable + .dxtlPagerBottomPanel_DevEx1,
+.LayoutTabContainer.LayoutTabContainerWithNestedFrame .dxtlDataTable + .dxtlPagerBottomPanel_DevEx1
+{
+    border-top: 1px solid #c6c6c6;
+    padding: 4px 13px 0;
+}
+.cgc-np .dxtlDataTable + .dxtlPagerBottomPanel_DevEx1 .dxpLite_DevEx1
+{
+    padding: 6px 0 0;
+}
+.CardGroupContent .NestedFrame .dxtlPagerBottomPanel_DevEx1,
+.LayoutTabContainer.LayoutTabContainerWithNestedFrame .dxtlPagerBottomPanel_DevEx1,
+.LayoutTabContainer.LayoutTabContainerWithNestedFrame .dxtlDataTable
+{
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+/* TreeList styles end */
+.dxscControl_DevEx1 .dxscDayScrollBodyTable,
+.dxscControl_DevEx1 .dxscRendererTable,
+.dxscControl_DevEx1 .dxscRendererTable .dxscDayHdrsTbl
+{
+    border-collapse: collapse !important;
+}

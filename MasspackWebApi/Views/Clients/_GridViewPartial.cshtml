@@ -1,0 +1,94 @@
+@{ 
+    List<BestellErfassung.DomainObjects.Kunden.Kundenarten> list = ViewBag.KundenartenList;
+}
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new { Controller = "Customers", Action = "GridViewPartial" };
+
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Customers", Action = "GridViewPartialAddNew" };
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Customers", Action = "GridViewPartialUpdate" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Customers", Action = "GridViewPartialDelete" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.Styles.Table.CssClass = "droppableLeft";
+        settings.Styles.Row.CssClass = "draggableRow left";
+
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowNewButtonInHeader = true;
+        //settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowEditButton = true;
+
+        settings.KeyFieldName = "Oid";
+
+        settings.SettingsPager.Visible = true;
+        settings.Settings.ShowGroupPanel = true;
+        settings.Settings.ShowFilterRow = true;
+        settings.SettingsBehavior.AllowSelectByRowClick = true;
+
+        settings.SettingsAdaptivity.AdaptivityMode = GridViewAdaptivityMode.Off;
+        settings.SettingsAdaptivity.AdaptiveColumnPosition = GridViewAdaptiveColumnPosition.Right;
+        settings.SettingsAdaptivity.AdaptiveDetailColumnCount = 1;
+        settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
+        settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
+
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+        settings.Columns.Add("Suchname");
+        settings.Columns.Add("Name1");
+        settings.Columns.Add("Name2");
+        settings.Columns.Add("Name3");
+        settings.Columns.Add("Strasse");
+        settings.Columns.Add("Nation");
+        settings.Columns.Add("PLZ");
+        settings.Columns.Add("Ort");
+        settings.Columns.Add("eMail");
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "kdauftrgesperrt";
+            c.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Kundenart.Kundenart";
+            c.Name = "Kundenart";
+            c.SetEditItemTemplateContent( i => {
+                var ex = Html.DevExpress().ComboBox(comboBoxSettings =>
+                {
+                    comboBoxSettings.Name = "Kundenart";
+                    ComboBoxProperties comboBoxProperties = comboBoxSettings.Properties;
+                    comboBoxProperties.TextField = "Kundenart";
+                    comboBoxProperties.ValueField = "Oid";
+                    comboBoxProperties.ValueType = typeof(int);
+                    comboBoxProperties.DropDownStyle = DropDownStyle.DropDown;
+                }).BindList(list).Bind(DataBinder.Eval(i.DataItem, "Kundenart.Oid"));
+                ex.Render();
+            });
+        });
+        //settings.Columns.Add(c =>
+        //{
+        //    c.FieldName = "Kundenart.Oid";
+        //    //c.UnboundType = DevExpress.Data.UnboundColumnType.Integer;
+        //    c.EditFormSettings.Visible = DefaultBoolean.True;
+        //    c.Visible = false;
+        //    c.SetEditItemTemplateContent(i =>
+        //    {
+        //        var extension = Html.DevExpress().ComboBox(comboBoxSettings =>
+        //        {
+        //            comboBoxSettings.Name = "Kundenart";
+        //            ComboBoxProperties comboBoxProperties = comboBoxSettings.Properties;
+        //            comboBoxProperties.TextField = "Kundenart";
+        //            comboBoxProperties.ValueField = "Oid";
+        //            comboBoxProperties.ValueType = typeof(int);
+        //            comboBoxProperties.DropDownStyle = DropDownStyle.DropDown;
+        //        }).BindList(list).Bind(DataBinder.Eval(i.DataItem, "Kundenart.Oid"));
+        //        extension.Render();
+        //    });
+        //});
+    });
+    if (ViewData["EditError"] != null){
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
