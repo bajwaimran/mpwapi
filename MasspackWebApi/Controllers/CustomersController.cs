@@ -16,40 +16,26 @@ namespace MasspackWebApi.Controllers
     {
         private UnitOfWork unitOfWork = new UnitOfWork();
         private UnitOfWork externalUow = MasspackWebApi.XPO.MasterXpoHelper.GetNewUnitOfWork();
-        //public ActionResult GridViewPartial()
-        //{
-        //    var model = unitOfWork.Query<Kundenstamm>();
-        //    return PartialView("_GridViewPartial", model.ToList());
-        //}
-        //List<Kundenstamm> kundenList = new List<Kundenstamm>();
-        //public CustomersController()
-        //{
-        //    kundenList.Clear();
-        //    ExternalDatabankHelper helper = new ExternalDatabankHelper();
-        //    var kundens = helper.GetKundens().ToList();
-        //    kundenList.AddRange(kundens);
-        //}
+
 
         [ValidateInput(false)]
         public ActionResult GridViewPartial()
         {
-            ViewBag.KundenartenList = unitOfWork.Query<Kundenarten>().ToList();
-            var model = unitOfWork.Query<Kundenstamm>();
+            ViewBag.KundenartenList = new XPCollection<Kundenarten>(externalUow, true).ToList();
+            var model = new XPCollection<Kundenstamm>(externalUow, true);
             return PartialView("~/Views/Clients/_GridViewPartial.cshtml", model.ToList());
         }
 
         [HttpPost, ValidateInput(false)]
         public ActionResult GridViewPartialAddNew(CustomerModel obj)
         {
-            ViewBag.KundenartenList = unitOfWork.Query<Kundenarten>().ToList();
-            var model = unitOfWork.Query<Kundenstamm>();
             if (ModelState.IsValid)
             {
                 try
                 {
                     // Insert here a code to insert the new item in your model
-                    var kundenart = unitOfWork.FindObject<Kundenarten>(CriteriaOperator.Parse("Oid==?", obj.Kundenart));
-                    new Kundenstamm(unitOfWork)
+                    var kundenart = externalUow.FindObject<Kundenarten>(CriteriaOperator.Parse("Oid==?", obj.Kundenart));
+                    new Kundenstamm(externalUow)
                     {
                         Selektion = obj.Selektion,
                         KDNr = obj.KDNr,
@@ -66,7 +52,7 @@ namespace MasspackWebApi.Controllers
                         eMail = obj.eMail,
                         Kundenart = kundenart
                     };
-                    unitOfWork.CommitChanges();
+                    externalUow.CommitChanges();
                 }
                 catch (Exception e)
                 {
@@ -75,20 +61,23 @@ namespace MasspackWebApi.Controllers
             }
             else
                 ViewData["EditError"] = "Please, correct all errors.";
+
+            ViewBag.KundenartenList = new XPCollection<Kundenarten>(externalUow, true).ToList();
+            var model = new XPCollection<Kundenstamm>(externalUow, true);
             return PartialView("~/Views/Clients/_GridViewPartial.cshtml", model.ToList());
         }
         [HttpPost, ValidateInput(false)]
         public ActionResult GridViewPartialUpdate(CustomerModel obj)
         {
-            ViewBag.KundenartenList = unitOfWork.Query<Kundenarten>().ToList();
-            var model = unitOfWork.Query<Kundenstamm>();
+            ViewBag.KundenartenList = new XPCollection<Kundenarten>(externalUow, true).ToList();
+            var model = new XPCollection<Kundenstamm>(externalUow, true);
             if (ModelState.IsValid)
             {
                 try
                 {
                     // Insert here a code to update the item in your model
-                    var item = unitOfWork.FindObject<Kundenstamm>(CriteriaOperator.Parse("Oid==?", obj.Oid));
-                    var kundenart = unitOfWork.FindObject<Kundenarten>(CriteriaOperator.Parse("Oid==?", obj.Kundenart));
+                    var item = externalUow.FindObject<Kundenstamm>(CriteriaOperator.Parse("Oid==?", obj.Oid));
+                    var kundenart = externalUow.FindObject<Kundenarten>(CriteriaOperator.Parse("Oid==?", obj.Kundenart));
                     if (obj != null)
                     {
                         item.Selektion = obj.Selektion;
@@ -108,7 +97,7 @@ namespace MasspackWebApi.Controllers
                         item.Kundenart = kundenart;
 
                         item.Save();
-                        unitOfWork.CommitChanges();
+                        externalUow.CommitChanges();
                     }
                     else
                         ViewData["EditError"] = "Something went wrong.";
@@ -125,18 +114,17 @@ namespace MasspackWebApi.Controllers
         [HttpPost, ValidateInput(false)]
         public ActionResult GridViewPartialDelete(System.String Oid)
         {
-            ViewBag.KundenartenList = unitOfWork.Query<Kundenarten>().ToList();
-            var model = unitOfWork.Query<Kundenstamm>();
+
             if (Oid != null)
             {
                 try
                 {
                     // Insert here a code to delete the item from your model
-                    var item = unitOfWork.FindObject<Kundenstamm>(CriteriaOperator.Parse("Oid==?", Oid));
+                    var item = externalUow.FindObject<Kundenstamm>(CriteriaOperator.Parse("Oid==?", Oid));
                     if (item != null)
                     {
-                        unitOfWork.Delete(item);
-                        unitOfWork.CommitChanges();
+                        externalUow.Delete(item);
+                        externalUow.CommitChanges();
                     }
                     else
                         ViewData["EditError"] = "Unable to find the customer.";
@@ -148,6 +136,9 @@ namespace MasspackWebApi.Controllers
                     ViewData["EditError"] = e.Message;
                 }
             }
+
+            ViewBag.KundenartenList = new XPCollection<Kundenarten>(externalUow, true).ToList();
+            var model = new XPCollection<Kundenstamm>(externalUow, true);
             return PartialView("~/Views/Clients/_GridViewPartial.cshtml", model);
         }
 

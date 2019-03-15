@@ -252,6 +252,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ArtikelController.cs" />
     <Compile Include="Controllers\ArtikelStatusController.cs" />
     <Compile Include="Controllers\BestellungAbsendenController.cs" />
@@ -265,6 +266,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ItemsController.cs" />
     <Compile Include="Controllers\KundensController.cs" />
+    <Compile Include="Controllers\MassbestellungsController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ResponseController.cs" />
     <Compile Include="Controllers\TestController.cs" />
@@ -295,6 +297,8 @@
     <Compile Include="Models\ItemModel.cs" />
     <Compile Include="Models\MassOrder.cs" />
     <Compile Include="Models\LocalModels.cs" />
+    <Compile Include="Models\Tutorial.cs" />
+    <Compile Include="Models\TutorialViewModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="XPO\IXpoController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -3948,6 +3952,11 @@
     <Content Include="Views\Bestellungs\_GridCallBackPartial.cshtml" />
     <Content Include="Views\Clients\Einstellungen.cshtml" />
     <Content Include="Views\Shared\Message.cshtml" />
+    <Content Include="Views\Massbestellungs\Index.cshtml" />
+    <Content Include="Views\Massbestellungs\_GridViewPartial.cshtml" />
+    <Content Include="Views\Admin\Tutorials.cshtml" />
+    <Content Include="Views\Admin\_GridViewPartial.cshtml" />
+    <Content Include="Views\Admin\_TutorialTypePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

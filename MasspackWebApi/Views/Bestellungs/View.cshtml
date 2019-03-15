@@ -61,8 +61,18 @@
 
     $(document).ready(function () {
         if ($("#fertigId").val() == false)
-            btnSendOrder.SetEnabled(false);           
+            btnSendOrder.SetEnabled(false);
+        //if status is true disable fertig checkbox
+        if ($("#statusId").val() == true)
+            Fertig.SetEnabled(false);
+
+        //console.log(GridViewItems);
     });
+
+    function fertig_INIT(s, e) {
+        console.log("fertig_INIT");
+        s.SetEnabled(false);
+    }
 
 </script>
 <input type="hidden" id="bestellungId"  value="@Model.Oid"/>
@@ -152,13 +162,12 @@
            }).GetHtml()
                 @Html.DevExpress().CheckBoxFor(model => model.Fertig, set => {
                set.Properties.ClientSideEvents.CheckedChanged = "fertigchange_CHECKED";
+               if(Model.Status == true)
+               {
+                   set.Properties.ClientSideEvents.Init = "fertig_INIT";
+               }
+               
            }).GetHtml()
-                @*@Html.DevExpress().TextBox(tb =>
-                   {
-                       tb.Name = "tbFertig";
-                       tb.Text = Model.Fertig.ToString();
-                       tb.ClientEnabled = false;
-                   }).GetHtml()*@
             </div>
             <div class="col-lg-12">
                 @Html.DevExpress().Label(lbl =>
@@ -196,25 +205,6 @@
                    }).Bind(Model.Bestellung_BestellKunden_XPColl).GetHtml()
             </div>
             <div class="col-lg-6">
-                @*@Html.Action("GridViewPartialBestellArtikel", "Bestellungs")*@
-
-                @*@Html.Action("BistellArtiklesPartial")*@
-                @*@Html.DevExpress().CallbackPanel(
-                    cbpsettings => {
-                        cbpsettings.Name = "cbpExample";
-                        cbpsettings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "BistellArtiklesPartial" };
-                        cbpsettings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
-                        cbpsettings.Height = 250;
-
-                        cbpsettings.SetContent(() =>
-                        {
-                            
-                        });
-
-                        cbpsettings.ClientSideEvents.BeginCallback = "OnBeginCallback";
-                        cbpsettings.ClientSideEvents.EndCallback = "OnEndCallback";
-                    }
-                ).GetHtml()*@
                 @{ 
                     var m = Model.Bestellung_BestellKunden_XPColl;
                     var p = m.First();
@@ -238,3 +228,9 @@
         </div>
     </div>
 </div>
+
+<script>
+    function checkBestallungStatus() {
+        return $("#statusId").val();
+    }
+</script>

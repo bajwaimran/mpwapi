@@ -1,17 +1,18 @@
 ﻿
+
 @{
     var grid = Html.DevExpress().GridView(settings =>
     {
-        settings.Name = "GridViewBestellArtikel";
-        settings.CallbackRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartial" };
+        settings.Name = "GridViewPartial";
+        settings.CallbackRouteValues = new { Controller = "Massbestellungs", Action = "GridViewPartial" };
 
-        //settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartial" };
-        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartialUpdate" };
-        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Bestellungs", Action = "GridCallBackPartialDelete" };
+        //settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "Massbestellungs", Action = "GridViewPartialAddNew" };
+        //settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "Massbestellungs", Action = "GridViewPartialUpdate" };
+        //settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Massbestellungs", Action = "GridViewPartialDelete" };
         settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
         settings.SettingsBehavior.ConfirmDelete = true;
 
-        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellArtikel";
+        settings.SettingsSearchPanel.CustomEditorName = "tbSearchBestellung";
         settings.Settings.ShowTitlePanel = true;
         settings.SettingsBehavior.ConfirmDelete = true;
 
@@ -20,20 +21,21 @@
             Html.DevExpress().Label(label =>
             {
 
-                label.Text = "BestellArtikels";
+                label.Text = "MassBestellung";
                 label.Style["font-weight"] = "bold";
 
             }).Render();
 
         });
-        if(ViewBag.Status == false)
+
+        settings.CommandColumn.Visible = true;
+        //settings.CommandColumn.ShowNewButton = true;
+        if (User.IsInRole("SuperAdmin"))
         {
-            settings.CommandColumn.Visible = true;
-            settings.CommandColumn.ShowNewButton = false;
             settings.CommandColumn.ShowDeleteButton = true;
-            settings.CommandColumn.ShowEditButton = true;
         }
 
+        settings.CommandColumn.ShowEditButton = true;
 
         settings.KeyFieldName = "Oid";
 
@@ -48,46 +50,48 @@
         settings.SettingsAdaptivity.AllowOnlyOneAdaptiveDetailExpanded = false;
         settings.SettingsAdaptivity.HideDataCellsAtWindowInnerWidth = 0;
 
-        settings.Columns.Add(c =>
-        {
-            c.FieldName = "ArtikelNr";
-            c.EditFormSettings.Visible = DefaultBoolean.False;
-        });
-        settings.Columns.Add(c =>
-        {
-            c.FieldName = "Bezeichnung";
-            c.EditFormSettings.Visible = DefaultBoolean.False;
-        });
-        settings.Columns.Add(c =>
-        {
-            c.FieldName = "Stueckzahl";
-        });
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
 
         settings.Columns.Add(c =>
         {
-            c.FieldName = "Bestellung.Oid";
+            c.FieldName = "Oid";
             c.EditFormSettings.Visible = DefaultBoolean.False;
         });
         settings.Columns.Add(c =>
         {
-            c.FieldName = "Artikel.Bezeichnung";
+            c.FieldName = "Datum";
+            c.ColumnType = MVCxGridViewColumnType.DateEdit;
             c.EditFormSettings.Visible = DefaultBoolean.False;
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Mitarbeiter";
         });
         settings.Columns.Add(c =>
         {
             c.FieldName = "mboid";
-            c.EditFormSettings.Visible = DefaultBoolean.False;
         });
         settings.Columns.Add(c =>
         {
-            c.FieldName = "AuftragsNrKW";
-            c.EditFormSettings.Visible = DefaultBoolean.False;
+            c.FieldName = "BestellNr";
         });
         settings.Columns.Add(c =>
         {
-            c.FieldName = "BestellKunden.KDNr";
-            c.EditFormSettings.Visible = DefaultBoolean.False;
+            c.FieldName = "KDNr";
         });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "ArtikelNr";
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Stueck";
+        });
+        settings.Columns.Add(c =>
+        {
+            c.FieldName = "Bestellt";
+        });
+        
 
     });
     if (ViewData["EditError"] != null)
@@ -96,5 +100,6 @@
     }
 }
 @grid.Bind(Model).GetHtml()
+
 
 

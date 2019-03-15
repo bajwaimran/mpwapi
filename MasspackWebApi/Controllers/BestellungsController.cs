@@ -44,6 +44,23 @@ namespace MasspackWebApi.Controllers
             var model = unitOfWork.Query<BestellErfassung.DomainObjects.Bestellung>();
             return PartialView("_GridViewPartial", model);
         }
+        public ActionResult GridViewPartialDelete(int Oid)
+        {
+            var item = unitOfWork.FindObject<Bestellung>(CriteriaOperator.Parse("Oid==?", Oid));
+            if (item == null)
+            {
+                ViewData["EditError"] = "Unable to find the Item.";
+            }
+            else
+            {
+                unitOfWork.Delete(item);
+                unitOfWork.CommitChanges();
+            }
+
+            var model = new XPCollection<Bestellung>(unitOfWork, true);
+            return PartialView("_GridViewPartial", model);
+
+        }
 
         public ActionResult GridViewPartialBestellKunden()
         {
@@ -66,24 +83,6 @@ namespace MasspackWebApi.Controllers
             return PartialView("_GridViewPartialBestellungSummen", model);
         }
 
-        //public ActionResult KundenPanel()
-        //{
-        //    if (!string.IsNullOrEmpty(Request.Params["kundenID"]))
-        //    {
-        //        int kundenID = int.Parse(Request.Params["kundenID"]);
-        //        var kunden = unitOfWork.FindObject<BestellErfassung.DomainObjects.Kunden.Kundenstamm>(CriteriaOperator.Parse("Oid==?", kundenID));
-        //        if (kunden != null)
-        //        {
-        //            new BestellKunden(unitOfWork)
-        //            {
-        //                Kunde = kunden,                        
-        //            };
-        //        }
-
-        //    }
-
-        //    int kundenOid = !string.IsNullOrEmpty(Request.Params["kundenID"]) ? int.Parse(Request.Params["kundenID"]) : unitOfWork.Query<BestellKunden>().First().Oid;
-        //}
         public void Test()
         {
 
@@ -143,6 +142,7 @@ namespace MasspackWebApi.Controllers
                 Session["bistellKundenOid"] = Oid;
                 var bestellKunden = unitOfWork.FindObject<BestellKunden>(CriteriaOperator.Parse("Oid==?", Oid));
                 var model = bestellKunden.BestellKunden_BestellArtikel_XPColl;
+                ViewBag.Status = bestellKunden.Bestellung.Status;
                 bistellArtikelList = model.ToList();
                 Session["bistellArtikelList"] = model.ToList();
                 return PartialView("BistellArtiklesPartial", model);

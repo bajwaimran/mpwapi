@@ -36,8 +36,8 @@ namespace MasspackWebApi.Controllers
         [ValidateInput(false)]
         public ActionResult GridViewPartial()
         {
-            var model = GetAll();
-            return PartialView("_GridViewPartial", model);
+            var model = new XPCollection<Artikelstamm>(externalUow, true);
+            return PartialView("_GridViewPartial", model.ToList());
         }
 
         [HttpPost, ValidateInput(false)]
@@ -50,7 +50,7 @@ namespace MasspackWebApi.Controllers
                 {
                     // Insert here a code to insert the new item in your model
 
-                    var artikel = new Artikelstamm(unitOfWork)
+                    var artikel = new Artikelstamm(externalUow)
                     {
                         ArtNr = obj.ArtNr.ToString(),
                         ArtNrInt = obj.ArtNr,
@@ -62,12 +62,12 @@ namespace MasspackWebApi.Controllers
                         Stueckzahl = obj.Stueckzahl,
                         Verpackungseinheit = obj.Verpackungseinheit
                     };
-                    new ArtikelLieferbar(unitOfWork)
-                    {
-                        Artikel = artikel,
-                        StueckzahlLieferbar = obj.StueckzahlLieferbar
-                    };
-                    unitOfWork.CommitChanges();
+                    //new ArtikelLieferbar(unitOfWork)
+                    //{
+                    //    Artikel = artikel,
+                    //    StueckzahlLieferbar = obj.StueckzahlLieferbar
+                    //};
+                    externalUow.CommitChanges();
                 }
                 catch (Exception e)
                 {
@@ -76,7 +76,7 @@ namespace MasspackWebApi.Controllers
             }
             else
                 ViewData["EditError"] = "Please, correct all errors.";
-            var model = GetAll();
+            var model = new XPCollection<Artikelstamm>(externalUow, true);
             return PartialView("~/Views/Items/_GridViewPartial.cshtml", model);
         }
         [HttpPost, ValidateInput(false)]
@@ -88,23 +88,22 @@ namespace MasspackWebApi.Controllers
                 try
                 {
                     // Insert here a code to update the item in your model
-                    var artikelLieferbar = unitOfWork.FindObject<ArtikelLieferbar>(CriteriaOperator.Parse("Artikel.Oid==?", obj.Oid));
+                    var artikelLieferbar = externalUow.FindObject<Artikelstamm>(CriteriaOperator.Parse("Oid==?", obj.Oid));
                     if (artikelLieferbar != null)
                     {
 
-                        artikelLieferbar.Artikel.Artikeltext1 = obj.Artikeltext1;
-                        artikelLieferbar.Artikel.Artikeltext2 = obj.Artikeltext2;
-                        artikelLieferbar.Artikel.Artikeltext3 = obj.Artikeltext3;
-                        artikelLieferbar.Artikel.Bestand = obj.Bestand;
-                        artikelLieferbar.Artikel.Bezeichnung = obj.Bezeichnung;
-                        artikelLieferbar.Artikel.Stueckzahl = obj.Stueckzahl;
-                        artikelLieferbar.Artikel.Verpackungseinheit = obj.Verpackungseinheit;
-                        artikelLieferbar.Artikel.Save();
+                        artikelLieferbar.Artikeltext1 = obj.Artikeltext1;
+                        artikelLieferbar.Artikeltext2 = obj.Artikeltext2;
+                        artikelLieferbar.Artikeltext3 = obj.Artikeltext3;
+                        artikelLieferbar.Bestand = obj.Bestand;
+                        artikelLieferbar.Bezeichnung = obj.Bezeichnung;
+                        artikelLieferbar.Stueckzahl = obj.Stueckzahl;
+                        artikelLieferbar.Verpackungseinheit = obj.Verpackungseinheit;
 
-                        artikelLieferbar.StueckzahlLieferbar = obj.StueckzahlLieferbar;
-                        artikelLieferbar.Save();
 
-                        unitOfWork.CommitChanges();
+
+
+                        externalUow.CommitChanges();
                     }
                     else
                         ViewData["EditError"] = "Unable to find the artikel";
@@ -117,7 +116,7 @@ namespace MasspackWebApi.Controllers
             else
                 ViewData["EditError"] = "Please, correct all errors.";
 
-            var model = GetAll();
+            var model = new XPCollection<Artikelstamm>(externalUow, true);
             return PartialView("~/Views/Items/_GridViewPartial.cshtml", model);
         }
         [HttpPost, ValidateInput(false)]
@@ -129,11 +128,10 @@ namespace MasspackWebApi.Controllers
                 try
                 {
                     // Insert here a code to delete the item from your model
-                    var item = unitOfWork.FindObject<Artikelstamm>(CriteriaOperator.Parse("Oid==?", Oid));
-                    unitOfWork.Delete(item);
-                    var lieferbar = unitOfWork.FindObject<ArtikelLieferbar>(CriteriaOperator.Parse("Artikel.Oid==?", Oid));
-                    unitOfWork.Delete(lieferbar);
-                    unitOfWork.CommitChanges();
+                    var item = externalUow.FindObject<Artikelstamm>(CriteriaOperator.Parse("Oid==?", Oid));
+                    externalUow.Delete(item);
+
+                    externalUow.CommitChanges();
                 }
                 catch (Exception e)
                 {
@@ -141,7 +139,7 @@ namespace MasspackWebApi.Controllers
                 }
             }
 
-            var model = GetAll();
+            var model = new XPCollection<Artikelstamm>(externalUow, true);
             return PartialView("~/Views/Items/_GridViewPartial.cshtml", model);
         }
         [ValidateInput(false)]
